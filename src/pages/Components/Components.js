@@ -15,7 +15,7 @@ import FileInput from "../../components/InputFields/FileInput/FileInput";
 import cloudIcon from "../../assets/icons/cloud-upload-icon.svg";
 import TabGroup from "../../components/TabGroup/TabGroup";
 import TextInput from "../../components/InputFields/TextInput/TextInput";
-import Accordian from "../../components/Accordian/Accordian";
+import Accordion from "../../components/Accordion/Accordion";
 import SelectInput from "../../components/InputFields/SelectInput/SelectInput";
 import Notifications from "../../components/Notifications/Notifications";
 import Table from "../../components/Table/Table";
@@ -315,7 +315,7 @@ function Components() {
       </div>
 
       <div>
-        accordian : <Accordian tabs={accordianTabs} />
+      Accordion : <Accordion tabs={accordianTabs} />
       </div>
 
       <div>

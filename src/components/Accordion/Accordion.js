@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Accordian.module.scss";
+import styles from "./Accordion.module.scss";
 import Tab from "./Tab/Tab";
 
-function Accordian({ tabs }) {
+function Accordion({ tabs }) {
   return (
-    <div className={styles.accordianContainer}>
+    <div className={styles.accordionContainer}>
       {tabs.map((item, index) => (
         <Tab item={item} key={index} />
       ))}
@@ -12,4 +12,4 @@ function Accordian({ tabs }) {
   );
 }
 
-export default Accordian;
+export default Accordion;
