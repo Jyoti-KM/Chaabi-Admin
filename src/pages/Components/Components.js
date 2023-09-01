@@ -71,10 +71,10 @@ function Components() {
     "calcutta",
   ];
 
-  const accordianTabs = [
-    "Accordian title - 1",
-    "Accordian title - 2",
-    "Accordian title - 3",
+  const AccordionTabs = [
+    "Accordion title - 1",
+    "Accordion title - 2",
+    "Accordion title - 3",
   ];
 
   const fileInput = {
@@ -315,7 +315,7 @@ function Components() {
       </div>
 
       <div>
-      Accordion : <Accordion tabs={accordianTabs} />
+      Accordion : <Accordion tabs={AccordionTabs} />
       </div>
 
       <div>

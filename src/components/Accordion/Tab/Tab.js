@@ -3,7 +3,7 @@ import styles from "./Tab.module.scss";
 import { ReactComponent as ArrowRightIcon } from "../../../assets/icons/arrow-right.svg";
 import { ReactComponent as ArrowDownIcon } from "../../../assets/icons/arrow-down.svg";
 
-function AccordianTab({ item }) {
+function AccordionTab({ item }) {
   const [isTabClicked, setIsTabClicked] = useState(false);
 
   function tabClickHandler() {
@@ -26,4 +26,4 @@ function AccordianTab({ item }) {
   );
 }
 
-export default AccordianTab;
+export default AccordionTab;

@@ -12,11 +12,12 @@
     gap: .75rem;
     align-self: stretch;
     color: $neutral30;
-    font-family: "Roboto", sans-serif;
-    font-size: .875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.25rem;
+    // font-family: "Roboto", sans-serif;
+    // font-size: .875rem;
+    // font-style: normal;
+    // font-weight: 500;
+    // line-height: 1.25rem;
+    @include t4Med;
   }
 
   .nameColumnHeader {

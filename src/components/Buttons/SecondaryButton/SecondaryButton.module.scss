@@ -10,11 +10,12 @@
   background-color: transparent;
 
   
-  font-family: "Roboto";
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
+  // font-family: "Roboto";
+  // font-size: 1rem;
+  // font-style: normal;
+  // font-weight: 500;
+  // line-height: 1.5rem;
+  @include t3Med;
   text-align: center;
   border: .06rem solid $neutral90;
   cursor: pointer;
@@ -45,11 +46,12 @@
   padding: 0.75rem 1.5rem;
   color: $neutral99;
   background-color: transparent;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
+  // font-family: "Roboto", sans-serif;
+  // font-size: 1rem;
+  // font-style: normal;
+  // font-weight: 500;
+  // line-height: 1.5rem;
+  @include t3Med;
   text-align: center;
   border: .06rem solid $neutral90;
   cursor: pointer;

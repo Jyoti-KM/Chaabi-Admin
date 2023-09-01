@@ -61,12 +61,13 @@
       .supportingText {
         align-self: stretch;
         color: $neutral50;
-        text-align: center;
-        font-family: "Roboto";
-        font-size: 0.75rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1.125rem;
+        // text-align: center;
+        // font-family: "Roboto";
+        // font-size: 0.75rem;
+        // font-style: normal;
+        // font-weight: 300;
+        // line-height: 1.125rem;
+        @include t5Lite;
       }
     }
 
