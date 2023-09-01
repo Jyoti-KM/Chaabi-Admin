@@ -1,0 +1,274 @@
+// @import './global.module.scss';
+
+  $font-family: "Roboto";
+  $h1-font-size: 4.5rem;
+  $h2-font-size: 3.75rem;
+  $h3-font-size: 3rem;
+  $h4-font-size: 2.25rem;
+  $h5-font-size: 1.875rem;
+  $h6-font-size: 1.5rem;
+
+  $t1-font-size: 1.25rem;
+  $t2-font-size: 1.125rem;
+  $t3-font-size: 1rem;
+  $t4-font-size: 0.875rem;
+  $t5-font-size: 0.75rem;
+
+  $font-weight-lite: 300;
+  $font-weight-reg: 400;
+  $font-weight-med: 500;
+  $font-weight-semi: 600;
+  $font-weight-bold: 700;
+
+
+// Heading Styles
+@mixin headingStyles($font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// h1 - group
+@mixin h1Lite {
+  @include headingStyles($h1-font-size, $font-weight-lite, 5.625rem);
+}
+
+@mixin h1Reg {
+  @include headingStyles($h1-font-size, $font-weight-reg, 5.625rem);
+}
+
+@mixin h1Med {
+  @include headingStyles($h1-font-size, $font-weight-med, 5.625rem);
+}
+
+@mixin h1Semi {
+  @include headingStyles($h1-font-size, $font-weight-semi, 5.625rem);
+}
+
+@mixin h1Bold {
+  @include headingStyles($h1-font-size, $font-weight-bold, 5.625rem);
+}
+
+// h2 - group
+@mixin h2Lite {
+  @include headingStyles($h2-font-size, $font-weight-lite, 4.5rem);
+}
+
+@mixin h2Reg {
+  @include headingStyles($h2-font-size, $font-weight-reg, 4.5rem);
+}
+
+@mixin h2Med {
+  @include headingStyles($h2-font-size, $font-weight-med, 4.5rem);
+}
+
+@mixin h2Semi {
+  @include headingStyles($h2-font-size, $font-weight-semi, 4.5rem);
+}
+
+@mixin h2Bold {
+  @include headingStyles($h2-font-size, $font-weight-bold, 4.5rem);
+}
+
+// h3 - group
+@mixin h3Lite {
+  @include headingStyles($h3-font-size, $font-weight-lite, 3.75rem);
+}
+
+@mixin h3Reg {
+  @include headingStyles($h3-font-size, $font-weight-reg, 3.75rem);
+}
+
+@mixin h3Med {
+  
+  @include headingStyles($h3-font-size, $font-weight-med, 3.75rem);
+}
+
+@mixin h3Semi {
+  @include headingStyles($h3-font-size, $font-weight-semi, 3.75rem);
+}
+
+@mixin h3Bold {
+  @include headingStyles($h3-font-size, $font-weight-bold, 3.75rem);
+}
+
+
+// h4 - group
+@mixin h4Lite {
+  @include headingStyles($h4-font-size, $font-weight-lite, 2.75rem);
+}
+
+@mixin h4Reg {
+  @include headingStyles($h4-font-size, $font-weight-reg, 2.75rem);
+}
+
+@mixin h4Med {
+  
+  @include headingStyles($h4-font-size, $font-weight-med, 2.75rem);
+}
+
+@mixin h4Semi {
+  @include headingStyles($h4-font-size, $font-weight-semi, 2.75rem);
+}
+
+@mixin h4Bold {
+  @include headingStyles($h4-font-size, $font-weight-bold, 2.75rem);
+}
+
+// h5 - group
+@mixin h5Lite {
+  @include headingStyles($h5-font-size, $font-weight-lite, 2.375rem);
+}
+
+@mixin h5Reg {
+  @include headingStyles($h5-font-size, $font-weight-reg, 2.375rem);
+}
+
+@mixin h5Med {
+  @include headingStyles($h5-font-size, $font-weight-med, 2.375rem);
+}
+
+@mixin h5Semi {
+  @include headingStyles($h5-font-size, $font-weight-semi, 2.375rem);
+}
+
+@mixin h5Bold {
+  @include headingStyles($h5-font-size, $font-weight-bold, 2.375rem);
+}
+
+// h6 - group
+@mixin h6Lite {
+  @include headingStyles($h6-font-size, $font-weight-lite, 2rem);
+}
+
+@mixin h6Reg {
+  @include headingStyles($h6-font-size, $font-weight-reg, 2rem);
+}
+
+@mixin h6Med {
+  @include headingStyles($h6-font-size, $font-weight-med, 2rem);
+}
+
+@mixin h6Semi {
+  @include headingStyles($h6-font-size, $font-weight-semi, 2rem);
+}
+
+@mixin h6Bold {
+  @include headingStyles($h6-font-size, $font-weight-bold, 2rem);
+}
+
+
+// Text Styles
+@mixin textStyles($font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// t1 - group
+@mixin t1Lite {
+  @include textStyles($t1-font-size, $font-weight-lite, 1.875rem);
+}
+
+@mixin t1Reg {
+  @include textStyles($t1-font-size, $font-weight-reg, 1.875rem);
+}
+
+@mixin t1Med {
+  @include textStyles($t1-font-size, $font-weight-med, 1.875rem);
+}
+
+@mixin t1Semi {
+  @include textStyles($t1-font-size, $font-weight-semi, 1.875rem);
+}
+
+@mixin t1Bold {
+  @include textStyles($t1-font-size, $font-weight-bold, 1.875rem);
+}
+
+// t2 - group
+@mixin t2Lite {
+  @include textStyles($t2-font-size, $font-weight-lite, 1.75rem);
+}
+
+@mixin t2Reg {
+  @include textStyles($t2-font-size, $font-weight-reg, 1.75rem);
+}
+
+@mixin t2Med {
+  @include textStyles($t2-font-size, $font-weight-med, 1.75rem);
+}
+
+@mixin t2Semi {
+  @include textStyles($t2-font-size, $font-weight-semi, 1.75rem);
+}
+
+@mixin t2Bold {
+  @include textStyles($t2-font-size, $font-weight-bold, 1.75rem);
+}
+
+// t3 - group
+@mixin t3Lite {
+  @include textStyles($t3-font-size, $font-weight-lite, 1.5rem);
+}
+
+@mixin t3Reg {
+  @include textStyles($t3-font-size, $font-weight-reg, 1.5rem);
+}
+
+@mixin t3Med {
+  @include textStyles($t3-font-size, $font-weight-med, 1.5rem);
+}
+
+@mixin t3Semi {
+  @include textStyles($t3-font-size, $font-weight-semi, 1.5rem);
+}
+
+@mixin t3Bold {
+  @include textStyles($t3-font-size, $font-weight-bold, 1.5rem);
+}
+
+// t4 - group
+@mixin t4Lite {
+  @include textStyles($t4-font-size, $font-weight-lite, 1.25rem);
+}
+
+@mixin t4Reg {
+  @include textStyles($t4-font-size, $font-weight-reg, 1.25rem);
+}
+
+@mixin t4Med {
+  @include textStyles($t4-font-size, $font-weight-med, 1.25rem);
+}
+
+@mixin t4Semi {
+  @include textStyles($t4-font-size, $font-weight-semi, 1.25rem);
+}
+
+@mixin t4Bold {
+  @include textStyles($t4-font-size, $font-weight-bold, 1.25rem);
+}
+
+// t5 - group
+@mixin t5Lite {
+  @include textStyles($t5-font-size, $font-weight-lite, 1.125rem);
+}
+
+@mixin t5Reg {
+  @include textStyles($t5-font-size, $font-weight-reg, 1.125rem);
+}
+
+@mixin t5Med {
+  @include textStyles($t5-font-size, $font-weight-med, 1.125rem);
+}
+
+@mixin t5Semi {
+  @include textStyles($t5-font-size, $font-weight-semi, 1.125rem);
+}
+
+@mixin t5Bold {
+  @include textStyles($t5-font-size, $font-weight-bold, 1.125rem);
+}
+

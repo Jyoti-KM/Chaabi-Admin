@@ -1,0 +1,160 @@
+@import '../../../global-styles/global.module.scss';
+
+.phoneInputContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .25rem;
+  align-self: stretch;
+
+  .labelLightTheme {
+    color: $neutral50;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    cursor: pointer;
+  }
+
+  .labelDarkTheme {
+    color: $neutral95;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    cursor: pointer;
+  }
+
+  .inputContainerLightTheme {
+    display: inline-flex;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $neutral90;
+    background: $neutral100;
+
+    .dropdownLightTheme {
+      display: flex;
+      padding: 0.625rem 0.75rem 0.625rem 1rem;
+      align-items: center;
+      gap: 0.25rem;
+      align-self: stretch;
+      color: $neutral20;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5rem;
+      cursor: pointer;
+    }
+
+    .inputLightTheme {
+      display: inline-flex;
+      padding: .75rem 1rem .75rem 1rem;
+      align-items: center;
+      gap: .5rem;
+      flex: 1 0 0;
+      color: $neutral20;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      border: none;
+      border-radius: .25rem;
+    }
+
+    .inputLightTheme:focus {
+      outline: none;
+      //   box-shadow: 1rem 1rem 1rem .25rem #f0f1f4;
+    }
+
+    // .input:invalid {
+    //   border: .06rem solid $alert60, f97066);
+    // }
+
+    .inputLightTheme[disabled] {
+      border: .06rem solid $neutral90;
+      background: $neutral90;
+      color: $neutral70;
+    }
+  }
+
+  // dark theme mode
+  .inputContainerDarkTheme {
+    display: inline-flex;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $neutral70;
+    background: $neutral100;
+
+    .dropdownDarkTheme {
+      display: flex;
+      padding: 0.625rem 0.75rem 0.625rem 1rem;
+      align-items: center;
+      gap: 0.25rem;
+      align-self: stretch;
+      color: $neutral20;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5rem;
+      cursor: pointer;
+    }
+
+    .inputDarkTheme {
+      display: inline-flex;
+      padding: .75rem 1rem .75rem 1rem;
+      align-items: center;
+      gap: .5rem;
+      flex: 1 0 0;
+      color: $neutral20;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      border: none;
+      border-radius: .25rem;
+    }
+
+    .inputDarkTheme:focus {
+      outline: none;
+      //   box-shadow: 1rem 1rem 1rem .25rem #f0f1f4;
+    }
+
+    // .input:invalid {
+    //   border: .06rem solid $alert60, f97066);
+    // }
+
+    .inputDarkTheme[disabled] {
+      border: .06rem solid $neutral40;
+      background: $neutral40;
+      color: $neutral80;
+    }
+  }
+}
+
+.helperTextLightTheme {
+  color: $neutral20;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0rem;
+}
+
+.helperTextDarkTheme {
+  color: $neutral95;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0rem;
+}

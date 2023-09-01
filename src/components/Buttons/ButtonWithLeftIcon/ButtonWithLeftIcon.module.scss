@@ -1,0 +1,37 @@
+@import '../../../global-styles/global.module.scss';
+
+.btnWithLeftIconLightTheme {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: .06rem solid $neutral90;
+  background: $neutral100;
+  color: $neutral20;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.btnWithLeftIconDarkTheme {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: .06rem solid $neutral99;
+  background: $neutral100;
+  color: $neutral20;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  cursor: pointer;
+}

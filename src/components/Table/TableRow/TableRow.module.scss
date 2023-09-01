@@ -1,0 +1,140 @@
+@import '../../../global-styles/variables.scss';
+
+.tableItem {
+  border-bottom: .06rem solid $neutral90;
+  background-color: $neutral100;
+  .draftBadge {
+    color: $warning50;
+    background: $warning90;
+  }
+
+  .activeBadge {
+    color: $success50;
+    background: $success90;
+  }
+
+  .inactiveBadge {
+    color: $alert50;
+    background: $alert90;
+  }
+
+  .badge {
+    display: flex;
+    padding: .18rem .62rem;
+    justify-content: center;
+    align-items: center;
+    gap: .375rem;
+    border-radius: .75rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.125rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  td {
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    color: $neutral40; /* Fixed the color property here */
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .nameColumn {
+    width: 24%;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .name {
+      input {
+        border: none;
+        color: $neutral40; /* Fixed the color property here */
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .requiredMessage {
+        color: $alert50;
+      }
+    }
+  }
+
+  .statusColumn {
+    width: 8%;
+  }
+
+  .roleColumn {
+    width: 17%;
+  }
+
+  .emailColumn {
+    width: 20%;
+  }
+
+  .teamsColumn {
+    width: 26.5%;
+
+    .badges {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+
+      .badgeGroup1 {
+        color: $badgeColorMain1;
+        background: $badgeColorBack1;
+      }
+
+      .badgeGroup2 {
+        color: $badgeColorMain2;
+        background: $badgeColorBack2;
+      }
+
+      .badgeGroup5 {
+        color: $badgeColorMain5;
+        background: $badgeColorBack5;
+      }
+
+      .remainingCount {
+        color: $neutral30;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.125rem;
+      }
+    }
+  }
+
+  .deleteColumn {
+    padding: 1rem 0.625rem;
+  }
+
+  .editColumn {
+    padding: 1rem .875rem;
+  }
+}

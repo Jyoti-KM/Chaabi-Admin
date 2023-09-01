@@ -1,0 +1,46 @@
+@import '../../../global-styles/global.module.scss';
+
+.radioBtnLightTheme {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.0625rem solid $neutral90;
+  background: $neutral100;
+
+  .radioBtnIcon {
+    // width: 0.75rem;
+    // height: 0.75rem;
+    flex-shrink: 0;
+  }
+}
+
+.radioBtnLightTheme:hover {
+  border: 0.0625rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem 0.25rem $primary90;
+}
+
+// dark theme mode
+.radioBtnDarkTheme {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: $neutral100;
+  border: 0.0625rem solid $neutral70;
+
+  .radioBtnIcon {
+    // width: 0.75rem;
+    // height: 0.75rem;
+    flex-shrink: 0;
+  }
+}
+
+.radioBtnDarkTheme:hover {
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem .25rem $primary80;
+}

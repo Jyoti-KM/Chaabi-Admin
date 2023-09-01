@@ -1,0 +1,121 @@
+@import '../../global-styles/global.module.scss';
+
+.link {
+  text-decoration: none;
+}
+
+.navItemLightTheme {
+  display: flex;
+  padding: .75rem 0rem;
+  padding-left: 1.2vw;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: stretch;
+  background-color: transparent;
+
+  &:hover {
+    background: $primary95;
+  }
+
+  .navIcon {
+    width: 2rem;
+    height: 2rem;
+    fill: #75777a;
+  }
+
+  .navIconActive {
+    width: 2rem;
+    height: 2rem;
+    fill: #0d62ff;
+  }
+
+  .navItemText {
+    color: $neutral50;
+    flex: 1;
+  }
+
+  .navItemTextActive {
+    color: $neutral20;
+    flex: 1;
+  }
+
+  .navItemActiveBar {
+    width: .25rem;
+    height: 2.12rem;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    background: $primary50;
+  }
+}
+
+.navItemlightTheme:hover {
+  background: $primary95;
+}
+
+// dark theme mode
+.navItemDarkTheme {
+  display: flex;
+  padding: .75rem 0rem;
+  padding-left: 1.2vw;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: stretch;
+  background-color: transparent;
+
+  &:hover {
+    background: $primary80;
+
+    .navIconActive {
+      width: 2rem;
+      height: 2rem;
+      fill: #fff;
+    }
+
+    // .navItemActiveBar {
+    //   width: .25rem;
+    //   height: 2.12rem;
+    //   border-top-left-radius: .75rem;
+    //   border-bottom-left-radius: .75rem;
+    //   background: $neutral10);
+    // }
+  }
+
+  .navIcon {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+  }
+
+  .navIconActive {
+    width: 2rem;
+    height: 2rem;
+    fill: #b4ceff;
+  }
+
+  .navItemText {
+    color: $neutral100;
+    flex: 1;
+  }
+
+  .navItemTextActive {
+    color: $neutral100;
+    flex: 1;
+  }
+
+  .navItemActiveBar {
+    width: .25rem;
+    height: 2.12rem;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    background: $primary80;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navItemTextActive,
+  .navItemText {
+    display: none;
+  }
+}

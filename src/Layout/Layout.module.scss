@@ -1,0 +1,174 @@
+@import '../global-styles/global.module.scss';
+
+.layoutContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+  .rightHandSection {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+
+    .headerLightTheme {
+      height: 11vh;
+    
+
+      // width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0vw 1.5vw;
+      background: $neutral100;
+
+      .content {
+        max-width: 70%;
+        display: inline-flex;
+        flex-direction: column;
+        gap: .25rem;
+
+        h4 {
+          @include h4Med;
+          color: $neutral20;
+          margin: 0;
+        }
+
+        p {
+          @include t1Lite;
+          color: $neutral50;
+          margin: 0;
+        }
+      }
+
+      .actions {
+        min-width: 28%;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+        align-items: center;
+      }
+    }
+
+    .headerDarkTheme {
+      height: 11vh;
+      // width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0vw 1.5vw;
+      background: $neutral10;
+
+      .content {
+        max-width: 70%;
+        display: inline-flex;
+        flex-direction: column;
+        gap: .25rem;
+
+        h4 {
+       
+          color: $neutral100;
+          margin: 0;
+        }
+
+        p {
+         
+          color: $neutral95;
+          margin: 0;
+        }
+      }
+
+      .actions {
+        min-width: 28%;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+        align-items: center;
+      }
+    }
+  }
+
+  .page {
+    padding: 1.25rem;
+    overflow: scroll;
+    height: calc(100vh - 11vh);
+    height: calc(100dvh - 11dvh);
+    
+    
+    @include lightThemeRegular  ;
+  }
+
+  .sidebarLightTheme {
+    width: 15vw;
+    height: 100vh;
+    background-color: $neutral100;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 11vh;
+
+      .logo {
+        height: auto;
+        width: 50%;
+      }
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: .75rem;
+      // background: $neutral100);
+    }
+  }
+
+  .sidebarDarkTheme {
+    width: 15vw;
+    height: 100vh;
+    background-color: $neutral10;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 11vh;
+
+      .logo {
+        height: auto;
+        width: 50%;
+      }
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: .75rem;
+      // background: $neutral100);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .layoutContainer {
+    .rightHandSection {
+      width: 94vw;
+    }
+
+    .sidebarLightTheme,
+    .sidebarDarkTheme {
+      width: 6vw;
+
+      .logoContainer {
+        .logo {
+          height: auto;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

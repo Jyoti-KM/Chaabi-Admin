@@ -1,0 +1,41 @@
+
+
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+@mixin respond ($breakpoint){
+    // @if $breakpoint == phone{
+    //     @media (max-width : 37.5em ){ @content };  //600px
+    // }
+
+    // @if $breakpoint == tabPort {
+    //     @media (max-width : 56.25em ){ @content };   //900px
+    // }
+
+    // @if $breakpoint == tabLand{
+    //     @media (max-width : 75em ){ @content };  //1200px
+    // }
+
+    // @if $breakpoint == bigDesktop{
+    //     @media (min-width : 112.5em ){ @content };   //1800px
+    // }
+}
+
+
+html{
+    
+    // 1rem = 16px 
+    font-size: 100%;
+   
+}
+
+body{
+    // @include respond(tab-land){  // < 1200
+    //     font-size: 56.25%;       // 1rem = 9px , 9/16 =56.25%
+    // }
+}

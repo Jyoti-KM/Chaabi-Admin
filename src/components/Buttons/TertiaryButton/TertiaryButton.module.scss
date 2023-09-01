@@ -1,0 +1,65 @@
+@import '../../../global-styles/global.module.scss';
+
+
+.tertiaryBtnLightTheme {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: $primary50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  border: .06rem solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tertiaryBtnLightTheme:not(:disabled):hover {
+  border: .06rem solid $neutral80;
+}
+
+.tertiaryBtnLightTheme:not(:disabled):active {
+  color: $primary50;
+  border: .06rem solid $neutral80;
+  background-color: $neutral90;
+}
+
+.tertiaryBtnLightTheme[disabled] {
+  color: $neutral70;
+  cursor: not-allowed;
+}
+
+.tertiaryBtnDarkTheme {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: $primary99;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  border: .06rem solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tertiaryBtnDarkTheme:not(:disabled):hover {
+  border: .06rem solid $primary99;
+}
+
+.tertiaryBtnDarkTheme:not(:disabled):active {
+  color: $primary50;
+  border: .06rem solid $primary99;
+  background-color: $primary99;
+}
+
+.tertiaryBtnDarkTheme[disabled] {
+  color: $neutral90;
+  background: $neutral20;
+  cursor: not-allowed;
+}

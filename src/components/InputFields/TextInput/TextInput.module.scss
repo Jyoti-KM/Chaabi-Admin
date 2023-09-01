@@ -1,0 +1,27 @@
+@import '../../../global-styles/global.module.scss';
+
+.textInputContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid $neutral90;
+  padding: 0.75rem;
+  align-items: center;
+  background: $neutral100;
+
+  .input {
+    background: $neutral100;
+    border: none;
+    color: $neutral50;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+}

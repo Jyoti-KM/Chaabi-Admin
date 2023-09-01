@@ -1,0 +1,45 @@
+@import '../../../global-styles/global.module.scss';
+
+.checkBoxLightTheme {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: .06rem solid $neutral90;
+  background: $neutral100;
+
+  .checkBoxIcon {
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+  }
+}
+
+.checkBoxLightTheme:hover {
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem 0.25rem  $primary90;
+}
+
+.checkBoxDarkTheme {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid $neutral70;
+  background: $neutral100;
+
+  .checkBoxIcon {
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+  }
+}
+
+.checkBoxDarkTheme:hover {
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem .25rem $primary80;
+}

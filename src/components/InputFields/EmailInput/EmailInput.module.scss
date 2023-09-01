@@ -1,0 +1,112 @@
+@import '../../../global-styles/global.module.scss';
+
+
+.emailInputContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .labelLightTheme {
+    color: $neutral50;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    cursor: pointer;
+  }
+
+  .inputLightTheme {
+    display: flex;
+    padding: .75rem 1rem;
+    align-items: center;
+    gap: .5rem;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $neutral90;
+    background: $neutral100;
+    color: $neutral20;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .inputLightTheme:focus {
+    outline: none;
+    box-shadow: 0rem 0rem 0rem .25rem $neutral95;
+  }
+
+  .inputLightTheme:invalid {
+    border: .06rem solid $alert60;  }
+
+  .inputLightTheme[disabled] {
+    border: .06rem solid $neutral90;
+    background: $neutral90;
+    color: $neutral70;
+  }
+
+  .helperTextLightTheme {
+    color: $neutral20;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin: 0rem;
+  }
+
+  // dark theme mode
+  .labelDarkTheme {
+    color: $neutral95;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    cursor: pointer;
+  }
+
+  .inputDarkTheme {
+    display: flex;
+    padding: .75rem 1rem;
+    align-items: center;
+    gap: .5rem;
+    align-self: stretch;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $neutral70;
+    background: $neutral100;
+    color: $neutral20;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .inputDarkTheme:focus {
+    outline: none;
+    box-shadow: 0rem 0rem 0rem .25rem  $neutral80;
+  }
+
+  .inputDarkTheme:invalid {
+    border: .06rem solid $alert60;  }
+
+  .inputDarkTheme[disabled] {
+    border: .06rem solid $neutral40;
+    background: $neutral40;
+    color: $neutral80;
+  }
+
+  .helperTextDarkTheme {
+    color: $neutral95;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin: 0rem;
+  }
+}

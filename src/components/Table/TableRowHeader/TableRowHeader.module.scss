@@ -1,0 +1,49 @@
+@import '../../../global-styles/global.module.scss';
+
+
+.tableRowHeader {
+  border-bottom: .06rem solid $neutral80;
+  background: $neutral95;
+
+  th {
+    height: 3rem;
+    padding: .75rem 1.5rem;
+    align-items: center;
+    gap: .75rem;
+    align-self: stretch;
+    color: $neutral30;
+    font-family: "Roboto", sans-serif;
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+
+  .nameColumnHeader {
+    width: 25%;
+  }
+
+  .statusColumnHeader {
+    width: 8%;
+  }
+
+  .roleColumnHeader {
+    width: 17%;
+  }
+
+  .emailColumnHeader {
+    width: 20%;
+  }
+
+  .teamsColumnHeader {
+    width: 26.5%;
+  }
+
+  .deleteColumnHeader {
+    padding: 1rem .62rem;
+  }
+
+  .editColumnHeader {
+    padding: 1rem .875rem;
+  }
+}
