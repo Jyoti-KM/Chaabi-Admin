@@ -1,18 +1,34 @@
 import React from "react";
 import styles from "./TextInput.module.scss";
-import { ReactComponent as SearchIcon } from "../../../assets/icons/search-icon.svg";
+import { useSelector } from "react-redux";
 
-function TextInput({ placeholder, required, disabled }) {
+function TextInput(props) {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
+
   return (
-    <div className={styles.textInputContainer}>
-      <SearchIcon />
+    <div className={styles.emailInputContainer}>
+      <label
+        htmlFor="email-input"
+        className={isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme}
+      >
+        {props.label}
+      </label>
       <input
-        className={styles.input}
-        type="text"
-        placeholder={placeholder}
-        required={required}
-        disabled={disabled}
+        className={isDarkMode ? styles.inputDarkTheme : styles.inputLightTheme}
+        type="email"
+        name="email-input"
+        id="email-input"
+        disabled={props.disabled}
+        required={props.required}
+        placeholder={props.placeholder}
       />
+      <p
+        className={
+          isDarkMode ? styles.helperTextDarkTheme : styles.helperTextLightTheme
+        }
+      >
+        {props.helperText}
+      </p>
     </div>
   );
 }

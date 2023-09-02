@@ -8,15 +8,15 @@ import cancelIcon from "../../assets/icons/cancel-icon.svg";
 import ButtonGroup from "../../components/Buttons/ButtonGroup/ButtonGroup";
 import NavigationButtonGroup from "../../components/Buttons/NavigationButtonGroup/NavigationButtonGroup";
 import ModalActionButtons from "../../components/Buttons/ModalActionButtons/ModalActionButtons";
-import EmailInput from "../../components/InputFields/EmailInput/EmailInput";
-import PhoneInput from "../../components/InputFields/PhoneInput/PhoneInput";
+import EmailInput from "../../components/InputFields/TextInput/TextInput";
+import NumberInput from "../../components/InputFields/NumberInput/NumberInput";
 import TogglePairButtons from "../../components/Buttons/TogglePairButtons/TogglePairButtons";
-import FileInput from "../../components/InputFields/FileInput/FileInput";
+// import FileInput from "../../components/InputFields/FileInput/FileInput";
 import cloudIcon from "../../assets/icons/cloud-upload-icon.svg";
 import TabGroup from "../../components/TabGroup/TabGroup";
-import TextInput from "../../components/InputFields/TextInput/TextInput";
+
 import Accordion from "../../components/Accordion/Accordion";
-import SelectInput from "../../components/InputFields/SelectInput/SelectInput";
+// import SelectInput from "../../components/InputFields/DropDown/DropDown";
 import Notifications from "../../components/Notifications/Notifications";
 import Table from "../../components/Table/Table";
 import ToggleButton from "../../components/Buttons/ToggleButton/ToggleButton";
@@ -26,6 +26,10 @@ import colorTheme from "../../global-styles/color-theme.module.scss";
 
 import ThemeToggleButton from "../../components/Buttons/ThemeToggleButton/ThemeToggleButton";
 import { useSelector } from "react-redux";
+import SearchInput from "../../components/InputFields/SearchInput/searchInput";
+import FileUpload from "../../components/InputFields/FileUpload/FileUpload";
+import DropDown from "../../components/InputFields/DropDown/DropDown";
+import TextInput from "../../components/InputFields/TextInput/TextInput";
 
 function Components() {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
@@ -95,12 +99,12 @@ function Components() {
   };
 
   const emailInput = {
-    label: "Email",
+    label: "Text",
     helperText: "this is some text hint",
   };
 
   const phoneInput = {
-    label: "Phone number",
+    label: "Number number",
     helperText: "this is some text hint",
   };
 
@@ -286,11 +290,11 @@ function Components() {
       </div>
 
       <div>
-        email - input : <EmailInput {...emailInput} />
+        Text - input : <TextInput {...emailInput} />
       </div>
 
       <div>
-        phone - input : <PhoneInput {...phoneInput} />
+        phone - input : <NumberInput {...phoneInput} />
       </div>
 
       <div>
@@ -298,20 +302,20 @@ function Components() {
       </div>
 
       <div>
-        file - input : <FileInput {...fileInput} />
+        file - Upload : <FileUpload {...fileInput} />
       </div>
       <div>
         tab - group : <TabGroup tabs={tabs} />
       </div>
 
       <div>
-        text - input : <TextInput />
+        Search - input : <SearchInput />
       </div>
 
       <hr />
 
       <div>
-        select - input : <SelectInput options={options} />
+        Dropdown - input : <DropDown options={options} />
       </div>
 
       <div>

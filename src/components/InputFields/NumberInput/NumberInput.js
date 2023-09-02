@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./PhoneInput.module.scss";
+import styles from "./NumberInput.module.scss";
 import { ReactComponent as DownArrow } from "../../../assets/icons/chevron-down.svg";
 import { useSelector } from "react-redux";
 
-function PhoneInput(props) {
+function NumberInput(props) {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
 
   return (
@@ -52,4 +52,4 @@ function PhoneInput(props) {
   );
 }
 
-export default PhoneInput;
+export default NumberInput;

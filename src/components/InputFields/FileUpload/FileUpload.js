@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import styles from "./FileInput.module.scss";
+import styles from "./FileUpload.module.scss";
 
-const FileInput = ({ accept, supportingText, iconSource }) => {
+const FileUpload = ({ accept, supportingText, iconSource }) => {
   const fileInputRef = useRef(null);
   const [selectedFileName, setSelectedFileName] = useState(null);
   const [isDraggingOver, setIsDraggingOver] = useState(false);
@@ -74,4 +74,4 @@ const FileInput = ({ accept, supportingText, iconSource }) => {
   );
 };
 
-export default FileInput;
+export default FileUpload;
