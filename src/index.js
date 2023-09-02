@@ -14,6 +14,7 @@ import Layout from "./Layout/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/Signup/SignUp";
 import OrganisationLogin from "./pages/Organisation /OrganisationLogin";
+import Login from "./pages/Login/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +31,8 @@ root.render(
             <Route path="/support" element={<Support />} />
           </Route>
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/Login" element={<Login />} />
+
           <Route path="/organisation" element={<OrganisationLogin />} />
         </Routes>
       </BrowserRouter>

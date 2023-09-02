@@ -1,0 +1,124 @@
+@import "../../global-styles/global.module.scss";
+
+.LoginContainer {
+  height: 100vh;
+  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  // overflow: hidden;
+
+  &__left {
+    width: 50%;
+    height: 100%;
+    padding: 8.3rem 9.3rem;
+    background-color: #0d62ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+
+    img{
+      align-self: flex-start;
+      height: 3.5rem;
+      margin-left: 4.5rem;
+    }
+
+    .Image{
+      width: calc(100% - (9.3rem));
+height: calc(100% - (8.3rem));
+
+background-color: #999;
+    }
+  }
+  &__right {
+    width: 50%;
+    height: 100%;
+    padding: 15rem 4.25rem;
+    background-color: #dbe8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formcontainer {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h2 {
+        text-align: center;
+        @include h3Med;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &_name {
+          display: flex;
+          gap: 1.5rem;
+        }
+        &_detail {
+          display: flex;
+          gap: 1.5rem;
+        }
+        &_password {
+          display: flex;
+          gap: 1.5rem;
+        }
+      }
+
+      p {
+        text-align: center;
+        @include t3Lite;
+        span {
+          @include t3Med;
+          color: #0d62ff;
+        }
+      }
+
+      .hr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          padding: 0 1rem;
+        }
+        .line {
+          width: 25%;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1.5rem;
+        .button {
+          width: 100%;
+          display: inline-flex;
+          border-radius: 0.25rem;
+          padding: 0.75rem 1.5rem;
+          color: black;
+          text-align: center;
+          display: flex;
+          
+          align-items: center;
+        //   justify-content: center;
+          @include t4Bold;
+          background: white;
+          border: 0.15rem solid #9999999c;
+          cursor: pointer;
+
+
+          img{
+            height: 1.5rem;
+            padding: 0;
+            
+            margin: 0;
+            margin-right: .8rem;
+          }
+        }
+      }
+    }
+  }
+}
