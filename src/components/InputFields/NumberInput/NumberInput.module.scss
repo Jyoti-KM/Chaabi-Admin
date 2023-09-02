@@ -1,6 +1,7 @@
 @import '../../../global-styles/global.module.scss';
 
 .phoneInputContainer {
+  width:100%;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,27 +10,18 @@
 
   .labelLightTheme {
     color: $neutral50;
-    // font-family: "Roboto", sans-serif;
-    // font-size: 0.875rem;
-    // font-style: normal;
-    // font-weight: 300;
-    // line-height: 1.25rem;
     @include t4Lite;
     cursor: pointer;
   }
 
   .labelDarkTheme {
     color: $neutral95;
-    font-family: "Roboto", sans-serif;
-    // font-size: 0.875rem;
-    // font-style: normal;
-    // font-weight: 300;
-    // line-height: 1.25rem;
     @include t4Lite;
     cursor: pointer;
   }
 
   .inputContainerLightTheme {
+    width: 100%;
     display: inline-flex;
     align-items: flex-start;
     align-self: stretch;
@@ -44,40 +36,27 @@
       gap: 0.25rem;
       align-self: stretch;
       color: $neutral20;
-      // font-family: "Roboto", sans-serif;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 300;
-      // line-height: 1.5rem;
       @include t3Lite;
       cursor: pointer;
     }
 
     .inputLightTheme {
+      width: 100%;
       display: inline-flex;
       padding: .75rem 1rem .75rem 1rem;
       align-items: center;
       gap: .5rem;
       flex: 1 0 0;
       color: $neutral20;
-      // font-family: Roboto;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 400;
-      // line-height: 1.5rem;
       @include t3Reg;
       border: none;
       border-radius: .25rem;
     }
 
     .inputLightTheme:focus {
-      outline: none;
-      //   box-shadow: 1rem 1rem 1rem .25rem #f0f1f4;
+      outline: none;  
     }
 
-    // .input:invalid {
-    //   border: .06rem solid $alert60, f97066);
-    // }
 
     .inputLightTheme[disabled] {
       border: .06rem solid $neutral90;
@@ -102,11 +81,6 @@
       gap: 0.25rem;
       align-self: stretch;
       color: $neutral20;
-      // font-family: "Roboto", sans-serif;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 300;
-      // line-height: 1.5rem;
       @include t3Lite;
       cursor: pointer;
     }
@@ -118,11 +92,6 @@
       gap: .5rem;
       flex: 1 0 0;
       color: $neutral20;
-      // font-family: "Roboto", sans-serif;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 400;
-      // line-height: 1.5rem;
       @include t3Reg;
       border: none;
       border-radius: .25rem;
@@ -130,13 +99,10 @@
 
     .inputDarkTheme:focus {
       outline: none;
-      //   box-shadow: 1rem 1rem 1rem .25rem #f0f1f4;
+    
     }
 
-    // .input:invalid {
-    //   border: .06rem solid $alert60, f97066);
-    // }
-
+   
     .inputDarkTheme[disabled] {
       border: .06rem solid $neutral40;
       background: $neutral40;
@@ -147,22 +113,12 @@
 
 .helperTextLightTheme {
   color: $neutral20;
-  // font-family: "Roboto", sans-serif;
-  // font-size: 0.875rem;
-  // font-style: normal;
-  // font-weight: 300;
-  // line-height: 1.25rem;
   @include t4Lite;
   margin: 0rem;
 }
 
 .helperTextDarkTheme {
   color: $neutral95;
-  // font-family: "Roboto", sans-serif;
-  // font-size: 0.875rem;
-  // font-style: normal;
-  // font-weight: 300;
-  // line-height: 1.25rem;
   @include t4Lite;
   margin: 0rem;
 }

@@ -1,16 +1,15 @@
 @import '../../../global-styles/global.module.scss';
 
 .primaryBtnLightTheme {
+  width: 100%;
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   color: $neutral100;
   text-align: center;
-  // font-family: "Roboto";
-  // font-size: 1rem;
-  // font-style: normal;
-  // font-weight: 700;
-  // line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include t3Bold;
   background: $primary50;
   border: .06rem solid $primary50;
@@ -35,6 +34,7 @@
 
 // dark mode classes
 .primaryBtnDarkTheme {
+  width: 100%;
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;

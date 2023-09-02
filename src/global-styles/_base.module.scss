@@ -8,6 +8,18 @@
     box-sizing:inherit;
 }
 
+@font-face {
+    font-family: 'Typo-Round-bold';
+    src: url('./fonttest/Typo_Round_Bold_Demo.otf') format('truetype');
+   
+  }
+
+  @font-face {
+    font-family: 'Typo-Round-regular';
+    src: url('./fonttest/Typo_Round_Regular_Demo.otf') format('truetype');
+   
+  }
+
 @mixin respond ($breakpoint){
     // @if $breakpoint == phone{
     //     @media (max-width : 37.5em ){ @content };  //600px
