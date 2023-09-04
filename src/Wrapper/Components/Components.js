@@ -315,7 +315,7 @@ function Components() {
       <hr />
 
       <div>
-        Dropdown - input : <DropDown options={options} />
+        Dropdown - input : <DropDown options={options} label={"city"} />
       </div>
 
       <div>

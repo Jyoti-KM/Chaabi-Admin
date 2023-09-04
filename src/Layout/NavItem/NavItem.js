@@ -90,7 +90,7 @@ function NavItem() {
         >
           <TrainingIcon
             className={
-              currentRoute === "/support"
+              currentRoute === "/training"
                 ? styles.navIconActive
                 : styles.navIcon
             }

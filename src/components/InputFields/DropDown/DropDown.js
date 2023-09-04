@@ -5,7 +5,7 @@ import { ReactComponent as ArrowDownIcon } from "../../../assets/icons/arrow-dow
 import { ReactComponent as CheckIcon } from "../../../assets/icons/check-icon.svg";
 import { useSelector } from "react-redux";
 
-function DropDown({ options }) {
+function DropDown({ options , label}) {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
@@ -30,7 +30,7 @@ function DropDown({ options }) {
             isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme
           }
         >
-          city
+          {label}
         </label>
         <div
           id="select-input"
@@ -38,7 +38,7 @@ function DropDown({ options }) {
           onClick={inputClickHandler}
         >
           {selectedOption ?? "select an option"}
-          {isDropDownOpen ? <ArrowDownIcon /> : <ArrowRightIcon />}
+          {<ArrowDownIcon />  }
         </div>
       </div>
       {isDropDownOpen && (

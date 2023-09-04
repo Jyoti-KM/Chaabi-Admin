@@ -3,6 +3,7 @@
 .layoutContainer {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -93,8 +94,8 @@
   .page {
     padding: 1.25rem;
     overflow: scroll;
-    height: calc(100vh - 11vh);
-    height: calc(100dvh - 11dvh);
+    height: calc(100vh - 9.5vh);
+    height: calc(100dvh - 9.5dvh);
     
     
     @include lightThemeRegular  ;
