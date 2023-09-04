@@ -1,6 +1,7 @@
 @import '../../global-styles/global.module.scss';
 
 .tableContainer {
+  overflow-y:scroll;
   display: inline-flex;
   width: 100%;
   flex-direction: column;
@@ -71,12 +72,17 @@
   }
 
   .table {
+    
     width: 100%;
     border-collapse: collapse;
 
     th,
     td {
       text-align: left;
+      
+    }
+    .tableBody{
+      overflow-y:scroll;
     }
   }
 }

@@ -1,6 +1,7 @@
 @import '../../../global-styles/global.module.scss';
 
 .tableItem {
+ 
   border-bottom: .06rem solid $neutral90;
   background-color: $neutral100;
   .draftBadge {
@@ -26,11 +27,7 @@
     gap: .375rem;
     border-radius: .75rem;
     text-align: center;
-    // font-family: "Roboto", sans-serif;
-    // font-size: .75rem;
-    // font-style: normal;
-    // font-weight: 500;
-    // line-height: 1.125rem;
+   
     @include t5Reg;
   }
 
@@ -46,12 +43,7 @@
   td {
     height: 4rem;
     padding: 1rem 1.5rem;
-    color: $neutral40; /* Fixed the color property here */
-    // font-family: "Roboto", sans-serif;
-    // font-size: 1rem;
-    // font-style: normal;
-    // font-weight: 400;
-    // line-height: 1.5rem;
+    color: $neutral40; 
     @include t3Reg;
   }
 
@@ -67,12 +59,7 @@
     .name {
       input {
         border: none;
-        color: $neutral40; /* Fixed the color property here */
-        // font-family: "Roboto", sans-serif;
-        // font-size: 1rem;
-        // font-style: normal;
-        // font-weight: 400;
-        // line-height: 1.5rem;
+        color: $neutral40; 
         @include t3Reg;
 
       }
@@ -125,11 +112,6 @@
       .remainingCount {
         color: $neutral30;
         text-align: center;
-        // font-family: "Roboto", sans-serif;
-        // font-size: 0.75rem;
-        // font-style: normal;
-        // font-weight: 400;
-        // line-height: 1.125rem;
         @include t5Reg;
       }
     }

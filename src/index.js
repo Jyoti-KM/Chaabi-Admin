@@ -15,6 +15,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/Signup/SignUp";
 import OrganisationLogin from "./pages/Organisation /OrganisationLogin";
 import Login from "./pages/Login/Login";
+import Training from "./pages/Training/Training";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +26,7 @@ root.render(
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Components />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/training" element={<Training />} />
             <Route path="/users" element={<Users />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/my-account" element={<MyAccount />} />

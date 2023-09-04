@@ -8,6 +8,8 @@ import { ReactComponent as AnalyticsIcon } from "../../assets/icons/layout-icons
 import { ReactComponent as MyAccountIcon } from "../../assets/icons/layout-icons/my-account-icon.svg";
 import { ReactComponent as SupportIcon } from "../../assets/icons/layout-icons/support-icon.svg";
 import { ReactComponent as ComponentsIcon } from "../../assets/icons/layout-icons/components-icon.svg";
+import { ReactComponent as TrainingIcon } from "../../assets/icons/layout-icons/training-icon.svg";
+
 import { useSelector } from "react-redux";
 
 function NavItem() {
@@ -75,6 +77,34 @@ function NavItem() {
             Dashboard
           </div>
           {currentRoute === "/dashboard" && (
+            <div className={styles.navItemActiveBar} />
+          )}
+        </div>
+      </Link>
+
+      <Link to="/training" className={styles.link}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
+          <TrainingIcon
+            className={
+              currentRoute === "/support"
+                ? styles.navIconActive
+                : styles.navIcon
+            }
+          />
+          <div
+            className={
+              currentRoute === "/support"
+                ? `${typography.t2Semi} ${styles.navItemTextActive}`
+                : `${typography.t2Reg} ${styles.navItemText}`
+            }
+          >
+            Training
+          </div>
+          {currentRoute === "/training" && (
             <div className={styles.navItemActiveBar} />
           )}
         </div>

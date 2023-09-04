@@ -37,7 +37,7 @@ function Table({ columnNames, tableRows }) {
         <thead>
           <TableRowHeader columnNames={columnNames} />
         </thead>
-        <tbody>
+        <tbody className={styles.tableBody}>
           {visibleRows.map((item) => (
             <TableRow
               item={item}
