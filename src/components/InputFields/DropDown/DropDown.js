@@ -38,7 +38,7 @@ function DropDown({ options , label}) {
           onClick={inputClickHandler}
         >
           {selectedOption ?? "select an option"}
-          {<ArrowDownIcon />  }
+          {isDropDownOpen ? <ArrowRightIcon /> : <ArrowDownIcon />}
         </div>
       </div>
       {isDropDownOpen && (

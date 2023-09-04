@@ -7,6 +7,7 @@ import DropDown from "../../components/InputFields/DropDown/DropDown";
 import RadialChart from "./Charts/RadialChart";
 import ColumnChart from "./Charts/ColumnChart";
 import Spine2Chart from "./Charts/Spine2Chart";
+import threedots from './threedots.svg';
 
 const options = [
   "Training Name 1",
@@ -24,7 +25,7 @@ function Dashboard() {
             <h4>3,435</h4>
             <h5>In Training</h5>
           </div>
-          <p className={styles.heading_right}>:</p>
+          <img className={styles.heading_right} src={threedots} alt="button" />
         </div>
 
         <div className={styles.chart}>
@@ -37,11 +38,11 @@ function Dashboard() {
             <h4>40,000</h4>
             <h5>Learning Mins</h5>
           </div>
-          <p className={styles.heading_right}>:</p>
+          <img className={styles.heading_right} src={threedots} alt="button" />
         </div>
 
         <div className={styles.chart}>
-          <SpineChart />
+          <SpineChart  />
         </div>
       </div>
       <div className={styles.div3}>
@@ -50,7 +51,7 @@ function Dashboard() {
             <h4>3,435</h4>
             <h5>Video Mins</h5>
           </div>
-          <p className={styles.heading_right}>:</p>
+          <img className={styles.heading_right} src={threedots} alt="button" />
         </div>
 
         <div className={styles.chart}>
@@ -63,7 +64,7 @@ function Dashboard() {
             <h4>3,435</h4>
             <h5>Completion</h5>
           </div>
-          <p className={styles.heading_right}>:</p>
+          <img className={styles.heading_right} src={threedots} alt="button" />
         </div>
 
         <div className={styles.chart}>

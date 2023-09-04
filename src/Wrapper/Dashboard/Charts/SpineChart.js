@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
-// import series from './yourSeriesFile'; // Import your series data file here
 
 const SpineChart = () => {
   const chartStyles = {
-    height:'8.5vw',
-width:"100%",
-    
-        margin: '0px',
-        padding: '0rem',
-    };
-
+    height: '8vw',
+    width: '100%',
+    margin: '0px',
+    padding: '0rem',
+  };
+  const toolbarStyles = `
+  .apexcharts-toolbar {
+    display: none !important;
+  }
+`;
   const chartData = {
     series: [
       {
         name: 'series1',
-        data: [44, 55, 41, 67, 22 ,60],
+        data: [44, 55, 41, 67, 22, 60],
       },
     ],
     options: {
@@ -30,17 +32,9 @@ width:"100%",
         enabled: false,
       },
       stroke: {
-        curve: 'straight',
+        curve: 'smooth',
       },
-      // title: {
-      //   text: 'Fundamental Analysis of Stocks',
-      //   align: 'left',
-      // },
-      // subtitle: {
-      //   text: 'Price Movements',
-      //   align: 'left',
-      // },
-      labels: ['Q1', 'Q2', 'Q3', 'Q4','Q5','Q6'],
+      labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
       xaxis: {
         type: 'datetime',
         labels: {
@@ -71,26 +65,22 @@ width:"100%",
           show: false, // Hide y-axis border
         },
         grid: {
-         
           show: false, // Hide y-axis grid lines
         },
       },
-
-      grid:{
+      grid: {
         show: false,
       },
       toolbar: {
-        show: false,
-      }
-      // legend: {
-      //   horizontalAlign: 'left',
-      // },
+        show: false, // Hide toolbar icons
+      },
     },
   };
 
   return (
     <div id="chart" style={chartStyles}>
-      <ReactApexChart options={chartData.options} series={chartData.series} type="area"  height={"100%"}   />
+     <style>{toolbarStyles}</style> {/* Inject the CSS styles */}
+      <ReactApexChart options={chartData.options} series={chartData.series} type="area" height={'100%'} />
     </div>
   );
 };
