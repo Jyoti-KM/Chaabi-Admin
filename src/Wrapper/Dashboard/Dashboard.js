@@ -7,7 +7,7 @@ import DropDown from "../../components/InputFields/DropDown/DropDown";
 import RadialChart from "./Charts/RadialChart";
 import ColumnChart from "./Charts/ColumnChart";
 import Spine2Chart from "./Charts/Spine2Chart";
-import threedots from "./threedots.svg";
+import threedots from "../../assets/threedots.svg";
 
 const options = ["Training Name 1", "Training Name 2", "Training Name 3"];
 
