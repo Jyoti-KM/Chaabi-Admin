@@ -24,9 +24,20 @@ const OrganisationLogin = () => {
           <h2>One Step Away</h2>
           <div className={styles.field}>
           
-          <TextInput label="First Name" helperText="" />
-          <TextInput label="Last Name" helperText="" />
+          <div className={styles.field_name}>
+          <TextInput label="Company Name" helperText="" />
+          <TextInput label="Your Role" helperText="" />
+          </div>
+          <div className={styles.field_account}>
+          <TextInput label="Account URL" helperText="" />
+          <TextInput label="Industry" helperText="" />
+         
+          </div>
+          <div className={styles.field_detail}>
           <TogglePairButtons label='How will your users login?'  firstButton="Email Address" secondButton="Mobile Number" />
+          <NumberInput label="Company Size" helperText="" />
+          </div>
+          
           
           </div>
           <PrimaryButton>Submit</PrimaryButton>

@@ -3,6 +3,8 @@
 .layoutContainer {
   width: 100vw;
   height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   overflow: hidden;
   display: flex;
   align-items: flex-start;
@@ -15,14 +17,12 @@
 
     .headerLightTheme {
       height: 11vh;
-    
-
-      // width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0vw 1.5vw;
-      background: $neutral100;
+      // background: $neutral100;
+      @include lightThemeLowest ;
 
       .content {
         max-width: 70%;
@@ -60,7 +60,8 @@
       align-items: center;
       justify-content: space-between;
       padding: 0vw 1.5vw;
-      background: $neutral10;
+      // background: $neutral10;
+      @include darkThemeLowest ;
 
       .content {
         max-width: 70%;
@@ -104,7 +105,8 @@
   .sidebarLightTheme {
     width: 15vw;
     height: 100vh;
-    background-color: $neutral100;
+    // background-color: $neutral100;
+    @include lightThemeLowest ;
 
     .logoContainer {
       display: flex;
@@ -130,8 +132,9 @@
   .sidebarDarkTheme {
     width: 15vw;
     height: 100vh;
-    background-color: $neutral10;
-
+    // background-color: $neutral10;
+    @include darkThemeLowest ;
+    
     .logoContainer {
       display: flex;
       align-items: center;

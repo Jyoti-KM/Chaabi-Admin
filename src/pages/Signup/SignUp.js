@@ -7,6 +7,8 @@ import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton"
 import googleIcon from "./Asset/google_icon.svg";
 import microsoftIcon from './Asset/Microsoft_icon.svg';
 import ScreenImage from './Asset/screen.svg';
+import CheckBox from "../../components/Buttons/CheckBox/CheckBox";
+
 
 
 const SignUp = () => {
@@ -33,6 +35,17 @@ const SignUp = () => {
           <div className={styles.field_password}>
           <TextInput label="Set Your Password" helperText="" />
           <TextInput label="Confirm Your Password" helperText="" />
+          </div>
+
+          <div className={styles.field_terms}>
+          <CheckBox />
+          <p>I have read and agree to the <span>
+          Terms Of Service
+          </span> </p>
+          </div>
+          <div className={styles.field_terms}>
+          <CheckBox />
+          <p>I want to receive communication about product, features and updates</p>
           </div>
           </div>
           <PrimaryButton>Submit</PrimaryButton>

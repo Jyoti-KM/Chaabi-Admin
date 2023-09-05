@@ -1,6 +1,7 @@
 @import '../../../global-styles/global.module.scss';
 
 .togglePairButtonsContainer {
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
