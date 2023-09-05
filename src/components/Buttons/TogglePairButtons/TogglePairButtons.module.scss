@@ -44,11 +44,6 @@
       border-right: 0.0625rem solid $neutral95 ;
       background: $neutral95 ;
       color: $neutral20 ;
-      // font-family: "Roboto", sans-serif;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 700;
-      // line-height: 1.5rem;
       @include t3Bold;
       cursor: pointer;
     }
@@ -64,11 +59,6 @@
       border-right: 0.0625rem solid $neutral95;
       background: $neutral100;
       color: $neutral20;
-      // font-family: "Roboto", sans-serif;
-      // font-size: 1rem;
-      // font-style: normal;
-      // font-weight: 400;
-      // line-height: 1.5rem;
       @include t3Reg;
       cursor: pointer;
     }

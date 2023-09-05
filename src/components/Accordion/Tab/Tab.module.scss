@@ -22,9 +22,11 @@
 
   .tabContent {
     display: flex;
-    padding: 0.25rem 1rem 1rem 1.5rem;
-    align-items: flex-start;
-    gap: 0.625rem;
+    padding: 1rem ;
+    padding-left: 3rem;
+    
+    align-items: center;
+    gap: 0.25rem;
     align-self: stretch;
     background:$neutral95;
     color:$neutral30;

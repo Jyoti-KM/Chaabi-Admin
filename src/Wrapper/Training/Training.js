@@ -148,7 +148,7 @@ const Training = () => {
      
 
       </div>
-      <div className={styles.Training__button}>
+      <div className={styles.Training__buttom}>
 
       <Table columnNames={columnNames} tableRows={tableRows} />
       </div>

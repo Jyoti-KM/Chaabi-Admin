@@ -14,7 +14,7 @@ function AccordionTab({ item }) {
     <div className={styles.tabContainer}>
       <div className={styles.tab} onClick={tabClickHandler}>
         <div>{item}</div>
-        {isTabClicked ? <ArrowDownIcon /> : <ArrowRightIcon />}
+        {isTabClicked ?  <ArrowRightIcon />: <ArrowDownIcon /> }
       </div>
       {isTabClicked && (
         <div className={styles.tabContent}>

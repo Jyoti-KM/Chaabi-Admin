@@ -8,7 +8,7 @@
 
   .btnLightTheme {
     display: flex;
-    padding: 1.3rem 1.5rem;
+    padding: .75rem 1.5rem;
     justify-content: center;
     align-items: center;
     gap: .5rem;
@@ -16,11 +16,6 @@
     border-right: .06rem solid $neutral90;
     background: $neutral100;
     color: $neutral20;
-    // font-family: "Roboto";
-    // font-size: 1rem;
-    // font-style: normal;
-    // font-weight: 400;
-    // line-height: 1.5rem;
     @include t3Reg;
     cursor: pointer;
   }
@@ -35,11 +30,6 @@
     border-right: .06rem solid $neutral90;
     background: $neutral95;
     color: $neutral20;
-    // font-family: "Roboto";
-    // font-size: 1rem;
-    // font-style: normal;
-    // font-weight: 700;
-    // line-height: 1.5rem;
     @include t3Bold;
     cursor: pointer;
   }
@@ -61,11 +51,6 @@
     border-right: .06rem solid $neutral99;
     background: $neutral100;
     color: $neutral20;
-    // font-family: "Roboto";
-    // font-size: 1rem;
-    // font-style: normal;
-    // font-weight: 400;
-    // line-height: 1.5rem;
     @include t3Reg;
     cursor: pointer;
   }
@@ -80,11 +65,6 @@
     border-right: .06rem solid $neutral99;
     background: $neutral95;
     color: $neutral20;
-    // font-family: "Roboto";
-    // font-size: 1rem;
-    // font-style: normal;
-    // font-weight: 700;
-    // line-height: 1.5rem;
     @include t3Bold;
     cursor: pointer;
   }

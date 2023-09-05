@@ -42,10 +42,12 @@
 
   .navItemActiveBar {
     width: .25rem;
-    height: 2.12rem;
+    height: 2rem;
+    
     border-top-left-radius: .75rem;
     border-bottom-left-radius: .75rem;
     background: $primary50;
+    
   }
 }
 
@@ -100,7 +102,7 @@
 
   .navItemActiveBar {
     width: .25rem;
-    height: 2.12rem;
+    height: 2rem;
     border-top-left-radius: .75rem;
     border-bottom-left-radius: .75rem;
     background: $primary80;
