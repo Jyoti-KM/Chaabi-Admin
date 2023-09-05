@@ -21,7 +21,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0vw 1.5vw;
-      // background: $neutral100;
+     
       @include lightThemeLowest ;
 
       .content {
@@ -54,13 +54,13 @@
 
     .headerDarkTheme {
       height: 11vh;
-      // width: 100%;
+      
 
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0vw 1.5vw;
-      // background: $neutral10;
+      
       @include darkThemeLowest ;
 
       .content {
@@ -105,7 +105,7 @@
   .sidebarLightTheme {
     width: 15vw;
     height: 100vh;
-    // background-color: $neutral100;
+  
     @include lightThemeLowest ;
 
     .logoContainer {
@@ -125,16 +125,16 @@
       flex-direction: column;
       width: 100%;
       gap: .75rem;
-      // background: $neutral100);
+      
     }
   }
 
   .sidebarDarkTheme {
     width: 15vw;
     height: 100vh;
-    // background-color: $neutral10;
+   
     @include darkThemeLowest ;
-    
+
     .logoContainer {
       display: flex;
       align-items: center;
@@ -152,7 +152,7 @@
       flex-direction: column;
       width: 100%;
       gap: .75rem;
-      // background: $neutral100);
+      
     }
   }
 }

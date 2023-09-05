@@ -21,13 +21,13 @@
   .navIcon {
     width: 2rem;
     height: 2rem;
-    fill: #75777a;
+    fill: $neutral50;
   }
 
   .navIconActive {
     width: 2rem;
     height: 2rem;
-    fill: #0d62ff;
+    fill: $primary50;
   }
 
   .navItemText {
@@ -70,28 +70,22 @@
     .navIconActive {
       width: 2rem;
       height: 2rem;
-      fill: #fff;
+      fill:  $neutral100;
     }
 
-    // .navItemActiveBar {
-    //   width: .25rem;
-    //   height: 2.12rem;
-    //   border-top-left-radius: .75rem;
-    //   border-bottom-left-radius: .75rem;
-    //   background: $neutral10);
-    // }
+   
   }
 
   .navIcon {
     width: 2rem;
     height: 2rem;
-    fill: #fff;
+    fill:  $neutral100;
   }
 
   .navIconActive {
     width: 2rem;
     height: 2rem;
-    fill: #b4ceff;
+    fill:  $primary80;
   }
 
   .navItemText {
