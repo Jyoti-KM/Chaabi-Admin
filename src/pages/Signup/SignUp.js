@@ -67,11 +67,16 @@ const SignUp = () => {
           </div>
           <div className={styles.buttons}>
             <button className={styles.button}>
+            <div className={styles.img}>
             <img src={googleIcon} alt="google icon" />
+            </div>
+            
             Sign up with Google
             </button>
             <button className={styles.button}>
+            <div className={styles.img}>
             <img src={microsoftIcon} alt="Microsoft icon" />
+            </div>
             Sign up with Microsoft</button>
           </div>
           </div>

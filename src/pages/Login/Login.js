@@ -46,11 +46,17 @@ const Login = () => {
           </div>
           <div className={styles.buttons}>
             <button className={styles.button}>
+            <div className={styles.img}>
             <img src={googleIcon} alt="google icon" />
+            </div>
+            
             Signup with Google
             </button>
             <button className={styles.button}>
+            <div className={styles.img}>
             <img src={microsoftIcon} alt="Microsoft icon" />
+            </div>
+           
             Signup with Microsoft</button>
           </div>
           </div>

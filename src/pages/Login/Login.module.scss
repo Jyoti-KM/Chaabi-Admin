@@ -98,7 +98,8 @@
 
       .buttons {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
+        
         .button {
           width: 100%;
           display: inline-flex;
@@ -117,12 +118,16 @@
           cursor: pointer;
           white-space: nowrap;
 
-          img {
+          .img {
+            height: 1.5rem;
+            width: 1.5rem;
+            img{
             height: 1.5rem;
             padding: 0;
 
             margin: 0;
             // margin-right: .2rem;
+            }
           }
         }
       }
