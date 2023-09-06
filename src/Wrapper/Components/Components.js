@@ -61,7 +61,7 @@ function Components() {
     },
   ];
 
-  const buttons = ["btn1", "btn2", "btn3", "btn4"];
+  const buttons = ["Email Address", "Phone number"];
 
   const tabs = ["tab1", "tab2", "tab3", "tab4"];
 

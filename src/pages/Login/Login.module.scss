@@ -12,31 +12,31 @@
     width: 50%;
     height: 100%;
     padding: 8.3rem 9.3rem;
-    background-color: #0d62ff;
+    background-color: $primary50;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:1.5rem;
+    gap: 1.5rem;
 
-    img{
+    img {
       align-self: flex-start;
       height: 3.5rem;
       margin-left: 4.5rem;
     }
 
-    .Image{
+    .Image {
       width: calc(100% - (9.3rem));
-height: calc(100% - (8.3rem));
+      height: calc(100% - (8.3rem));
 
-background-color: #999;
+      background-color: #999;
     }
   }
   &__right {
     width: 50%;
     height: 100%;
     padding: 15rem 4.25rem;
-    background-color: #dbe8ff;
+    @include lightThemeRegular;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,8 @@ background-color: #999;
         @include t3Lite;
         span {
           @include t3Med;
-          color: #0d62ff;
+          color: $primary50;
+          cursor: pointer;
         }
       }
 
@@ -82,11 +83,16 @@ background-color: #999;
         display: flex;
         justify-content: center;
         align-items: center;
+
         p {
           padding: 0 1rem;
         }
         .line {
           width: 25%;
+          hr {
+            border-style: none;
+            border: 0.5px solid $neutral70;
+          }
         }
       }
 
@@ -97,25 +103,26 @@ background-color: #999;
           width: 100%;
           display: inline-flex;
           border-radius: 0.25rem;
-          padding: 0.75rem 1.5rem;
+          padding: 0.75rem 1rem;
           color: black;
-          text-align: center;
+          // text-align: center;
           display: flex;
-          
+
           align-items: center;
-        //   justify-content: center;
+          gap: 0.5rem;
+          //   justify-content: center;
           @include t4Bold;
-          background: white;
-          border: 0.15rem solid #9999999c;
+          background: $neutral100;
+          border: 0.0625rem solid $neutral90;
           cursor: pointer;
+          white-space: nowrap;
 
-
-          img{
+          img {
             height: 1.5rem;
             padding: 0;
-            
+
             margin: 0;
-            margin-right: .8rem;
+            // margin-right: .2rem;
           }
         }
       }

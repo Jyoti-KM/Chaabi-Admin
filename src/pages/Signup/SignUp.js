@@ -36,16 +36,20 @@ const SignUp = () => {
           <TextInput label="Set Your Password" helperText="" />
           <TextInput label="Confirm Your Password" helperText="" />
           </div>
+           
+           <div className={styles.field_terms}>
 
-          <div className={styles.field_terms}>
+           
+          <div className={styles.field_terms_1}>
           <CheckBox />
           <p>I have read and agree to the <span>
           Terms Of Service
           </span> </p>
           </div>
-          <div className={styles.field_terms}>
+          <div className={styles.field_terms_2}>
           <CheckBox />
           <p>I want to receive communication about product, features and updates</p>
+          </div>
           </div>
           </div>
           <PrimaryButton>Submit</PrimaryButton>

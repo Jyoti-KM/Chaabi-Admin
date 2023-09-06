@@ -60,8 +60,25 @@
           gap: 1.5rem;
         }
         &_detail {
+          width: 100%;
           display: flex;
           gap: 1.5rem;
+
+        // &_1 ,&_2{
+        //    width: 50%;
+        // }
+ 
+          &_1{
+          
+             p{
+              @include t4Lite;
+              color: $neutral50;
+              text-align: left;
+              margin-bottom: .1rem;
+             }
+          }
+         
+
         }
         &_account {
           display: flex;

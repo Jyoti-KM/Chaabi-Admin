@@ -1,14 +1,16 @@
 @import '../../../global-styles/global.module.scss';
 
 .btnGroupLightTheme {
+  // height: 100%;
   display: inline-flex;
   align-items: flex-start;
   border-radius: 0.25rem;
   border: 0.0625rem solid $neutral90;
+  
 
   .btnLightTheme {
     display: flex;
-    padding: .75rem 1.5rem;
+    padding: .9rem 1.5rem;
     justify-content: center;
     align-items: center;
     gap: .5rem;
@@ -16,13 +18,14 @@
     border-right: .06rem solid $neutral90;
     background: $neutral100;
     color: $neutral20;
-    @include t3Reg;
+    @include t4Reg;
     cursor: pointer;
+   
   }
 
   .selectedBtnLightTheme {
     display: flex;
-    padding: .75rem 1.5rem;
+    padding: .9rem 1.5rem;
     justify-content: center;
     align-items: center;
     gap: .5rem;
@@ -30,8 +33,9 @@
     border-right: .06rem solid $neutral90;
     background: $neutral95;
     color: $neutral20;
-    @include t3Bold;
+    @include t4Bold;
     cursor: pointer;
+    
   }
 }
 
@@ -51,7 +55,7 @@
     border-right: .06rem solid $neutral99;
     background: $neutral100;
     color: $neutral20;
-    @include t3Reg;
+    @include t4Reg;
     cursor: pointer;
   }
 
@@ -65,7 +69,7 @@
     border-right: .06rem solid $neutral99;
     background: $neutral95;
     color: $neutral20;
-    @include t3Bold;
+    @include t4Bold;
     cursor: pointer;
   }
 }

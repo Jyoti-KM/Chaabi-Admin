@@ -69,9 +69,16 @@
         }
         &_terms{
           display: flex;
-          gap: 1rem;
-          justify-content: flex-start;
-          align-items: center;
+          flex-direction: column;
+          gap: .25rem;
+          margin-top: 2rem;
+          &_1 , &_2{
+            display: flex;
+           
+            gap: 1rem;
+            // justify-content: flex-start;
+            align-items: center;
+          }
         }
       }
 
@@ -81,6 +88,7 @@
         span {
           @include t3Med;
           color: #0d62ff;
+          cursor: pointer;
         }
       }
 
@@ -93,6 +101,10 @@
         }
         .line {
           width: 25%;
+          hr{
+            border-style: none;
+          border: .5px solid $neutral70;
+          }
         }
       }
 
@@ -112,7 +124,7 @@
         //   justify-content: center;
           @include t4Bold;
           background: white;
-          border: 0.15rem solid #9999999c;
+          border: 0.0625rem solid  #e2e3e6;
           cursor: pointer;
 
 

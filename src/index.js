@@ -14,7 +14,7 @@ import Support from './Wrapper/Support/Support';
 import Layout from "./Layout/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/Signup/SignUp";
-import OrganisationLogin from "./pages/Organisation /OrganisationLogin";
+import OrganisationLogin from "./pages/Org/OrgLogin";
 import Login from "./pages/Login/Login";
 // import Training from "./pages/Training/Training";
 
