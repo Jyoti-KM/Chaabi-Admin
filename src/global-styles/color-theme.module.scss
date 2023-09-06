@@ -1,53 +1,53 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-@mixin theme($text-color, $background-color) {
-  color: $text-color;
-  background: $background-color;
+@mixin lightTheme($textColor, $bgColor1, $bgColor1Percent, $bgColor2) {
+  color: $textColor;
+  background-color: mix($bgColor1, $bgColor2, $bgColor1Percent);
 }
 
-@mixin gradient-theme($text-color, $gradient-color) {
-  color: $text-color;
-  background: linear-gradient(0deg, $gradient-color 0%, $gradient-color 100%);
+@mixin darkTheme($textColor, $bgColor1, $bgColor1Percent, $bgColor2) {
+  color: $textColor;
+  background-color: mix($bgColor1, $bgColor2, $bgColor1Percent);
 }
 
-// Light color theme
 @mixin lightThemeLowest {
-  @include theme( $neutral0,  $neutral99);
+  color: $neutral10;
+  background: $neutral99;
 }
 
 @mixin lightThemeLow {
-  @include gradient-theme( $neutral0, rgba( $primary50, 0.05));
+  @include lightTheme($neutral0, $neutral99, 95%, $primary50);
 }
 
 @mixin lightThemeRegular {
-  @include gradient-theme( $neutral0, rgba( $primary50, 0.08));
+  @include lightTheme($neutral0, $neutral99, 92%, $primary50);
 }
-
 @mixin lightThemeHigh {
-  @include gradient-theme( $neutral0, rgba( $primary50, 0.11));
+  @include lightTheme($neutral0, $neutral99, 89%, $primary50);
 }
 
 @mixin lightThemeHighest {
-  @include gradient-theme( $neutral0, rgba( $primary50, 0.14));
+  @include lightTheme($neutral0, $neutral99, 86%, $primary50);
 }
 
-// Dark color theme
+// dark color theme
 @mixin darkThemeLowest {
-  @include theme($neutral100, $neutral10);
+  color: $neutral100;
+  background: $neutral10;
 }
 
 @mixin darkThemeLow {
-  @include gradient-theme($neutral100, rgba( $primary50, 0.05));
+  @include darkTheme($neutral100, $neutral10, 95%, $primary50);
 }
 
 @mixin darkThemeRegular {
-  @include gradient-theme($neutral100, rgba( $primary50, 0.08));
+  @include darkTheme($neutral100, $neutral10, 92%, $primary50);
 }
 
 @mixin darkThemeHigh {
-  @include gradient-theme($neutral100, rgba( $primary50, 0.11));
+  @include darkTheme($neutral100, $neutral10, 89%, $primary50);
 }
 
 @mixin darkThemeHighest {
-  @include gradient-theme($neutral100, rgba( $primary50, 0.14));
+  @include darkTheme($neutral100, $neutral10, 86%, $primary50);
 }

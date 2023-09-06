@@ -1,0 +1,39 @@
+@import '../../../global-styles/global.module.scss';
+.card {
+	width: 32vw;
+	
+	border-radius: 15px;
+	overflow: hidden;
+	font-size: 1rem;
+	
+	@include lightThemeRegular  ;
+	
+
+	.header {
+		
+		
+		padding:1rem 1.5rem;
+		background-color:  $primary50;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color:$neutral100;
+
+		h3,
+		button {
+			color:$neutral100;
+			@include h6Med;
+			cursor: pointer;
+		}
+
+		
+		button{
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	.body {
+		padding: 2vh 1.2vw;
+	}
+}

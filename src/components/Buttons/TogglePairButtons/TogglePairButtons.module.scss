@@ -6,25 +6,17 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 20rem;
-  height: 4.3125rem;
+  height: 4rem;
   flex-shrink: 0;
 
   .labelLightTheme {
     color: $neutral50;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.25rem;
+    @include t4Lite;
   }
 
   .labelDarkTheme {
     color: $neutral95;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.25rem;
+    @include t4Lite;
   }
 
   .buttonGroup {

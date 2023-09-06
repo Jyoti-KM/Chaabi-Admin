@@ -36,7 +36,7 @@ root.render(
           <Route path="/signup" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
 
-          <Route path="/organisation" element={<OrganisationLogin />} />
+          <Route path="/org" element={<OrganisationLogin />} />
         </Routes>
       </BrowserRouter>
     </Provider>
