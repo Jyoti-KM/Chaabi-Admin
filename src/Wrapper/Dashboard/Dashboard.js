@@ -33,7 +33,7 @@ function CustomizeButtonAndForm({ showCustomizeButton, showForm, handleButtonCli
       )}
       {showForm &&
         createPortal(
-          <Card heading="Chapter Details" onCancel={cancelBtnHandler}>
+          <Card heading="Customise Dashboard" onCancel={cancelBtnHandler}>
           
           {/* form can also customise */}
           <div className={styles.formContain}>
