@@ -1,27 +1,32 @@
 import React from 'react';
-// import ReactApexChart from 'apexcharts';
 import ReactApexChart from 'react-apexcharts';
 
 const DonutChart = () => {
-    const chartStyles = {
-        height:'100%',
-        width:'100%',
-        overflow:"hidden",
-            // Define your inline styles here
-            // height: '350px',
-            // border: '1px solid #ccc',
-            // display:"flex",
-            // justifyContent:'center',
-            // alignItem:'center',
-            // margin: '0px',
-            // padding: '0px',
-        };
+  const chartStyles = {
+    height: '100%', // Set the height to 100% to fill the container vertically
+    width: '100%',  // Set the width to 100% to fill the container horizontally
+    margin: '0px',
+    padding: '0rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // backgroundColor:'red',
+  };
 
   const chartData = {
     series: [44, 55, 41, 17, 15],
     options: {
       chart: {
         type: 'donut',
+      },
+      plotOptions: {
+        pie: {
+          customScale: 1.1,
+          donut: {
+            size: '55%', // Adjust this value to increase or decrease the width of the donut
+            
+          },
+        },
       },
       responsive: [
         {
@@ -41,7 +46,7 @@ const DonutChart = () => {
 
   return (
     <div id="chart" style={chartStyles}>
-      <ReactApexChart options={chartData.options} series={chartData.series} type="donut" />
+      <ReactApexChart options={chartData.options} series={chartData.series} type="donut" height={"80%"} />
     </div>
   );
 };

@@ -53,6 +53,24 @@ const Spine2Chart = () => {
           format: 'dd/MM/yy HH:mm',
         },
       },
+      grid: {
+        show: false,
+      },
+      yaxis: {
+        
+        labels: {
+          show: true, 
+        },
+        lines: {
+          show: true,
+        },
+        axisBorder: {
+          show: true, 
+        },
+        grid: {
+          show: true,
+        },
+      }
     },
   };
 

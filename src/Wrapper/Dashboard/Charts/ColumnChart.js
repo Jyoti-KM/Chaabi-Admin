@@ -66,6 +66,24 @@ const ColumnChart = () => {
         offsetX: 0,
         offsetY: 50,
       },
+      grid: {
+        show: false,
+      },
+      yaxis: {
+        
+        labels: {
+          show: true, 
+        },
+        lines: {
+          show: true,
+        },
+        axisBorder: {
+          show: true, 
+        },
+        grid: {
+          show: true,
+        },
+      }
     },
   };
 
