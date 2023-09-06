@@ -2,9 +2,52 @@ import React, { useState } from "react";
 import styles from "./Table.module.scss";
 import TableRow from "./TableRow/TableRow";
 import TableRowHeader from "./TableRowHeader/TableRowHeader";
+import Columnfilter from '../../assets/columnfilter.svg';
+import filterIcon from '../../assets/filterIcon.svg';
+import { createPortal } from "react-dom";
+import Card from '../CardComponent/Card/Card';
+import CheckBox from "../Buttons/CheckBox/CheckBox";
+import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
+import closeImage from '../../assets/close.svg';
+import DropDown from "../InputFields/DropDown/DropDown";
+import TextInput from "../InputFields/TextInput/TextInput";
+
+
+const options = [
+  "Name of the field",
+  "bombay",
+  "hyd",
+  "calcutta",
+  "bombay",
+  "hyd",
+  "calcutta",
+];
+
+const emailInput = {
+  label: "",
+  helperText: "",
+};
 
 function Table({ columnNames, tableRows }) {
+  const [showColumnFilter ,setShowColumnFilter] = useState(false);
+  const [showFilter ,setShowFilter] = useState(false);
   const [rows, setRows] = useState(tableRows);
+
+  
+ function handleColumnFilter(){
+  setShowColumnFilter(!showColumnFilter);
+  }
+
+  function cancelBtnHandler (){
+    setShowColumnFilter(false);
+    setShowFilter(false);
+  }
+  
+ function handleFilter(){
+  setShowFilter(!showColumnFilter);
+  }
+
+ 
 
   // pagination
   const itemsPerPage = 6;
@@ -32,10 +75,93 @@ function Table({ columnNames, tableRows }) {
 
   return (
     <div className={styles.tableContainer}>
-      <div className={styles.header}>table heading</div>
+      <div className={styles.header}>
+          <p className={styles.header_left}>
+          Table Heading
+          </p>
+         <div className={styles.header_right}>
+            <img src={ filterIcon} alt="filter button" onClick={handleFilter}/>
+            <img src={Columnfilter} alt="filter button" onClick={handleColumnFilter}/>
+             
+            {showFilter &&
+        createPortal(
+          <Card heading="Create a Filter" onCancel={cancelBtnHandler}>
+           
+          <div className={styles.formContain1}>
+                 <div className={styles.row}>
+                 <DropDown options={options} />
+                 <DropDown options={options} />
+                 <TextInput {...emailInput} />
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+            </div>
+          </Card>,
+          document.getElementById("modalPortal")
+        )}
+            {showColumnFilter &&
+        createPortal(
+          <Card heading="Choose your Columns" onCancel={cancelBtnHandler}>
+          
+          {/* form can also customise */}
+          <div className={styles.formContain2}>
+                 <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>Total Trainings</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+              <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>In Training</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+              <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>Learning Minutes</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+              <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>Video Watch Time</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+              <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>Completions</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+              <div className={styles.fields}>
+              <div className={styles.fields_left}>
+                  <CheckBox />
+                  <p>Enrollments</p>
+                </div>
+                <img src={closeImage} alt="close icon " className={styles.fields_left} />
+              </div>
+
+              <div className={styles.button}>
+              <PrimaryButton >Confirm</PrimaryButton> 
+              </div>
+             
+                 </div>
+          </Card>,
+          document.getElementById("modalPortal")
+        )}
+          </div>
+      </div>
       <table className={styles.table}>
         <thead>
           <TableRowHeader columnNames={columnNames} />
+
+         
         </thead>
         <tbody className={styles.tableBody}>
           {visibleRows.map((item) => (

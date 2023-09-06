@@ -3,6 +3,9 @@ import styles from './Training.module.scss';
 import SearchInput from '../../components/InputFields/SearchInput/searchInput';
 import PrimaryButton from '../../components/Buttons/PrimaryButton/PrimaryButton';
 import Table from '../../components/Table/Table';
+import ButtonGroup from '../../components/Buttons/ButtonGroup/ButtonGroup';
+
+const buttons = ["List", "Templates" , "Playlist"];
 
 const tableRows = [
     {
@@ -141,6 +144,7 @@ const Training = () => {
   return (
     <div className={styles.Training}>
       <div className={styles.Training__top}>
+      <ButtonGroup buttons={buttons} />
       <div className={styles.conatiner}>
       <SearchInput />
       <PrimaryButton>Create New</PrimaryButton>
