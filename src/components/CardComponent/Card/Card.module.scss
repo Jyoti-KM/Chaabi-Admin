@@ -1,6 +1,6 @@
 @import '../../../global-styles/global.module.scss';
 .card {
-	width: 32vw;
+	min-width: 32vw;
 	
 	border-radius: 15px;
 	overflow: hidden;
