@@ -15,12 +15,12 @@
 
     .labelLightTheme {
       color: $neutral50;
-      @include t4Lite;
+      @extend .t4Lite;
     }
 
     .labelDarkTheme {
       color: $neutral95 ;
-      @include t4Lite;
+      @extend .t4Lite;
     }
 
     .input {
@@ -35,7 +35,7 @@
       border: 0.0625rem solid $neutral90;
       background: $neutral100;
       color: $neutral20 ;
-      @include t3Reg;
+      @extend .t3Reg;
       cursor: pointer;
     }
   }
@@ -66,7 +66,7 @@
       align-self: stretch;
       background-color:  $primary100;
       color: $neutral20;
-      @include t3Lite;
+      @extend .t3Lite;
       cursor: pointer;
       transition: all .3s ease;
 
@@ -78,7 +78,7 @@
     .dropDownItem:hover {
       background: $neutral99;
       color: $neutral20 ;
-      @include t3Bold;
+      @extend .t3Bold;
       // font-weight: 500;
     }
 

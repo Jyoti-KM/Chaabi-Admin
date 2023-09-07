@@ -16,7 +16,7 @@
     border-radius: 0.25rem;
     background:$neutral90;
     color:$neutral20;
-    @include t1Reg;
+    @extend .t1Reg;
     cursor: pointer;
   }
 
@@ -30,7 +30,7 @@
     align-self: stretch;
     background:$neutral95;
     color:$neutral30;
-    @include t4Reg;
+    @extend .t4Reg;
     
   }
 }

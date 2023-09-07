@@ -10,14 +10,14 @@
 
   .labelLightTheme {
     color: $neutral50;
-    @include t4Lite;
+    @extend .t4Lite;
     cursor: pointer;
     span{ color:$alert50;}
   }
 
   .labelDarkTheme {
     color: $neutral95;
-    @include t4Lite;
+    @extend .t4Lite;
     cursor: pointer;
     span{ color:$alert50;}
   }
@@ -38,7 +38,7 @@
       gap: 0.25rem;
       align-self: stretch;
       color: $neutral20;
-      @include t3Lite;
+      @extend .t3Lite;
       cursor: pointer;
     }
 
@@ -50,7 +50,7 @@
       gap: .25rem;
       flex: 1 0 0;
       color: $neutral20;
-      @include t3Reg;
+      @extend .t3Reg;
       border: none;
       border-radius: .25rem;
     }
@@ -83,7 +83,7 @@
       gap: 0.25rem;
       align-self: stretch;
       color: $neutral20;
-      @include t3Lite;
+      @extend .t3Lite;
       cursor: pointer;
     }
 
@@ -94,7 +94,7 @@
       gap: .25rem;
       flex: 1 0 0;
       color: $neutral20;
-      @include t3Reg;
+      @extend .t3Reg;
       border: none;
       border-radius: .25rem;
     }
@@ -115,12 +115,12 @@
 
 .helperTextLightTheme {
   color: $neutral20;
-  @include t4Lite;
+  @extend .t4Lite;
   margin: 0rem;
 }
 
 .helperTextDarkTheme {
   color: $neutral95;
-  @include t4Lite;
+  @extend .t4Lite;
   margin: 0rem;
 }

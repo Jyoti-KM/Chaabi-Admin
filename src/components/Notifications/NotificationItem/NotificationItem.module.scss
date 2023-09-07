@@ -17,7 +17,7 @@
     .notificationTitle {
       flex: 1;
       color: $neutral20;
-      @include h5Semi;
+     @extend .h5Semi;
     }
 
     .cancelIconContainer {
@@ -29,7 +29,7 @@
     padding: 0rem 2.5rem;
     align-self: stretch;
     color: $neutral20 ;
-    @include t3Reg;
+   @extend .t3Reg;
   }
 }
 

@@ -14,11 +14,11 @@
   
   cursor: pointer;
   transition: all 0.3s ease-in-out; 
-  @include shadowSmLightTheme;
+ @extend .shadowSmLightTheme;
   white-space: nowrap;
  
   
-    @include t4Bold;
+   @extend .t4Bold;
 
   .img{
     height: 1.5rem;
@@ -29,7 +29,7 @@
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
     transform: translateY(-2px);
-    @include shadowMdLightTheme;
+   @extend .shadowMdLightTheme;
   }
 
   &:not(:disabled):active {
@@ -37,7 +37,7 @@
     box-shadow: 0rem 0rem 0.25rem .25rem $primary90;
     background: $neutral95;
     transform: translateY(1px);
-    @include shadowLgLightTheme;
+   @extend .shadowLgLightTheme;
   }
 
   &[disabled] {
@@ -59,15 +59,15 @@
   border: .06rem solid $neutral99;
   background: $neutral100;
   color: $neutral20;
-  @include t3Med;
+ @extend .t3Med;
   cursor: pointer;
-  @include shadowSmDarkTheme;
+ @extend .shadowSmDarkTheme;
   transition: all 0.3s ease-in-out; 
 
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
     transform: translateY(-2px);
-    @include shadowMdDarkTheme;
+   @extend .shadowMdDarkTheme;
   }
 
   &:not(:disabled):active {
@@ -75,7 +75,7 @@
     box-shadow: 0rem 0rem 0.25rem .25rem $primary90;
     background: $neutral95;
     transform: translateY(1px);
-    @include shadowLgDarkTheme;
+   @extend .shadowLgDarkTheme;
   }
 
   &[disabled] {

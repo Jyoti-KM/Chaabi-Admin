@@ -1,31 +1,62 @@
-// @import './base.module.scss';
-
+@import "./variables.scss";
 // shadow - variants - light theme
-@mixin shadowSmLightTheme {
-  box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral10, 0.05);
+.shadowSmLightTheme {
+  box-shadow: 0rem 0.1rem 0.2rem 0rem rgba($neutral10, 0.05);
 }
 
-@mixin shadowMdLightTheme {
-  box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral10, 0.06),
-    .0rem .1rem .3rem .0rem rgba( $neutral10, 0.1);
+.shadowMdLightTheme {
+  box-shadow: 0rem 0.1rem 0.2rem 0rem rgba($neutral10, 0.06),
+    0rem 0.1rem 0.3rem 0rem rgba($neutral10, 0.1);
 }
 
-@mixin shadowLgLightTheme {
-  box-shadow: .0rem .2rem .4rem -.2rem rgba( $neutral10, 0.06),
-    .0rem .4rem .8rem -.2rem rgba( $neutral10, 0.1);
+.shadowLgLightTheme {
+  box-shadow: 0rem 0.2rem 0.4rem -0.2rem rgba($neutral10, 0.06),
+    0rem 0.4rem 0.8rem -0.2rem rgba($neutral10, 0.1);
 }
 
 // shadow - variants - dark theme
-@mixin shadowSmDarkTheme {
-  box-shadow: .0rem .1rem .3rem .0rem rgba( $neutral100, 0.25);
+.shadowSmDarkTheme {
+  box-shadow: 0rem 0.1rem 0.3rem 0rem rgba($neutral100, 0.25);
 }
 
-@mixin shadowMdDarkTheme {
-  box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral100, 0.4),
-    .0rem .1rem .3rem .0rem rgba( $neutral100, 0.4);
+.shadowMdDarkTheme {
+  box-shadow: 0rem 0.1rem 0.2rem 0rem rgba($neutral100, 0.4),
+    0rem 0.1rem 0.3rem 0rem rgba($neutral100, 0.4);
 }
 
-@mixin shadowLgDarkTheme {
-  box-shadow: .0rem .1rem .2rem -.2rem rgba( $neutral100, 0.5),
-    .0rem .3rem .6rem .0rem rgba( $neutral100, 0.4);
+.shadowLgDarkTheme {
+  box-shadow: 0rem 0.1rem 0.2rem -0.2rem rgba($neutral100, 0.5),
+    0rem 0.3rem 0.6rem 0rem rgba($neutral100, 0.4);
 }
+
+ // @import './base.module.scss';
+
+// // shadow - variants - light theme
+// @mixin shadowSmLightTheme {
+//   box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral10, 0.05);
+// }
+
+// @mixin shadowMdLightTheme {
+//   box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral10, 0.06),
+//     .0rem .1rem .3rem .0rem rgba( $neutral10, 0.1);
+// }
+
+// @mixin shadowLgLightTheme {
+//   box-shadow: .0rem .2rem .4rem -.2rem rgba( $neutral10, 0.06),
+//     .0rem .4rem .8rem -.2rem rgba( $neutral10, 0.1);
+// }
+
+// // shadow - variants - dark theme
+// @mixin shadowSmDarkTheme {
+//   box-shadow: .0rem .1rem .3rem .0rem rgba( $neutral100, 0.25);
+// }
+
+// @mixin shadowMdDarkTheme {
+//   box-shadow: .0rem .1rem .2rem .0rem rgba( $neutral100, 0.4),
+//     .0rem .1rem .3rem .0rem rgba( $neutral100, 0.4);
+// }
+
+// @mixin shadowLgDarkTheme {
+//   box-shadow: .0rem .1rem .2rem -.2rem rgba( $neutral100, 0.5),
+//     .0rem .3rem .6rem .0rem rgba( $neutral100, 0.4);
+// }

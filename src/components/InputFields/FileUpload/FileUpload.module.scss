@@ -61,7 +61,7 @@
       .supportingText {
         align-self: stretch;
         color: $neutral50;
-        @include t5Lite;
+        @extend .t5Lite;
       }
     }
 

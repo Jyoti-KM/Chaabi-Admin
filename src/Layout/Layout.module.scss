@@ -24,7 +24,7 @@
       justify-content: space-between;
       padding: 0vw 1.5vw;
      
-      @include lightThemeLowest ;
+      @extend .lightThemeLowest ;
 
       .content {
         max-width: 70%;
@@ -33,13 +33,13 @@
         gap: .25rem;
 
         h4 {
-          @include h4Med;
+          @extend .h4Med;
           color: $neutral20;
           margin: 0;
         }
 
         p {
-          @include t1Lite;
+          @extend .t1Lite;
           color: $neutral50;
           margin: 0;
         }
@@ -64,7 +64,7 @@
       justify-content: space-between;
       padding: 0vw 1.5vw;
       
-      @include darkThemeLowest ;
+      @extend .darkThemeLowest ;
 
       .content {
         max-width: 70%;
@@ -102,7 +102,7 @@
     height: calc(100dvh - 9.5dvh);
     
     
-    @include lightThemeRegular  ;
+    @extend .lightThemeRegular  ;
   }
 
   .sidebarLightTheme {
@@ -111,7 +111,7 @@
     width: 15dvw;
     height: 100dvh;
   
-    @include lightThemeLowest ;
+    @extend .lightThemeLowest ;
 
     .logoContainer {
       display: flex;
@@ -139,7 +139,7 @@
     width: 15vw;
     height: 100vh;
    
-    @include darkThemeLowest ;
+    @extend .darkThemeLowest ;
 
     .logoContainer {
       display: flex;

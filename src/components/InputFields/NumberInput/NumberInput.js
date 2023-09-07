@@ -39,6 +39,7 @@ function NumberInput(props) {
           disabled={props.isDisabled}
         required={props.isRequired}
         placeholder={props.placeholder}
+        maxlength="10"
         />
       </div>
       <p

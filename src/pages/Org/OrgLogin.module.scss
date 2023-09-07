@@ -22,7 +22,7 @@
         
         color: #FFF;
         text-align: center;
-        @include h3Med;
+        @extend .h3Med;
         font-family: 'Typo-Round-bold';
        
        
@@ -49,7 +49,7 @@
 
       h2 {
         text-align: center;
-        @include h3Med;
+        @extend .h3Med;
       }
       .field {
         display: flex;
@@ -71,7 +71,7 @@
           &_1{
           
              p{
-              @include t4Lite;
+              @extend .t4Lite;
               color: $neutral50;
               text-align: left;
               margin-bottom: .1rem;
@@ -88,9 +88,9 @@
 
       p {
         text-align: center;
-        @include t3Lite;
+        @extend .t3Lite;
         span {
-          @include t3Med;
+          @extend .t3Med;
           color: #0d62ff;
         }
       }
@@ -121,7 +121,7 @@
           
           align-items: center;
         //   justify-content: center;
-          @include t4Bold;
+          @extend .t4Bold;
           background: white;
           border: 0.15rem solid #9999999c;
           cursor: pointer;

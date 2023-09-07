@@ -10,44 +10,98 @@
   background-color: mix($bgColor1, $bgColor2, $bgColor1Percent);
 }
 
-@mixin lightThemeLowest {
+.lightThemeLowest {
   color: $neutral10;
   background: $neutral99;
 }
 
-@mixin lightThemeLow {
+.lightThemeLow {
   @include lightTheme($neutral0, $neutral99, 95%, $primary50);
 }
 
-@mixin lightThemeRegular {
+.lightThemeRegular {
   @include lightTheme($neutral0, $neutral99, 92%, $primary50);
 }
-@mixin lightThemeHigh {
+.lightThemeHigh {
   @include lightTheme($neutral0, $neutral99, 89%, $primary50);
 }
 
-@mixin lightThemeHighest {
+.lightThemeHighest {
   @include lightTheme($neutral0, $neutral99, 86%, $primary50);
 }
 
 // dark color theme
-@mixin darkThemeLowest {
+.darkThemeLowest {
   color: $neutral100;
   background: $neutral10;
 }
 
-@mixin darkThemeLow {
+.darkThemeLow {
   @include darkTheme($neutral100, $neutral10, 95%, $primary50);
 }
 
-@mixin darkThemeRegular {
+.darkThemeRegular {
   @include darkTheme($neutral100, $neutral10, 92%, $primary50);
 }
 
-@mixin darkThemeHigh {
+.darkThemeHigh {
   @include darkTheme($neutral100, $neutral10, 89%, $primary50);
 }
 
-@mixin darkThemeHighest {
+.darkThemeHighest {
   @include darkTheme($neutral100, $neutral10, 86%, $primary50);
 }
+
+// @import "./variables.scss";
+
+// @mixin lightTheme($textColor, $bgColor1, $bgColor1Percent, $bgColor2) {
+//   color: $textColor;
+//   background-color: mix($bgColor1, $bgColor2, $bgColor1Percent);
+// }
+
+// @mixin darkTheme($textColor, $bgColor1, $bgColor1Percent, $bgColor2) {
+//   color: $textColor;
+//   background-color: mix($bgColor1, $bgColor2, $bgColor1Percent);
+// }
+
+// @mixin lightThemeLowest {
+//   color: $neutral10;
+//   background: $neutral99;
+// }
+
+// @mixin lightThemeLow {
+//   @include lightTheme($neutral0, $neutral99, 95%, $primary50);
+// }
+
+// @mixin lightThemeRegular {
+//   @include lightTheme($neutral0, $neutral99, 92%, $primary50);
+// }
+// @mixin lightThemeHigh {
+//   @include lightTheme($neutral0, $neutral99, 89%, $primary50);
+// }
+
+// @mixin lightThemeHighest {
+//   @include lightTheme($neutral0, $neutral99, 86%, $primary50);
+// }
+
+// // dark color theme
+// @mixin darkThemeLowest {
+//   color: $neutral100;
+//   background: $neutral10;
+// }
+
+// @mixin darkThemeLow {
+//   @include darkTheme($neutral100, $neutral10, 95%, $primary50);
+// }
+
+// @mixin darkThemeRegular {
+//   @include darkTheme($neutral100, $neutral10, 92%, $primary50);
+// }
+
+// @mixin darkThemeHigh {
+//   @include darkTheme($neutral100, $neutral10, 89%, $primary50);
+// }
+
+// @mixin darkThemeHighest {
+//   @include darkTheme($neutral100, $neutral10, 86%, $primary50);
+// }

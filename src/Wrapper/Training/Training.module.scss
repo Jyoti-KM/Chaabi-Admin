@@ -3,7 +3,7 @@
 .Training{
     // overflow-y: scroll;
     // background-color:  $neutral100;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;

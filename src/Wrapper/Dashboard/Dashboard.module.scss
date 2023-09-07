@@ -28,11 +28,11 @@
         align-items: baseline;
 
         h4 {
-          @include h5Med;
+          @extend .h5Med;
         }
 
         h5 {
-          @include t2Lite;
+          @extend .t2Lite;
           white-space: nowrap;
         }
       }
@@ -56,9 +56,9 @@
           
         }
         button{
-          @include lightThemeLowest;
+          @extend .lightThemeLowest;
           
-          @include t3Lite;
+          @extend .t3Lite;
           padding: .6rem;
           border: 1.5px solid $neutral90;
           border-radius: .4rem;
@@ -81,7 +81,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 1 / 1 / 4 / 2;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
     // padding: 1rem;
     .heading {
@@ -103,11 +103,11 @@
         align-items: baseline;
 
         h4 {
-          @include h5Med;
+          @extend .h5Med;
         }
 
         h5 {
-          @include t2Lite;
+          @extend .t2Lite;
           white-space: nowrap;
         }
       }
@@ -131,9 +131,9 @@
           
         }
         button{
-          @include lightThemeLowest;
+          @extend .lightThemeLowest;
           
-          @include t3Lite;
+          @extend .t3Lite;
           padding: .6rem;
           border: 1.5px solid $neutral90;
           border-radius: .4rem;
@@ -175,7 +175,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 1 / 2 / 4 / 3;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
     // padding: 1rem;
     .heading {
@@ -197,11 +197,11 @@
         align-items: baseline;
 
         h4 {
-          @include h5Med;
+          @extend .h5Med;
         }
 
         h5 {
-          @include t2Lite;
+          @extend .t2Lite;
           white-space: nowrap;
         }
       }
@@ -225,9 +225,9 @@
           
         }
         button{
-          @include lightThemeLowest;
+          @extend .lightThemeLowest;
           
-          @include t3Lite;
+          @extend .t3Lite;
           padding: .6rem;
           border: 1.5px solid $neutral90;
           border-radius: .4rem;
@@ -264,7 +264,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 1 / 3 / 4 / 4;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
     // padding: 1rem;
     .heading {
@@ -286,11 +286,11 @@
         align-items: baseline;
 
         h4 {
-          @include h5Med;
+          @extend .h5Med;
         }
 
         h5 {
-          @include t2Lite;
+          @extend .t2Lite;
           white-space: nowrap;
         }
       }
@@ -314,9 +314,9 @@
           
         }
         button{
-          @include lightThemeLowest;
+          @extend .lightThemeLowest;
           
-          @include t3Lite;
+          @extend .t3Lite;
           padding: .6rem;
           border: 1.5px solid $neutral90;
           border-radius: .4rem;
@@ -353,7 +353,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 1 / 4 / 4 / 5;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
     // padding: 1rem;
     .heading {
@@ -375,11 +375,11 @@
         align-items: baseline;
 
         h4 {
-          @include h5Med;
+          @extend .h5Med;
         }
 
         h5 {
-          @include t2Lite;
+          @extend .t2Lite;
           white-space: nowrap;
         }
       }
@@ -404,9 +404,9 @@
           
         }
         button{
-          @include lightThemeLowest;
+          @extend .lightThemeLowest;
           
-          @include t3Lite;
+          @extend .t3Lite;
           padding: .6rem;
           border: 1.5px solid $neutral90;
           border-radius: .4rem;
@@ -443,7 +443,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 4 / 1 / 9 / 3;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
 
     &_heading {
@@ -469,7 +469,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 4 / 3 / 8 / 5;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
     padding: 1rem;
     display: flex;
@@ -491,7 +491,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 9 / 1 / 13 / 3;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
 
     // padding: 1rem;
@@ -513,7 +513,7 @@
     min-height: 100%;
     overflow: visible;
     grid-area: 8 / 3 / 13 / 5;
-    @include lightThemeLowest;
+    @extend .lightThemeLowest;
     border-radius: 0.25rem;
 
     &_heading {

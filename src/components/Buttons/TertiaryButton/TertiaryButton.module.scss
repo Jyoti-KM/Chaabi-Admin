@@ -6,7 +6,7 @@
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   color: $primary50;
-  @include t3Reg;
+  @extend .t3Reg;
   text-align: center;
   border: .06rem solid transparent;
   background-color: transparent;
@@ -34,7 +34,7 @@
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   color: $primary99;
-  @include t3Reg;
+  @extend .t3Reg;
   text-align: center;
   border: .06rem solid transparent;
   background-color: transparent;

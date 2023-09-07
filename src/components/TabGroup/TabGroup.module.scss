@@ -22,7 +22,7 @@
     // font-style: normal;
     // font-weight: 700;
     // line-height: 1.5rem;
-    @include t3Bold;
+    @extend .t3Bold;
     border-bottom: 0.0938rem solid $primary50;
     cursor: pointer;
   }
@@ -37,7 +37,7 @@
     background: $neutral100;
     color: $neutral20;
     text-align: center;
-    @include t3Reg;
+    @extend .t3Reg;
     border-bottom: 0.0938rem solid $neutral90;
     cursor: pointer;
   }

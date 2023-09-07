@@ -28,7 +28,7 @@
     border-radius: .75rem;
     text-align: center;
    
-    @include t5Reg;
+    @extend .t5Reg;
   }
 
   .button {
@@ -44,7 +44,7 @@
     height: 4rem;
     padding: 0rem 1.5rem;
     color: $neutral40; 
-    @include t3Reg;
+    @extend .t3Reg;
   }
 
   .nameColumn {
@@ -60,7 +60,7 @@
       input {
         border: none;
         color: $neutral40; 
-        @include t3Reg;
+        @extend .t3Reg;
 
       }
 
@@ -112,7 +112,7 @@
       .remainingCount {
         color: $neutral30;
         text-align: center;
-        @include t5Reg;
+        @extend .t5Reg;
       }
     }
   }

@@ -18,7 +18,7 @@
     border-right: .06rem solid $neutral90;
     background: $neutral100;
     color: $neutral20;
-    @include t4Reg;
+    @extend .t4Reg;
     cursor: pointer;
    
   }
@@ -33,7 +33,7 @@
     border-right: .06rem solid $neutral90;
     background: $neutral95;
     color: $neutral20;
-    @include t4Bold;
+    @extend .t4Bold;
     cursor: pointer;
     
   }
@@ -55,7 +55,7 @@
     border-right: .06rem solid $neutral99;
     background: $neutral100;
     color: $neutral20;
-    @include t4Reg;
+    @extend .t4Reg;
     cursor: pointer;
   }
 
@@ -69,7 +69,7 @@
     border-right: .06rem solid $neutral99;
     background: $neutral95;
     color: $neutral20;
-    @include t4Bold;
+    @extend .t4Bold;
     cursor: pointer;
   }
 }

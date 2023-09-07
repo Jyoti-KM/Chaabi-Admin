@@ -11,12 +11,12 @@
 
   .labelLightTheme {
     color: $neutral50;
-    @include t4Lite;
+    @extend .t4Lite;
   }
 
   .labelDarkTheme {
     color: $neutral95;
-    @include t4Lite;
+    @extend .t4Lite;
   }
 
   .buttonGroup {
@@ -36,7 +36,7 @@
       border-right: 0.0625rem solid $neutral95 ;
       background: $neutral95 ;
       color: $neutral20 ;
-      @include t3Bold;
+      @extend .t3Bold;
       cursor: pointer;
     }
 
@@ -51,7 +51,7 @@
       border-right: 0.0625rem solid $neutral95;
       background: $neutral100;
       color: $neutral20;
-      @include t3Reg;
+      @extend .t3Reg;
       cursor: pointer;
     }
   }

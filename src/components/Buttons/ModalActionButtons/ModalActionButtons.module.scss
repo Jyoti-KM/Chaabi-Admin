@@ -23,7 +23,7 @@
     // font-style: normal;
     // font-weight: 400;
     // line-height: 1.5rem;
-    @include t3Reg;
+    @extend .t3Reg;
   }
 
   .primaryBtnLightTheme {
@@ -43,7 +43,7 @@
     // font-style: normal;
     // font-weight: 700;
     // line-height: 1.5rem;
-    @include t3Bold;
+    @extend .t3Bold;
   }
 }
 
@@ -70,7 +70,7 @@
     // font-style: normal;
     // font-weight: 400;
     // line-height: 1.5rem;
-    @include t3Reg;
+    @extend .t3Reg;
   }
 
   .primaryBtnDarkTheme {
@@ -85,6 +85,6 @@
     border: 0.0625rem solid $primary50;
     background: $primary50;
     color: $neutral100;
-    @include t3Bold;
+    @extend .t3Bold;
   }
 }

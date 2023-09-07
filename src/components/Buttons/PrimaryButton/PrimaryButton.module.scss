@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include t3Bold;
+  @extend .t3Bold;
   background: $primary50;
   border: .06rem solid $primary50;
   cursor: pointer;
@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include t3Bold;
+  @extend .t3Bold;
   background: $primary50;
   border: .06rem solid $primary50;
   cursor: pointer;

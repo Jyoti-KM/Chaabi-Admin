@@ -11,7 +11,7 @@
   white-space: nowrap;
 
   
-  @include t3Med;
+  @extend .t3Med;
   text-align: center;
   border: .06rem solid $neutral90;
   cursor: pointer;
@@ -42,7 +42,7 @@
   padding: 0.75rem 1.5rem;
   color: $neutral99;
   background-color: transparent;
-  @include t3Med;
+  @extend .t3Med;
   text-align: center;
   border: .06rem solid $neutral90;
   cursor: pointer;
