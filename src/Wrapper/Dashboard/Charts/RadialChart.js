@@ -8,6 +8,11 @@ const RadialChart = () => {
         // height:'100%',
         // width:'20vw',
         height: '95%',
+        margin: '0px',
+        padding: '0rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         overflow:"hidden",
     }
   const chartData = {

@@ -3,22 +3,25 @@
 
 .searchInputContainer {
   width: 100%;
-  // display: flex;
+  display: flex;
   gap:.5rem;
   // justify-content: flex-start;
-  // align-items: center;
+  align-items: center;
   border-radius: 0.25rem;
   border: 0.0625rem solid $neutral90;
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem;
+  padding-right: 1rem;
   align-items: center;
   background: $neutral100;
   white-space: nowrap;
 
   .input {
+    flex:1;
     background: $neutral100;
     border: none;
     color: $neutral50;
     @include t3Reg;
+    
   }
 
   .input:focus {

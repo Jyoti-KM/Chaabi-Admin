@@ -264,10 +264,8 @@ function Components() {
 
       <div>
         btn w/th left icon :{" "}
-        <ButtonWithLeftIcon>
-          <img src={uploadIcon} alt="#" />
-          import
-        </ButtonWithLeftIcon>
+        <ButtonWithLeftIcon src={uploadIcon} text="Image" />
+         
       </div>
 
       <div>
