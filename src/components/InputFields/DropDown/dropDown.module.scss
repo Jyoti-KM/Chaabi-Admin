@@ -68,6 +68,7 @@
       color: $neutral20;
       @include t3Lite;
       cursor: pointer;
+      transition: all .3s ease;
 
       .hoverSVG {
         display: none;
@@ -77,7 +78,8 @@
     .dropDownItem:hover {
       background: $neutral99;
       color: $neutral20 ;
-      font-weight: 500;
+      @include t3Bold;
+      // font-weight: 500;
     }
 
     .dropDownItem:hover .hoverSVG {
