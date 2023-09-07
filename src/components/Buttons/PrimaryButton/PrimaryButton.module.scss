@@ -1,6 +1,7 @@
 @import '../../../global-styles/global.module.scss';
 
 .primaryBtnLightTheme {
+
   width: 100%;
   display: inline-flex;
   border-radius: 0.25rem;
@@ -14,6 +15,7 @@
   background: $primary50;
   border: .06rem solid $primary50;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .primaryBtnLightTheme:not(:disabled):hover {
@@ -34,16 +36,23 @@
 
 // dark mode classes
 .primaryBtnDarkTheme {
+
+
   width: 100%;
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
   color: $neutral100;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include t3Bold;
   background: $primary50;
-  border: 1rem solid $primary50;
+  border: .06rem solid $primary50;
   cursor: pointer;
+  white-space: nowrap;
+
 }
 
 .primaryBtnDarkTheme:not(:disabled):hover {

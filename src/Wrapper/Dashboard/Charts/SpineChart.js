@@ -3,7 +3,7 @@ import ReactApexChart from 'react-apexcharts';
 
 const SpineChart = () => {
   const chartStyles = {
-    // height: clamp('10rem' , ),
+    height: '100%',
     width: '100%',
     margin: '0px',
     padding: '0rem',

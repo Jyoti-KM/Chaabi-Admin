@@ -8,6 +8,7 @@ const ColumnChart = () => {
     // height:'100%',
     // width:'45vw',
     height:'13vw',
+    // height: '100%',
     width:"100%",
     // overflow:"hidden",
 }

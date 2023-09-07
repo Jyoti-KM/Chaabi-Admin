@@ -24,10 +24,10 @@ const Login = () => {
          
           
           
-          <TextInput label="Email" helperText="" />
+          <TextInput label="Email" helperText="" placeholder="email@chaabi.co"/>
           
           
-          <TextInput label="Password" helperText="" />
+          <TextInput label="Password" helperText="" type="password" placeholder="Enter your password" />
          
         
           </div>

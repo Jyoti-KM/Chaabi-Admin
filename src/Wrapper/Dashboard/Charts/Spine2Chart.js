@@ -4,7 +4,7 @@ import ReactApexChart from 'react-apexcharts';
 
 const Spine2Chart = () => {
     const chartStyles = {
-        height:'13vw',
+      height:'13vw',
     width:"100%",
         overflow:"hidden",
             // Define your inline styles here

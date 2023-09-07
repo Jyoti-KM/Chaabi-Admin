@@ -1,7 +1,7 @@
 @import '../../global-styles/global.module.scss';
 
 .tableContainer {
-  overflow-y:scroll;
+  // overflow-y:scroll;
   display: inline-flex;
   width: 100%;
   flex-direction: column;
@@ -15,7 +15,7 @@
     align-items: center;
     // flex-direction: column;
     align-self: stretch;
-    padding: .5rem 1.5rem;
+    padding: 0rem 1.5rem;
     background: $neutral100;
     color: $neutral40;
    
@@ -36,7 +36,7 @@
 
   .footer {
     display: flex;
-    padding: .875rem 1.5rem;
+    padding: .5rem 1.5rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;

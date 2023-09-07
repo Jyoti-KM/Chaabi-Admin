@@ -26,12 +26,12 @@ const OrganisationLogin = () => {
           <h2>One Step Away</h2>
           <div className={styles.field}>
             <div className={styles.field_name}>
-              <TextInput label="Company Name" helperText="" />
-              <TextInput label="Your Role" helperText="" />
+              <TextInput label="Company Name" helperText="" placeholder="Enter your company name"/>
+              <TextInput label="Your Role" helperText="" placeholder="Founder & CEO"/>
             </div>
             <div className={styles.field_account}>
-              <TextInput label="Account URL" helperText="" />
-              <TextInput label="Industry" helperText="" />
+              <TextInput label="Account URL" helperText="" placeholder="companyname"/>
+              <TextInput label="Industry" helperText="" placeholder="Manufacturing"/>
             </div>
             <div className={styles.field_detail}>
               <div className={styles.field_detail_1}>
@@ -42,7 +42,7 @@ const OrganisationLogin = () => {
 
               </div>
               <div className={styles.field_detail_2}>
-                <NumberInput label="Company Size" helperText="" />
+                <NumberInput label="Company Size" helperText="" placeholder="0-10"/>
               </div>
             </div>
           </div>

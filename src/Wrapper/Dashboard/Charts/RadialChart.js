@@ -6,7 +6,8 @@ const RadialChart = () => {
 
     const chartStyles = {
         // height:'100%',
-        width:'20vw',
+        // width:'20vw',
+        height: '100%',
         overflow:"hidden",
     }
   const chartData = {
