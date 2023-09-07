@@ -3,11 +3,11 @@ import ReactApexChart from 'react-apexcharts';
 
 const SpineChart = () => {
   const chartStyles = {
-    height: '87%',
+    height: '8vw',
     width: '100%',
     margin: '0px',
     padding: '0rem',
-    // border:"1px solid green",
+    border:"1px solid green",
   };
   const toolbarStyles = `
   .apexcharts-toolbar {

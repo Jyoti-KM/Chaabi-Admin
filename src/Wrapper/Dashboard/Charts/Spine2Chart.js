@@ -4,11 +4,12 @@ import ReactApexChart from 'react-apexcharts';
 
 const Spine2Chart = () => {
     const chartStyles = {
-      height:'13vw',
+      height:'14vw',
     width:"100%",
-        overflow:"hidden",
+        // overflow:"hidden",
             margin: '0px',
             padding: '0.5rem',
+            border:"1px solid green",
         };
 
   const chartData = {

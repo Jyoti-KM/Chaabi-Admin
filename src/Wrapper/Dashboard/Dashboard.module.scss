@@ -78,7 +78,7 @@
     }
 
   .div1 {
-    min-height: 100%;
+  min-height: 12rem;
     overflow: visible;
     grid-area: 1 / 1 / 4 / 2;
     @extend .lightThemeLowest;
@@ -155,7 +155,7 @@
     .chart {
       height: 8vw;
       width: 100%;
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       margin-top: 0.5rem;
     }
 
@@ -172,7 +172,7 @@
   }
 
   .div2 {
-    min-height: 100%;
+   min-height: 12rem;
     overflow: visible;
     grid-area: 1 / 2 / 4 / 3;
     @extend .lightThemeLowest;
@@ -249,7 +249,7 @@
     .chart {
       height: 8vw;
       width: 100%;
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       margin-top: 0.5rem;
     }
     &:hover {
@@ -261,7 +261,7 @@
     }
   }
   .div3 {
-    min-height: 100%;
+    min-height: 12rem;
     overflow: visible;
     grid-area: 1 / 3 / 4 / 4;
     @extend .lightThemeLowest;
@@ -338,7 +338,7 @@
     .chart {
       height: 8vw;
       width: 100%;
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       margin-top: 0.5rem;
     }
     &:hover {
@@ -350,7 +350,7 @@
     }
   }
   .div4 {
-    min-height: 100%;
+    min-height: 12rem;
     overflow: visible;
     grid-area: 1 / 4 / 4 / 5;
     @extend .lightThemeLowest;
@@ -428,7 +428,7 @@
       height: 8vw;
       height: 8dvw;
       width: 100%;
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       margin-top: 0.5rem;
     }
     &:hover {
@@ -440,7 +440,7 @@
     }
   }
   .div5 {
-    min-height: 100%;
+    min-height: 22rem;
     overflow: visible;
     grid-area: 4 / 1 / 9 / 3;
     @extend .lightThemeLowest;
@@ -466,16 +466,16 @@
     }
   }
   .div6 {
-    min-height: 100%;
+    min-height: 17rem;
     overflow: visible;
     grid-area: 4 / 3 / 8 / 5;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
-    padding: 1rem;
+    // padding: 1rem;
     display: flex;
 
     &_left {
-      // padding: 1rem;
+      padding: 1rem;
       width: 50%;
       //  padding: 0 1rem;
     }
@@ -488,7 +488,7 @@
     }
   }
   .div7 {
-    min-height: 100%;
+    min-height: 15rem;
     overflow: visible;
     grid-area: 9 / 1 / 13 / 3;
     @extend .lightThemeLowest;
@@ -510,7 +510,7 @@
     }
   }
   .div8 {
-    min-height: 100%;
+    min-height: 19.5rem;
     overflow: visible;
     grid-area: 8 / 3 / 13 / 5;
     @extend .lightThemeLowest;

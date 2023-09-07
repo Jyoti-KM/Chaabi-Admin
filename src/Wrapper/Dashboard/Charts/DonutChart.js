@@ -3,13 +3,14 @@ import ReactApexChart from 'react-apexcharts';
 
 const DonutChart = () => {
   const chartStyles = {
-    height: '100%', // Set the height to 100% to fill the container vertically
+    height: '16vw', // Set the height to 100% to fill the container vertically
     width: '100%',  // Set the width to 100% to fill the container horizontally
     margin: '0px',
     padding: '0rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    border:"1px solid green",
     // backgroundColor:'red',
   };
 
@@ -46,7 +47,7 @@ const DonutChart = () => {
 
   return (
     <div id="chart" style={chartStyles}>
-      <ReactApexChart options={chartData.options} series={chartData.series} type="donut" height={"80%"} />
+      <ReactApexChart options={chartData.options} series={chartData.series} type="donut" height={"70%"} />
     </div>
   );
 };
