@@ -34,7 +34,7 @@ root.render(
             <Route path="/support" element={<Support />} />
           </Route>
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
 
           <Route path="/org" element={<OrganisationLogin />} />
         </Routes>
