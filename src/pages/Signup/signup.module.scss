@@ -111,34 +111,12 @@
       .buttons {
         display: flex;
         gap: 1.5rem;
-        .button {
-          width: 100%;
-          display: inline-flex;
-          border-radius: 0.25rem;
-          padding: 0.75rem 1.5rem;
-          color: black;
-          text-align: center;
-          display: flex;
-          
-          align-items: center;
-        //   justify-content: center;
-          @include t4Bold;
-          background: white;
-          border: 0.0625rem solid  #e2e3e6;
-          cursor: pointer;
-        
-          // .img{
-          //   width: 2rem;
-          // }
-
-          img{
+       
+          .img{
+            width: 1.5rem;
             height: 1.5rem;
-            padding: 0;
-            
-            margin: 0;
-            margin-right: .8rem;
           }
-        }
+
       }
     }
   }

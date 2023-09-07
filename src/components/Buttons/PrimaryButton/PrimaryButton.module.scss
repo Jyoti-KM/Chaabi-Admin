@@ -16,23 +16,27 @@
   border: .06rem solid $primary50;
   cursor: pointer;
   white-space: nowrap;
+
+  &:not(:disabled):hover {
+    box-shadow: 0rem 0rem 0rem .25rem $primary90;
+  }
+
+  &:not(:disabled):active {
+    box-shadow: 0rem 0rem 0rem .25rem $primary90;
+    background: $primary40;
+  }
+
+  &[disabled] {
+    border: 1rem solid $neutral90;
+    background: $neutral90;
+    color: $neutral100;
+    cursor: not-allowed;
+  }
+  
 }
 
-.primaryBtnLightTheme:not(:disabled):hover {
-  box-shadow: 0rem 0rem 0rem .25rem $primary90;
-}
 
-.primaryBtnLightTheme:not(:disabled):active {
-  box-shadow: 0rem 0rem 0rem .25rem $primary90;
-  background: $primary40;
-}
 
-.primaryBtnLightTheme[disabled] {
-  border: 1rem solid $neutral90;
-  background: $neutral90;
-  color: $neutral100;
-  cursor: not-allowed;
-}
 
 // dark mode classes
 .primaryBtnDarkTheme {

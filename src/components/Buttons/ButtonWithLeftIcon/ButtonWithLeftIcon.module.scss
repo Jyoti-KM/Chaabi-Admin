@@ -1,6 +1,7 @@
 @import '../../../global-styles/global.module.scss';
 
 .btnWithLeftIconLightTheme {
+  width: 100%;
   display: inline-flex;
   padding: 0.75rem 1.5rem;
   justify-content: center;
@@ -12,11 +13,33 @@
   color: $neutral20;
   @include t3Med;
   cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+  @include shadowSmLightTheme;
 
-  
+  &:not(:disabled):hover {
+    box-shadow: 0rem 0rem 0rem .25rem $primary90;
+    transform: translateY(-2px);
+    @include shadowMdLightTheme;
+  }
+
+  &:not(:disabled):active {
+   
+    box-shadow: 0rem 0rem 0.25rem .25rem $primary90;
+    background: $neutral95;
+    transform: translateY(1px);
+    @include shadowLgLightTheme;
+  }
+
+  &[disabled] {
+    border: 1rem solid $neutral90;
+    background: $neutral90;
+    color: $neutral100;
+    cursor: not-allowed;
+  }
 }
 
 .btnWithLeftIconDarkTheme {
+  width: 100%;
   display: inline-flex;
   padding: 0.75rem 1.5rem;
   justify-content: center;
@@ -28,4 +51,27 @@
   color: $neutral20;
   @include t3Med;
   cursor: pointer;
+  @include shadowSmDarkTheme;
+  transition: all 0.3s ease-in-out; 
+
+  &:not(:disabled):hover {
+    box-shadow: 0rem 0rem 0rem .25rem $primary90;
+    transform: translateY(-2px);
+    @include shadowMdDarkTheme;
+  }
+
+  &:not(:disabled):active {
+   
+    box-shadow: 0rem 0rem 0.25rem .25rem $primary90;
+    background: $neutral95;
+    transform: translateY(1px);
+    @include shadowLgDarkTheme;
+  }
+
+  &[disabled] {
+    border: 1rem solid $neutral90;
+    background: $neutral90;
+    color: $neutral100;
+    cursor: not-allowed;
+  }
 }
