@@ -7,7 +7,7 @@ const SpineChart = () => {
     width: '100%',
     margin: '0px',
     padding: '0rem',
-    // backgroundColor:'red',
+    backgroundColor:'red',
   };
   const toolbarStyles = `
   .apexcharts-toolbar {

@@ -7,9 +7,6 @@ const Spine2Chart = () => {
       height:'13vw',
     width:"100%",
         overflow:"hidden",
-            // Define your inline styles here
-            // height: '350px',
-            // border: '1px solid #ccc',
             margin: '0px',
             padding: '0.5rem',
         };
