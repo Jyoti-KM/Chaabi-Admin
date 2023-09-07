@@ -33,7 +33,7 @@ const SignUp = () => {
           <NumberInput label="Phone Number" helperText="" type="tel" placeholder="9999999999"/>
           </div>
           <div className={styles.field_password}>
-          <TextInput label="Set Your Password" helperText="" type="text" placeholder="Enter your password"/>
+          <TextInput label="Set Your Password" helperText="" type="password" placeholder="Enter your password"/>
           <TextInput label="Confirm Your Password" helperText=""  type="password" placeholder="Confirm password"/>
           </div>
            

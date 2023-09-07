@@ -72,7 +72,8 @@
 
   &::placeholder {
     
-    color:#AAACAF;
+    color:$neutral70;
+    @include t3Lite;
   }
   }
 
