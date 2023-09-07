@@ -8,6 +8,7 @@ import googleIcon from "./Asset/google_icon.svg";
 import microsoftIcon from './Asset/Microsoft_icon.svg';
 import ScreenImage from './Asset/screen.svg';
 import companyLogo from './Asset/Zippe.svg';
+import ButtonWithLeftIcon from "../../components/Buttons/ButtonWithLeftIcon/ButtonWithLeftIcon";
 
 const Login = () => {
   return (
@@ -45,19 +46,8 @@ const Login = () => {
             </div>
           </div>
           <div className={styles.buttons}>
-            <button className={styles.button}>
-            <div className={styles.img}>
-            <img src={googleIcon} alt="google icon" />
-            </div>
-            
-            Signup with Google
-            </button>
-            <button className={styles.button}>
-            <div className={styles.img}>
-            <img src={microsoftIcon} alt="Microsoft icon" />
-            </div>
-           
-            Signup with Microsoft</button>
+          <ButtonWithLeftIcon src={googleIcon} text="Sign up with Google" />
+              <ButtonWithLeftIcon src={microsoftIcon} text="Sign up with  Microsoft" />
           </div>
           </div>
          

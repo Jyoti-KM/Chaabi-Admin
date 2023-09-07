@@ -100,36 +100,7 @@
         display: flex;
         gap: 1rem;
         
-        .button {
-          width: 100%;
-          display: inline-flex;
-          border-radius: 0.25rem;
-          padding: 0.75rem 1rem;
-          color: black;
-          // text-align: center;
-          display: flex;
-
-          align-items: center;
-          gap: 0.5rem;
-          //   justify-content: center;
-          @include t4Bold;
-          background: $neutral100;
-          border: 0.0625rem solid $neutral90;
-          cursor: pointer;
-          white-space: nowrap;
-
-          .img {
-            height: 1.5rem;
-            width: 1.5rem;
-            img{
-            height: 1.5rem;
-            padding: 0;
-
-            margin: 0;
-            // margin-right: .2rem;
-            }
-          }
-        }
+        
       }
     }
   }

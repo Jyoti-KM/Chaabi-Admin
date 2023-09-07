@@ -10,11 +10,21 @@
   border-radius: 0.25rem;
   border: .06rem solid $neutral90;
   background: $neutral100;
-  color: $neutral20;
-  @include t3Med;
+  color: $neutral10;
+  
   cursor: pointer;
   transition: all 0.3s ease-in-out; 
   @include shadowSmLightTheme;
+  white-space: nowrap;
+ 
+  
+    @include t4Bold;
+
+  .img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: .5rem;
+  }
 
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
