@@ -8,18 +8,18 @@ function TextInput(props) {
   return (
     <div className={styles.emailInputContainer}>
       <label
-        htmlFor="email-input"
+        htmlFor="text-input"
         className={isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme}
       >
-        {props.label}
+        {props.label}{props.isRequired ? "" : <span> *</span>}
       </label>
       <input
         className={isDarkMode ? styles.inputDarkTheme : styles.inputLightTheme}
-        type="email"
-        name="email-input"
-        id="email-input"
-        disabled={props.disabled}
-        required={props.required}
+        type={props.type}
+       
+        id="text-input"
+        disabled={props.isDisabled}
+        required={props.isRequired}
         placeholder={props.placeholder}
       />
       <p

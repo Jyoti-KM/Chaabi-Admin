@@ -7,12 +7,12 @@ function NumberInput(props) {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
 
   return (
-    <div className={styles.phoneInputContainer}>
+    <form className={styles.phoneInputContainer}>
       <label
         htmlFor="phone-input"
         className={isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme}
       >
-        {props.label}
+        {props.label}{props.isRequired ? "" : <span> *</span>}
       </label>
 
       <div
@@ -33,12 +33,12 @@ function NumberInput(props) {
           className={
             isDarkMode ? styles.inputDarkTheme : styles.inputLightTheme
           }
-          type="tel"
+          type={props.type}
           name="phone-input"
           id="phone-input"
-          disabled={props.disabled}
-          required={props.required}
-          placeholder={props.placeholder}
+          disabled={props.isDisabled}
+        required={props.isRequired}
+        placeholder={props.placeholder}
         />
       </div>
       <p
@@ -48,7 +48,7 @@ function NumberInput(props) {
       >
         {props.helperText}
       </p>
-    </div>
+    </form>
   );
 }
 

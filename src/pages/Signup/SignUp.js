@@ -25,16 +25,16 @@ const SignUp = () => {
           <h2>Start Your Trial</h2>
           <div className={styles.field}>
           <div className={styles.field_name}>
-          <TextInput label="First Name" helperText="" />
-          <TextInput label="Last Name" helperText="" />
+          <TextInput label="First Name" helperText="" type="text" placeholder="Enter your first name" />
+          <TextInput label="Last Name" helperText=""  type="text" placeholder="Enter your last name"/>
           </div>
           <div className={styles.field_detail}>
-          <TextInput label="Email" helperText="" />
-          <NumberInput label="Phone Number" helperText="" />
+          <TextInput label="Email" helperText=""  type="email" placeholder="Enter your email address"/>
+          <NumberInput label="Phone Number" helperText="" type="tel" placeholder="9999999999"/>
           </div>
           <div className={styles.field_password}>
-          <TextInput label="Set Your Password" helperText="" />
-          <TextInput label="Confirm Your Password" helperText="" />
+          <TextInput label="Set Your Password" helperText="" type="text" placeholder="Enter your password"/>
+          <TextInput label="Confirm Your Password" helperText=""  type="password" placeholder="Confirm password"/>
           </div>
            
            <div className={styles.field_terms}>

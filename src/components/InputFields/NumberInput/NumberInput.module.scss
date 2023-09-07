@@ -5,19 +5,21 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: .25rem;
+  gap: 0rem;
   align-self: stretch;
 
   .labelLightTheme {
     color: $neutral50;
     @include t4Lite;
     cursor: pointer;
+    span{ color:$alert50;}
   }
 
   .labelDarkTheme {
     color: $neutral95;
     @include t4Lite;
     cursor: pointer;
+    span{ color:$alert50;}
   }
 
   .inputContainerLightTheme {
@@ -43,9 +45,9 @@
     .inputLightTheme {
       width: 100%;
       display: inline-flex;
-      padding: .75rem 1rem .75rem 1rem;
+      padding: .75rem 1rem .75rem 0rem;
       align-items: center;
-      gap: .5rem;
+      gap: .25rem;
       flex: 1 0 0;
       color: $neutral20;
       @include t3Reg;
@@ -76,7 +78,7 @@
 
     .dropdownDarkTheme {
       display: flex;
-      padding: 0.625rem 0.75rem 0.625rem 1rem;
+      padding: 0.625rem 0.75rem 0.625rem 0rem;
       align-items: center;
       gap: 0.25rem;
       align-self: stretch;
@@ -89,7 +91,7 @@
       display: inline-flex;
       padding: .75rem 1rem .75rem 1rem;
       align-items: center;
-      gap: .5rem;
+      gap: .25rem;
       flex: 1 0 0;
       color: $neutral20;
       @include t3Reg;

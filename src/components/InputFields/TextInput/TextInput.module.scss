@@ -12,13 +12,15 @@
     color: $neutral50;
     @include t4Lite;
     cursor: pointer;
+
+    span{ color:$alert50;}
   }
 
   .inputLightTheme {
     display: flex;
     padding: .75rem 1rem;
     align-items: center;
-    gap: .5rem;
+    gap: .25rem;
     align-self: stretch;
     border-radius: 0.25rem;
     border: 0.0625rem solid $neutral90;
@@ -52,6 +54,7 @@
     color: $neutral95;
     @include t4Lite;
     cursor: pointer;
+    span{ color:$alert50;}
   }
 
   .inputDarkTheme {
@@ -65,6 +68,12 @@
     background: $neutral100;
     color: $neutral20;
     @include t3Reg;
+
+
+  &::placeholder {
+    
+    color:#AAACAF;
+  }
   }
 
   .inputDarkTheme:focus {
@@ -87,3 +96,6 @@
     margin: 0rem;
   }
 }
+
+
+
