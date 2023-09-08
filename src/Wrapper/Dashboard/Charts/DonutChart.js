@@ -10,7 +10,7 @@ const DonutChart = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border:"1px solid green",
+    // border:"1px solid green",
     // backgroundColor:'red',
   };
 

@@ -9,7 +9,7 @@ const Spine2Chart = () => {
         // overflow:"hidden",
             margin: '0px',
             padding: '0.5rem',
-            border:"1px solid green",
+            // border:"1px solid green",
         };
 
   const chartData = {

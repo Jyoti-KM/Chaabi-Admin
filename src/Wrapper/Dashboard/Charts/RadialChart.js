@@ -15,7 +15,7 @@ const RadialChart = () => {
         alignItems: 'center',
         justifyContent: 'center',
         // overflow:"hidden",
-        border:"1px solid green",
+        // border:"1px solid green",
     }
 
     const radialStyles = `

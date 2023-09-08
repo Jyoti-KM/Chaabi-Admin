@@ -46,12 +46,14 @@
     display: flex;
   
     gap:1.5rem;
+    
 
     .div7 , .div8{
       // height: 16dvwh
       height: calc(100% - 20vw) / 2;
       overflow: hidden;
         flex: 1;
+        // margin-bottom: 1.5rem;
         // background-color: rgb(201, 63, 192);
     }
 

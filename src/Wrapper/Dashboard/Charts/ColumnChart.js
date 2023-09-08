@@ -10,7 +10,7 @@ const ColumnChart = () => {
     height:'14vw',
     // height: '100%',
     width:"100%",
-    border:"1px solid green",
+    // border:"1px solid green",
     // overflow:"hidden",
 }
 
