@@ -122,7 +122,8 @@ function Dashboard() {
 
   return (
     <div className={styles.dashboardContainer}>
-     {dashboardContent.map((content, index) => (
+    <div className={styles.column1}>
+    {dashboardContent.map((content, index) => (
         <div className={styles[`div${index + 1}`]} key={index}>
           <div className={styles.heading}>
             <div className={styles.heading_left}>
@@ -143,6 +144,8 @@ function Dashboard() {
           </div>
         </div>
       ))}
+    </div>
+   
       <div className={styles.div5}>
         <div className={styles.div5_heading}>
           <h2>Training Funnel</h2>
