@@ -122,7 +122,7 @@ function Dashboard() {
 
   return (
     <div className={styles.dashboardContainer}>
-    <div className={styles.column1}>
+     <div className={styles.column1}>
     {dashboardContent.map((content, index) => (
         <div className={styles[`div${index + 1}`]} key={index}>
           <div className={styles.heading}>
@@ -144,9 +144,10 @@ function Dashboard() {
           </div>
         </div>
       ))}
-    </div>
+  </div>
    
-      <div className={styles.div5}>
+   <div className={styles.column2}> 
+   <div className={styles.div5}>
         <div className={styles.div5_heading}>
           <h2>Training Funnel</h2>
 
@@ -166,7 +167,9 @@ function Dashboard() {
           <DonutChart />
         </div>
       </div>
-      <div className={styles.div7}>
+   </div>
+  <div  className={styles.column3}>
+  <div className={styles.div7}>
         <div className={styles.div7_left}>
           <h2>Quiz Summary</h2>
           <DropDown options={options} />
@@ -186,6 +189,8 @@ function Dashboard() {
           <Spine2Chart />
         </div>
       </div>
+  </div>
+     
     </div>
   );
 }

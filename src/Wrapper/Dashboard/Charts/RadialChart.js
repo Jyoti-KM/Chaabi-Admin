@@ -7,15 +7,27 @@ const RadialChart = () => {
     const chartStyles = {
         // height:'100%',
         // width:'20vw',
-        height: '14vw',
+        height: '20vw',
         margin: '0px',
-        padding: '0rem',
+        padding: '1rem',
+        paddingBottom:'0',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         // overflow:"hidden",
         border:"1px solid green",
     }
+
+    const radialStyles = `
+    .apexcharts-svg {
+      overflow: visible !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+  
+   
+  `;
   const chartData = {
     series: [44, 55, 67, 83],
     options: {
@@ -49,6 +61,7 @@ const RadialChart = () => {
 
   return (
     <div id="chart" style={chartStyles}>
+      <style>{radialStyles}</style> 
       <ReactApexChart options={chartData.options} series={chartData.series} type="radialBar" height={"110%"}/>
     </div>
   );

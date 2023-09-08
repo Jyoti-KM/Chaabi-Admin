@@ -1,6 +1,9 @@
 @import "../../global-styles/global.module.scss";
 .dashboardContainer {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
  
 
   // display: grid;
@@ -11,7 +14,7 @@
 
   .column1{
     display: flex;
-    // height: clamp(4rem ,8vw + 2rem , 8rem );
+  
     gap:1.5rem;
 
     .div1 ,.div2 , .div3 , .div4{
@@ -19,8 +22,39 @@
       height: 11vw;
       overflow: hidden;
         flex: 1;
-        background-color: red;
+        // background-color: red;
     }
+  }
+
+  .column2{
+    display: flex;
+  
+    gap:1.5rem;
+
+    .div5 , .div6{
+      // height: 16dvw;
+      height: calc(100% - 20vw) / 2;
+      overflow: hidden;
+        flex: 1;
+        // background-color: rgb(120, 177, 120);
+    }
+
+  }
+
+
+  .column3{
+    display: flex;
+  
+    gap:1.5rem;
+
+    .div7 , .div8{
+      // height: 16dvwh
+      height: calc(100% - 20vw) / 2;
+      overflow: hidden;
+        flex: 1;
+        // background-color: rgb(201, 63, 192);
+    }
+
   }
 
    .heading {
@@ -454,8 +488,8 @@
     }
   }
   .div5 {
-    min-height: 22rem;
-    overflow: visible;
+    // min-height: 22rem;
+    // overflow: visible;
     grid-area: 4 / 1 / 9 / 3;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
@@ -480,8 +514,8 @@
     }
   }
   .div6 {
-    min-height: 17rem;
-    overflow: visible;
+    // min-height: 17rem;
+    // overflow: visible;
     grid-area: 4 / 3 / 8 / 5;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
@@ -502,8 +536,8 @@
     }
   }
   .div7 {
-    height: 15rem;
-    overflow: visible;
+    // height: 15rem;
+    // overflow: visible;
     grid-area: 9 / 1 / 13 / 3;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
@@ -524,8 +558,8 @@
     }
   }
   .div8 {
-    height: 19.5rem;
-    overflow: visible;
+    // height: 19.5rem;
+    // overflow: visible;
     grid-area: 8 / 3 / 13 / 5;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
