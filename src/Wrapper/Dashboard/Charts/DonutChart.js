@@ -6,7 +6,7 @@ const DonutChart = () => {
     height: '20vw', // Set the height to 100% to fill the container vertically
     width: '100%',  // Set the width to 100% to fill the container horizontally
     margin: '0px',
-    padding: '1vw',
+    padding: '2vw',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

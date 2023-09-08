@@ -7,6 +7,7 @@ const SpineChart = () => {
     width: '100%',
     margin: '0px',
     padding: '0rem',
+    paddingBottom:'1rem',
     // border:"1px solid green",
   };
   const toolbarStyles = `
