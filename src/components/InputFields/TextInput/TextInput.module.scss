@@ -10,7 +10,7 @@
 
   .labelLightTheme {
     color: $neutral50;
-    @extend .t4Lite;
+    @extend .t4Med;
     cursor: pointer;
 
     span{ color:$alert50;}
@@ -27,6 +27,13 @@
     background: $neutral100;
     color: $neutral20;
     @extend .t3Reg;
+
+
+  &::placeholder {
+    
+    color:$neutral70;
+    @extend .t3Lite;
+  }
   }
 
   .inputLightTheme:focus {
