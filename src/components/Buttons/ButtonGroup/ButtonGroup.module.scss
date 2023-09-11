@@ -20,6 +20,10 @@
     color: $neutral20;
     @extend .t4Reg;
     cursor: pointer;
+
+    &:hover{
+      background-color:$neutral99 ;
+    }
    
   }
 

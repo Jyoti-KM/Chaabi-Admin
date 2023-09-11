@@ -1,0 +1,64 @@
+@import '../../../global-styles/global.module.scss';
+
+.TrainingDetail {
+    height: 100%;
+    width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+
+  .div1 {
+    grid-area: 1 / 1 / 11 / 2;
+    @extend .lightThemeLowest;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 5;
+    @extend .lightThemeLowest;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_left{
+
+    }
+
+    &_right{
+        display: flex;
+        gap: 1rem;
+    }
+  }
+  .div3 {
+    grid-area: 2 / 2 / 11 / 5;
+    @extend .lightThemeLowest;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    
+    
+   .container{
+    height: 100%;
+    width: 100%;
+    @extend .lightThemeRegular; 
+    display: flex;
+    flex-direction: column;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+       
+       }
+       &__middle{
+   
+       }
+       &__bottom{
+   
+       }
+   }
+    
+  }
+}

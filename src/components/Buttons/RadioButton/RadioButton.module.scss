@@ -7,8 +7,9 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 0.0625rem solid $neutral90;
+  // border: 0.0625rem solid $neutral90;
   background: $neutral100;
+  border: .1rem solid $primary50;
 
   .radioBtnIcon {
     flex-shrink: 0;

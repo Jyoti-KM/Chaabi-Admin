@@ -40,5 +40,9 @@
     @extend .t3Reg;
     border-bottom: 0.0938rem solid $neutral90;
     cursor: pointer;
+
+    &:hover{
+      background-color:$neutral99 ;
+    }
   }
 }

@@ -28,7 +28,7 @@
 
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
-    transform: translateY(-2px);
+    transform: translateY(-.2rem);
    @extend .shadowMdLightTheme;
   }
 
@@ -36,7 +36,7 @@
    
     box-shadow: 0rem 0rem 0.25rem .25rem $primary90;
     background: $neutral95;
-    transform: translateY(1px);
+    transform: translateY(.1rem);
    @extend .shadowLgLightTheme;
   }
 

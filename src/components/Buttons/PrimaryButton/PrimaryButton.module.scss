@@ -16,14 +16,17 @@
   border: .06rem solid $primary50;
   cursor: pointer;
   white-space: nowrap;
+  transition: all 0.3s ease-in-out; 
 
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
+    transform: translateY(-.2rem);
   }
 
   &:not(:disabled):active {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
     background: $primary40;
+    transform: translateY(.1rem);
   }
 
   &[disabled] {

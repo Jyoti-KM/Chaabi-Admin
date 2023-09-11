@@ -17,6 +17,10 @@
     gap: 0.5rem;
     border: 0.0625rem solid $neutral90;
     background: $neutral100;
+
+    &:hover{
+      background-color:$neutral99 ;
+    }
   }
 }
 
@@ -36,5 +40,9 @@
     gap: 0.5rem;
     border: 0.0625rem solid transparent;
     background: $neutral100;
+
+    &:hover{
+      background-color:$neutral99 ;
+    }
   }
 }

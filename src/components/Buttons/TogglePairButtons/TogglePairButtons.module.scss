@@ -53,6 +53,10 @@
       color: $neutral20;
       @extend .t3Reg;
       cursor: pointer;
+
+    &:hover{
+      background-color:$neutral99 ;
+    }
     }
   }
 }

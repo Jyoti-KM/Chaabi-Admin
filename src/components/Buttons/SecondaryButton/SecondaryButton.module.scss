@@ -9,7 +9,7 @@
   color: $neutral20;
   background-color: transparent;
   white-space: nowrap;
-
+  transition: all 0.3s ease-in-out; 
   
   @extend .t3Med;
   text-align: center;
@@ -19,12 +19,14 @@
 
 .secondaryBtnLightTheme:not(:disabled):hover {
   border: .06rem solid $primary50;
+  transform: translateY(-.2rem);
 }
 
 .secondaryBtnLightTheme:not(:disabled):active {
   border: .06rem solid $primary50;
   background: $neutral99;
   box-shadow: 0px 0px 0px 4px $primary90;
+  transform: translateY(.1rem);
 }
 
 .secondaryBtnLightTheme[disabled] {
