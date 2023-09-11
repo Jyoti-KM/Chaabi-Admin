@@ -27,11 +27,13 @@
         gap: 1rem;
     }
   }
+
   .div2 {
     grid-area: 2 / 1 / 8 / 4;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
     padding: 1rem;
+    overflow: scroll;
 
     .container{
         gap: 1rem;
@@ -51,19 +53,30 @@
     &__container{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        // gap: 1rem;
+        // background-color: red;
 
         .text{
+         
             margin: .5rem 0;
             display: flex;
             gap: 1rem;
+            
+           
         }
-        .subText{
+     
+        .check{
+          display: flex;
+          gap: 1.5rem;
+          .checkMark{
             display: flex;
-
-          &_1{
-            display: flex;
+            gap:.5rem;
+            justify-content: center;
+            align-items: center;
           }
+         
+        }
+       
             
         }
     }
@@ -74,4 +87,4 @@
     border-radius: 0.25rem;
     padding: 1rem;
   }
-}
+

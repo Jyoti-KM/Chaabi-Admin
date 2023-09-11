@@ -16,16 +16,16 @@
   background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.3s ease-in-out; 
+  // transition: all 0.3s ease-in-out; 
 
 
 &:not(:disabled):hover {
   border: .06rem solid $neutral80;
-  transform: translateY(-.2rem);
+  // transform: translateY(-.2rem);
 }
 
 &:not(:disabled):active {
-  transform: translateY(.1rem);
+  // transform: translateY(.1rem);
   color: $primary50;
   border: .06rem solid $neutral80;
   background-color: $neutral90;
