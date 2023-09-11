@@ -1,8 +1,8 @@
-@import '../../../global-styles/global.module.scss';
+@import "../../../global-styles/global.module.scss";
 
 .TrainingDetail {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -25,13 +25,12 @@
     justify-content: space-between;
     align-items: center;
 
-    &_left{
-
+    &_left {
     }
 
-    &_right{
-        display: flex;
-        gap: 1rem;
+    &_right {
+      display: flex;
+      gap: 1rem;
     }
   }
   .div3 {
@@ -39,26 +38,58 @@
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
     padding: 1rem;
-    
-    
-   .container{
-    height: 100%;
-    width: 100%;
-    @extend .lightThemeRegular; 
-    display: flex;
-    flex-direction: column;
-    &__top{
+
+    .container {
+      height: 100%;
+      width: 100%;
+      @extend .lightThemeRegular;
+      display: flex;
+      flex-direction: column;
+      &__top {
         display: flex;
         justify-content: space-between;
+      }
+
+      &__bottom {
+        padding: 1rem;
+        width: 100%;
        
-       }
-       &__middle{
-   
-       }
-       &__bottom{
-   
-       }
-   }
-    
+        .ques{
+         
+          display: flex;
+          gap: 10vw;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 2rem;
+
+        }
+
+        .fields{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: $neutral100;
+          padding: 1rem;
+          border: .75rem;
+          width: 60%;
+          margin-bottom: .5rem;
+
+          &_left{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+          }
+          &_right{
+
+          }
+
+        }
+
+        .button{
+          width: 60%;
+        }
+      }
+    }
   }
 }

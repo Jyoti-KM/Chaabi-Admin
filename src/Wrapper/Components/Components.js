@@ -263,13 +263,13 @@ function Components() {
       </div>
 
       <div>
-        btn w/th left icon :{" "}
+        btn w/th left icon : 
         <ButtonWithLeftIcon src={uploadIcon} text="Image" />
          
       </div>
 
       <div>
-        btn w/th right icon :{" "}
+        btn w/th right icon : 
         <ButtonWithRightIcon>
           <img src={cancelIcon} alt="#" />
           all time

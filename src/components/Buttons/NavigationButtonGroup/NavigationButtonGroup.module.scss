@@ -17,9 +17,13 @@
     gap: 0.5rem;
     border: 0.0625rem solid $neutral90;
     background: $neutral100;
+    height: 100%;
 
     &:hover{
       background-color:$neutral99 ;
+    }
+    &:active{
+      background-color:$neutral90;
     }
   }
 }
