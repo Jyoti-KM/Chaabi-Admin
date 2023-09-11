@@ -1,8 +1,8 @@
 @import "../../../global-styles/global.module.scss";
 
 .TrainingDetail {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  max-width: 100%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
