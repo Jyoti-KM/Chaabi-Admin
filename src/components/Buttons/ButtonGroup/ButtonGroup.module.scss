@@ -20,6 +20,7 @@
     color: $neutral20;
     @extend .t4Reg;
     cursor: pointer;
+    white-space: nowrap;
 
     &:hover{
       background-color:$neutral99 ;
@@ -39,6 +40,8 @@
     color: $neutral20;
     @extend .t4Bold;
     cursor: pointer;
+    white-space: nowrap;
+
     
   }
 }
@@ -61,6 +64,8 @@
     color: $neutral20;
     @extend .t4Reg;
     cursor: pointer;
+    white-space: nowrap;
+
   }
 
   .selectedBtnDarkTheme {
@@ -75,5 +80,7 @@
     color: $neutral20;
     @extend .t4Bold;
     cursor: pointer;
+    white-space: nowrap;
+
   }
 }
