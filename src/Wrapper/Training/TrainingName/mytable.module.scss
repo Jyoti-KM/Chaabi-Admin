@@ -1,16 +1,28 @@
 @import '../../../global-styles/global.module.scss';
 
+.mytable{
+  border: .1rem solid $neutral90;
+}
+
+.heading{
+  @extend .h6Med;
+  color: $neutral40;
+  padding: 1.5rem;
+}
 .table{
 
     width: 100%;
     height: 100%;
+    border-collapse: collapse;
+    
 
     .header{
         background-color: $neutral95;
-        padding: 1rem;
+       
+        
 
         width: 100%;
-        border-bottom: .2rem solid $neutral30;
+        border-bottom: .2rem solid $neutral80;
 
        
         .name{
@@ -18,43 +30,49 @@
           padding: 1rem .5rem;
           @extend .t3Med;
           width: 50%;
+          text-align: left;
         }
         .completed {
          width: 30%;
          padding: 1rem .5rem; 
          @extend .t3Med;
+         text-align: left;
         }
 
         .score{
           width: 40%;
           padding: .5rem ;
           @extend .t3Med;
+          text-align: left;
         }
 
 
     }
     .row{
-        border: 1rem solid black;
+        border: .1rem solid $neutral90;
         @extend .t3Reg;
         padding: 1rem ; 
-        // background-color: red;
+        
         
 
  
         .name{
             width: 50%;
             padding: 1rem;
+            margin-left: 1rem;
             
           }
           .completed {
            width: 20%;
            padding: 1rem ; 
+           margin-left: 1rem;
            
           }
   
           .score{
             width: 30%;
             padding: 1rem ;
+            margin-left: 1rem;
            
           }
   

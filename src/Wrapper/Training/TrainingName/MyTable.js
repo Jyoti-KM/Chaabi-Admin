@@ -13,8 +13,11 @@ const data = [
 
 const MyTable = () => {
   return (
-    <div className={styles.table}>
-          <table>
+    <div className={styles.mytable}>
+          <h2 className={styles.heading}>
+          Top Learners
+          </h2>
+          <table className={styles.table}>
              
             <thead className={styles.header}>
               <tr>
@@ -23,7 +26,7 @@ const MyTable = () => {
                 <th className={styles.score}>Avg Quiz Score</th>
               </tr>
             </thead>
-            <tbody >
+            <tbody  >
               {data.map((item, index) => (
                 <tr key={index} className={styles.row} >
                   <td className={styles.name}>{item.name}</td>
