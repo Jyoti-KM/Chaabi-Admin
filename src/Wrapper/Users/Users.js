@@ -295,7 +295,7 @@ function Users() {
         </div>
       </div>
       <div className={styles.usersContainer__buttom} >
-        <Table columnNames={columnNames} tableRows={tableRows} />
+        <Table tableHeading="All Users Groups" columnNames={columnNames} tableRows={tableRows} />
       </div>
     </div>
   );

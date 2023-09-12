@@ -18,6 +18,7 @@ import OrganisationLogin from "./pages/Org/OrgLogin";
 import Login from "./pages/Login/Login";
 import Userdetail from "./Wrapper/Users/UserDetail/Userdetail";
 import TrainingDetail from "./Wrapper/Training/TrainingDetail/TrainingDetail";
+import TrainingName from "./Wrapper/Training/TrainingName/TrainingName";
 // import Training from "./pages/Training/Training";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -36,6 +37,7 @@ root.render(
             <Route path="/support" element={<Support />} />
             <Route path="/userdetail" element={<Userdetail />} />
             <Route path="/trainingdetail" element={<TrainingDetail />} />
+            <Route path="/trainingname" element ={<TrainingName/>} />
           </Route>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />

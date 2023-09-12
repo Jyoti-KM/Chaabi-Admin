@@ -13,6 +13,7 @@ import CheckBox from '../../components/Buttons/CheckBox/CheckBox';
 import closeImage from '../../assets/close.svg';
 import { createPortal } from "react-dom";
 import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton";
+
 const options = ["Training Name 1", "Training Name 2", "Training Name 3"];
 
 

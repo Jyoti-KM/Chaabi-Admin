@@ -36,7 +36,7 @@ const emailInput = {
   helperText: "",
 };
 
-function Table({ columnNames, tableRows }) {
+function Table({ tableHeading ,columnNames, tableRows }) {
   const [showColumnFilter, setShowColumnFilter] = useState(false);
   const [showFilter, setShowFilter] = useState(false);
   const [rows, setRows] = useState(tableRows);
@@ -81,7 +81,7 @@ function Table({ columnNames, tableRows }) {
   return (
     <div className={styles.tableContainer}>
       <div className={styles.header}>
-        <p className={styles.header_left}>Table Heading</p>
+        <p className={styles.header_left}>{tableHeading}</p>
         <div className={styles.header_right}>
           <img src={filterIcon} alt="filter button" onClick={handleFilter} />
           <img

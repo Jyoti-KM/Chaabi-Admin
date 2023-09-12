@@ -43,8 +43,12 @@ function TableItem({ item, onDelete }) {
     setIsNameEmpty(false);
   }
 
+  const emptyFunc = () => {
+   return;
+  }
+
   return (
-    <tr className={styles.tableItem}>
+    <tr className={styles.tableItem} onClick={item.onClick ?? emptyFunc}>
       <td className={styles.nameColumn}>
         <div>
           <ToggleButton />

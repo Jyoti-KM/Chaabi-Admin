@@ -10,7 +10,7 @@
 
   .labelLightTheme {
     color: $neutral50;
-    @extend .t4Med;
+    @extend .t3Med;
     cursor: pointer;
 
     span{ color:$alert50;}
@@ -26,13 +26,13 @@
     border: 0.0625rem solid $neutral90;
     background: $neutral100;
     color: $neutral20;
-    @extend .t3Reg;
+    @extend .t4Reg;
 
 
   &::placeholder {
     
     color:$neutral70;
-    @extend .t3Lite;
+    @extend .t4Lite;
   }
   }
 
@@ -62,6 +62,7 @@
     @extend .t4Lite;
     cursor: pointer;
     span{ color:$alert50;}
+  
   }
 
   .inputDarkTheme {
@@ -74,13 +75,13 @@
     border: 0.0625rem solid $neutral70;
     background: $neutral100;
     color: $neutral20;
-    @extend .t3Reg;
+    @extend .t4Reg;
 
 
   &::placeholder {
     
     color:$neutral70;
-    @extend .t3Lite;
+    @extend .t4Lite;
   }
   }
 

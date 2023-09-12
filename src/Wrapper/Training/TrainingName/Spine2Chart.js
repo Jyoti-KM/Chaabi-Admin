@@ -4,7 +4,7 @@ import ReactApexChart from "react-apexcharts";
 
 const Spine2Chart = () => {
   const chartStyles = {
-    height: "90%",
+    height: "100%",
     width: "100%",
     // overflow:"hidden",
     margin: "0px",
@@ -17,6 +17,7 @@ const Spine2Chart = () => {
           display: none !important;
         }
       `;
+
   const chartData = {
     series: [
       {
@@ -78,7 +79,7 @@ const Spine2Chart = () => {
 
   return (
     <div id="chart" style={chartStyles}>
-      <style>{toolbarStyles}</style> 
+     <style>{toolbarStyles}</style> 
       <ReactApexChart
         options={chartData.options}
         series={chartData.series}
