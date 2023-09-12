@@ -1,8 +1,9 @@
 @import "../../../global-styles/global.module.scss";
 
 .Userdetail {
-    min-height: 100%;
+   height: 100%;
     max-width: 100%;
+    
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -33,7 +34,7 @@
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
     padding: 1rem;
-    overflow: scroll;
+    
 
     .container{
         gap: 1rem;
@@ -95,5 +96,14 @@
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
     padding: 1rem;
+
+    // &:nth-child(1){
+    //   height: 20%;
+    // }
+    // &:nth-child(2){
+    //   height: 80%;
+     
+    // }
+
   }
 
