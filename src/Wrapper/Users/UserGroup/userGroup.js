@@ -234,7 +234,7 @@ function Users() {
         <ButtonGroup buttons={buttons}  />
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton >Bulk upload</SecondaryButton>
+          <SecondaryButton>Bulk upload</SecondaryButton>
           <PrimaryButton onClick={AddUserGroups}>Add User Group</PrimaryButton>
 
           {addUserGroup &&

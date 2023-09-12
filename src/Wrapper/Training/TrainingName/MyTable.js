@@ -7,6 +7,12 @@ const data = [
   { name: 'Abc', time: '3 days', percentage: '59%' },
  
   { name: 'number', time: '9 days', percentage: '47%' },
+  
+  { name: 'Puneet Dhiman', time: '12 hours ', percentage: '94%' },
+ 
+  { name: 'Abc', time: '3 days', percentage: '59%' },
+ 
+  { name: 'number', time: '9 days', percentage: '47%' },
  
   
 ];

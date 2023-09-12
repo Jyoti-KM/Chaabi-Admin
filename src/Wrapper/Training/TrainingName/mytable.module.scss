@@ -53,6 +53,27 @@
         @extend .t3Reg;
         padding: 1rem ; 
         
+
+    &:nth-child(1) {
+      @extend .h6Med;
+    }
+
+    &:nth-child(2) { 
+      @extend .t1Med;
+    }
+
+    &:nth-child(3) {
+      @extend .t2Med;
+    }
+    &:nth-child(4) {
+      @extend .t3Med;
+    }
+    &:nth-child(5) {
+      @extend .t4Med;
+    }
+    &:nth-child(6) {
+      @extend .t5Med;
+    }
         
 
  
