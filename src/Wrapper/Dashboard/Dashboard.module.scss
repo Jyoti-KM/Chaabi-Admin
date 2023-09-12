@@ -7,11 +7,7 @@
   padding-bottom: 1.5rem;
  
 
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(12, 1fr);
-  // grid-column-gap: 1.5rem;
-  // grid-row-gap: 1.5rem;
+ 
 
   .column1{
     display: flex;
@@ -23,8 +19,7 @@
       height: 11vw;
       overflow: hidden;
         flex: 1;
-        // padding-bottom: 1rem;
-        // background-color: red;
+       
     }
   }
 
@@ -34,11 +29,11 @@
     gap:1.5rem;
 
     .div5 , .div6{
-      // height: 16dvw;
+      
       height: calc(100% - 20vw) / 2;
       overflow: hidden;
         flex: 1;
-        // background-color: rgb(120, 177, 120);
+       
     }
 
   }
@@ -492,27 +487,24 @@
     }
   }
   .div5 {
-    // min-height: 22rem;
-    // overflow: visible;
+   
     grid-area: 4 / 1 / 9 / 3;
     @extend .lightThemeLowest;
     border-radius: 0.25rem;
 
     &_heading {
-      padding: 1rem;
-      width: 100%;
-      height: 20%;
-      display: flex;
-      margin-top: .5rem ;
-      margin-bottom: 1rem;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20%;
-      h2{
-        white-space: nowrap;
-      }
+      
 
-    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: .3rem;
+        gap: 20%;
+
+        h2{
+          white-space: nowrap;
+        }
     }
 
     .chart {
@@ -572,14 +564,12 @@
     border-radius: 0.25rem;
 
     &_heading {
-      padding: 1rem;
-      width: 100%;
-      height: 20%;
+     
       display: flex;
-      margin-top: .5rem ;
-      margin-bottom: 1rem;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem;
+      margin-bottom: .3rem;
       gap: 20%;
 
       h2{

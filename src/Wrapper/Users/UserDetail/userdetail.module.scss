@@ -56,6 +56,12 @@
         // gap: 1rem;
         // background-color: red;
 
+        .row{
+
+          display: flex;
+          flex-direction: column;
+          margin-top:  1rem;
+        
         .text{
          
             margin: .5rem 0;
@@ -66,17 +72,20 @@
         }
      
         .check{
+          padding-left:2rem;
           display: flex;
-          gap: 1.5rem;
+          gap: 1rem;
+
           .checkMark{
             display: flex;
-            gap:.5rem;
+            gap:.3rem;
             justify-content: center;
             align-items: center;
+            white-space: nowrap;
           }
          
         }
-       
+      }
             
         }
     }

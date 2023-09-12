@@ -31,11 +31,13 @@ const Userdetail = () => {
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
             <TextInput
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
           </div>
           <div className={styles.text}>
@@ -43,11 +45,13 @@ const Userdetail = () => {
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
             <TextInput
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
           </div>
           <div className={styles.text}>
@@ -55,11 +59,13 @@ const Userdetail = () => {
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
             <TextInput
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
           </div>
           <div className={styles.text}>
@@ -67,33 +73,25 @@ const Userdetail = () => {
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
             <TextInput
               label={"User Details"}
               placeholder={"Enter your email address"}
               helperText={" This is a hint text to help user."}
+              isDisabled={true}
             />
           </div>
-          <div className={styles.text}>
-            <TextInput
-              label={"User Details"}
-              placeholder={"Enter your email address"}
-              helperText={" This is a hint text to help user."}
-            />
-            <TextInput
-              label={"User Details"}
-              placeholder={"Enter your email address"}
-              helperText={" This is a hint text to help user."}
-            />
-          </div>
+         
         </div>
       </div>
       <div className={styles.div3}>
         <h6 className={styles.h6Lite}>Trainings Enrolled in</h6>
         <div className={styles.div3__container}>
-          <div className={styles.text}>
-            {" "}
-            <RadioButton />{" "}
+        <div className={styles.row}>
+        <div className={styles.text}>
+            
+            <RadioButton />
             <p className={styles.t3Req}>
               Training Name 124134143 | 12 Chapters | 20 Lessons
             </p>
@@ -101,19 +99,70 @@ const Userdetail = () => {
           <div className={styles.check}>
             <div className={styles.checkMark}>
               <img src={checkmark} />
-              <p>10 lessons completed</p>
+              <p className={styles.t3Lite}>10 lessons completed</p>
             </div>
             <div className={styles.checkMark}>
               <img src={checkmark} />
-              <p>10 lessons completed</p>
+              <p className={styles.t3Lite}>10 lessons completed</p>
             </div>
             <div className={styles.check}>
               <div className={styles.checkMark}>
                 <img src={checkmark} />
-                <p>10 lessons completed</p>
+                <p className={styles.t3Lite}>10 lessons completed</p>
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.row}>
+        <div className={styles.text}>
+            
+            <RadioButton />
+            <p className={styles.t3Req}>
+              Training Name 124134143 | 12 Chapters | 20 Lessons
+            </p>
+          </div>
+          <div className={styles.check}>
+            <div className={styles.checkMark}>
+              <img src={checkmark} />
+              <p className={styles.t3Lite}>10 lessons completed</p>
+            </div>
+            <div className={styles.checkMark}>
+              <img src={checkmark} />
+              <p className={styles.t3Lite}>10 lessons completed</p>
+            </div>
+            <div className={styles.check}>
+              <div className={styles.checkMark}>
+                <img src={checkmark} />
+                <p className={styles.t3Lite}>10 lessons completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.row}>
+        <div className={styles.text}>
+            
+            <RadioButton />
+            <p className={styles.t3Req}>
+              Training Name 124134143 | 12 Chapters | 20 Lessons
+            </p>
+          </div>
+          <div className={styles.check}>
+            <div className={styles.checkMark}>
+              <img src={checkmark} />
+              <p className={styles.t3Lite}>10 lessons completed</p>
+            </div>
+            <div className={styles.checkMark}>
+              <img src={checkmark} />
+              <p className={styles.t3Lite}>10 lessons completed</p>
+            </div>
+            <div className={styles.check}>
+              <div className={styles.checkMark}>
+                <img src={checkmark} />
+                <p className={styles.t3Lite}>10 lessons completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
          
         </div>
       </div>

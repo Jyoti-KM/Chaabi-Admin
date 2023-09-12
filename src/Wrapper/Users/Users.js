@@ -13,7 +13,7 @@ import closeImage from "../../assets/close.svg";
 import TertiaryButton from "../../components/Buttons/TertiaryButton/TertiaryButton";
 import CheckBox from "../../components/Buttons/CheckBox/CheckBox";
 import OrganisationLogin from "../../pages/Org/OrgLogin";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, useNavigate } from "react-router-dom";
 import Layout from "../../Layout/Layout";
 
 const buttons = ["Users", "User Groups"];
@@ -29,128 +29,6 @@ const emailInput = {
   helperText: "",
 };
 
-const tableRows = [
-  {
-    id: 1,
-    name: "John Smith",
-    status: "active",
-    role: "Software Engineer",
-    email: "john.smith@example.com",
-    teams: ["Engineering", "Product", "Development"],
-  },
-  {
-    id: 2,
-    name: "Jane Doe",
-    status: "inactive",
-    role: "UX Designer",
-    email: "jane.doe@example.com",
-    teams: ["Design", "Product"],
-  },
-  {
-    id: 3,
-    name: "Michael Johnson",
-    status: "draft",
-    role: "Product Manager",
-    email: "michael.johnson@example.com",
-    teams: ["Product", "Sales", "Marketing", "Analytics"],
-  },
-  {
-    id: 4,
-    name: "Emily Williams",
-    status: "active",
-    role: "Frontend Developer",
-    email: "emily.williams@example.com",
-    teams: ["Engineering", "Development"],
-  },
-  {
-    id: 5,
-    name: "William Davis",
-    status: "inactive",
-    role: "UI Designer",
-    email: "william.davis@example.com",
-    teams: ["Design", "Product"],
-  },
-  {
-    id: 6,
-    name: "Sophia Wilson",
-    status: "draft",
-    role: "Marketing Specialist",
-    email: "sophia.wilson@example.com",
-    teams: ["Marketing", "Sales"],
-  },
-  {
-    id: 7,
-    name: "Alexander Martinez",
-    status: "active",
-    role: "Backend Developer",
-    email: "alexander.martinez@example.com",
-    teams: ["Engineering", "Development", "QA"],
-  },
-  {
-    id: 8,
-    name: "Emma Brown",
-    status: "inactive",
-    role: "UX Designer",
-    email: "emma.brown@example.com",
-    teams: ["Design"],
-  },
-  {
-    id: 9,
-    name: "Daniel Jones",
-    status: "draft",
-    role: "Product Manager",
-    email: "daniel.jones@example.com",
-    teams: ["Product", "Sales", "Marketing", "Analytics"],
-  },
-  {
-    id: 10,
-    name: "Olivia Taylor",
-    status: "active",
-    role: "Full Stack Developer",
-    email: "olivia.taylor@example.com",
-    teams: ["Engineering", "Development", "QA"],
-  },
-  {
-    id: 11,
-    name: "Liam Jackson",
-    status: "inactive",
-    role: "UI Designer",
-    email: "liam.jackson@example.com",
-    teams: ["Design", "Product"],
-  },
-  {
-    id: 12,
-    name: "Ava White",
-    status: "draft",
-    role: "Marketing Specialist",
-    email: "ava.white@example.com",
-    teams: ["Marketing", "Sales", "Analytics"],
-  },
-  {
-    id: 13,
-    name: "Noah Martinez",
-    status: "active",
-    role: "Backend Developer",
-    email: "noah.martinez@example.com",
-    teams: ["Engineering", "Development"],
-  },
-  {
-    id: 14,
-    name: "Isabella Davis",
-    status: "inactive",
-    role: "UX Designer",
-    email: "isabella.davis@example.com",
-    teams: ["Design", "Product"],
-  },
-  {
-    id: 15,
-    name: "Mason Wilson",
-    status: "draft",
-    role: "Product Manager",
-    email: "mason.wilson@example.com",
-    teams: ["Product", "Sales", "Marketing", "Analytics"],
-  },
-];
 
 const columnNames = [
   "Name",
@@ -169,6 +47,7 @@ const options = [
 ];
 
 function Users() {
+  const navigate = useNavigate();
   const [addUserGroup, setAddUserGroup] = useState(false);
 
   function cancelBtnHandler() {
@@ -179,12 +58,176 @@ function Users() {
     setAddUserGroup(!addUserGroup);
   }
 
-  // function handleTable(){
-  //   <Route path="/" element={<Layout />}>
-  //   <Route path="/userdetail" element={<Userdetail />}
-  //   </Route>
-  // }
+  const tableRows = [
+    {
+      id: 1,
+      name: "John Smith",
+      status: "active",
+      role: "Software Engineer",
+      email: "john.smith@example.com",
+      teams: ["Engineering", "Product", "Development"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 2,
+      name: "Jane Doe",
+      status: "inactive",
+      role: "UX Designer",
+      email: "jane.doe@example.com",
+      teams: ["Design", "Product"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 3,
+      name: "Michael Johnson",
+      status: "draft",
+      role: "Product Manager",
+      email: "michael.johnson@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 4,
+      name: "Emily Williams",
+      status: "active",
+      role: "Frontend Developer",
+      email: "emily.williams@example.com",
+      teams: ["Engineering", "Development"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 5,
+      name: "William Davis",
+      status: "inactive",
+      role: "UI Designer",
+      email: "william.davis@example.com",
+      teams: ["Design", "Product"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 6,
+      name: "Sophia Wilson",
+      status: "draft",
+      role: "Marketing Specialist",
+      email: "sophia.wilson@example.com",
+      teams: ["Marketing", "Sales"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 7,
+      name: "Alexander Martinez",
+      status: "active",
+      role: "Backend Developer",
+      email: "alexander.martinez@example.com",
+      teams: ["Engineering", "Development", "QA"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 8,
+      name: "Emma Brown",
+      status: "inactive",
+      role: "UX Designer",
+      email: "emma.brown@example.com",
+      teams: ["Design"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 9,
+      name: "Daniel Jones",
+      status: "draft",
+      role: "Product Manager",
+      email: "daniel.jones@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 10,
+      name: "Olivia Taylor",
+      status: "active",
+      role: "Full Stack Developer",
+      email: "olivia.taylor@example.com",
+      teams: ["Engineering", "Development", "QA"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 11,
+      name: "Liam Jackson",
+      status: "inactive",
+      role: "UI Designer",
+      email: "liam.jackson@example.com",
+      teams: ["Design", "Product"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 12,
+      name: "Ava White",
+      status: "draft",
+      role: "Marketing Specialist",
+      email: "ava.white@example.com",
+      teams: ["Marketing", "Sales", "Analytics"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 13,
+      name: "Noah Martinez",
+      status: "active",
+      role: "Backend Developer",
+      email: "noah.martinez@example.com",
+      teams: ["Engineering", "Development"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 14,
+      name: "Isabella Davis",
+      status: "inactive",
+      role: "UX Designer",
+      email: "isabella.davis@example.com",
+      teams: ["Design", "Product"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+    {
+      id: 15,
+      name: "Mason Wilson",
+      status: "draft",
+      role: "Product Manager",
+      email: "mason.wilson@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
+      onClick: () => {
+        navigate("/userdetail");
+      }
+    },
+  ];
+  
 
+ 
   return (
     <div className={styles.usersContainer}>
       <div className={styles.usersContainer__top}>
