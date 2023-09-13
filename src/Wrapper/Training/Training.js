@@ -1,27 +1,25 @@
-import React from 'react';
-import styles from './Training.module.scss';
-import SearchInput from '../../components/InputFields/SearchInput/searchInput';
-import PrimaryButton from '../../components/Buttons/PrimaryButton/PrimaryButton';
-import Table from '../../components/Table/Table';
-import ButtonGroup from '../../components/Buttons/ButtonGroup/ButtonGroup';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import styles from "./Training.module.scss";
+import SearchInput from "../../components/InputFields/SearchInput/searchInput";
+import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton";
+import Table from "../../components/Table/Table";
+import ButtonGroup from "../../components/Buttons/ButtonGroup/ButtonGroup";
+import { useNavigate } from "react-router-dom";
 
-const buttons = ["List", "Templates" , "Playlist"];
+const buttons = ["List", "Templates", "Playlist"];
 
-
-  const columnNames = [
-    "Name",
-    "Status",
-    "Role",
-    "Email",
-    "Teams",
-    "Delete",
-    "Edit",
-  ];
+const columnNames = [
+  "Name",
+  "Status",
+  "Role",
+  "Email",
+  "Teams",
+  "Delete",
+  "Edit",
+];
 
 const Training = () => {
-
- const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const tableRows = [
     {
@@ -33,7 +31,7 @@ const Training = () => {
       teams: ["Engineering", "Product", "Development"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 2,
@@ -44,7 +42,7 @@ const Training = () => {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 3,
@@ -55,7 +53,7 @@ const Training = () => {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 4,
@@ -66,7 +64,7 @@ const Training = () => {
       teams: ["Engineering", "Development"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 5,
@@ -77,7 +75,7 @@ const Training = () => {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 6,
@@ -88,8 +86,7 @@ const Training = () => {
       teams: ["Marketing", "Sales"],
       onClick: () => {
         navigate("/trainingname");
-        
-      }
+      },
     },
     {
       id: 7,
@@ -100,7 +97,7 @@ const Training = () => {
       teams: ["Engineering", "Development", "QA"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 8,
@@ -111,7 +108,7 @@ const Training = () => {
       teams: ["Design"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 9,
@@ -122,7 +119,7 @@ const Training = () => {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 10,
@@ -133,7 +130,7 @@ const Training = () => {
       teams: ["Engineering", "Development", "QA"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 11,
@@ -144,7 +141,7 @@ const Training = () => {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 12,
@@ -155,7 +152,7 @@ const Training = () => {
       teams: ["Marketing", "Sales", "Analytics"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 13,
@@ -166,7 +163,7 @@ const Training = () => {
       teams: ["Engineering", "Development"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 14,
@@ -177,7 +174,7 @@ const Training = () => {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/trainingname");
-      }
+      },
     },
     {
       id: 15,
@@ -188,28 +185,40 @@ const Training = () => {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/trainingname");
-      }
-
+      },
     },
   ];
 
   return (
     <div className={styles.Training}>
       <div className={styles.Training__top}>
-      <ButtonGroup buttons={buttons} />
-      <div className={styles.conatiner}>
-      <SearchInput />
-      <PrimaryButton>Create New</PrimaryButton>
-      </div>
-     
+        <ButtonGroup
+          buttons={buttons}
+          onClick={(buttonName) => {
+            if (buttonName === "List") {
+              navigate("/list");
+            } else if (buttonName === "Templates") {
+              navigate("/templates");
+            } else if (buttonName === "Playlist") {
+              navigate("/playlist");
+            }
+          }}
+        />
 
+        <div className={styles.conatiner}>
+          <SearchInput />
+          <PrimaryButton>Create New</PrimaryButton>
+        </div>
       </div>
       <div className={styles.Training__buttom}>
-
-      <Table tableHeading="Training" columnNames={columnNames} tableRows={tableRows} />
+        <Table
+          tableHeading="Training"
+          columnNames={columnNames}
+          tableRows={tableRows}
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Training
+export default Training;
