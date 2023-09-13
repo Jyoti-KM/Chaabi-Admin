@@ -1,4 +1,4 @@
-import React , {useState }from "react";
+import React, { useState } from "react";
 import styles from "./template.module.scss";
 import SearchInput from "../../../components/InputFields/SearchInput/searchInput";
 import PrimaryButton from "../../../components/Buttons/PrimaryButton/PrimaryButton";
@@ -6,8 +6,22 @@ import Table from "../../../components/Table/Table";
 import ButtonGroup from "../../../components/Buttons/ButtonGroup/ButtonGroup";
 import { useNavigate } from "react-router-dom";
 import SecondaryButton from "../../../components/Buttons/SecondaryButton/SecondaryButton";
+import Card from "../../../components/CardComponent/Card/Card";
+import { createPortal } from "react-dom";
+import TextInput from "../../../components/InputFields/TextInput/TextInput";
+import FileUpload from "../../../components/InputFields/FileUpload/FileUpload";
+import cloudIcon from "../../../assets/icons/cloud-upload-icon.svg";
+import TabGroup from "../../../components/TabGroup/TabGroup";
 
 const buttons = ["List", "Templates", "Playlist"];
+
+const tabs = ["tab1", "tab2", "tab3", "tab4"];
+
+const fileInput = {
+  iconSource: cloudIcon,
+  supportingText: "SVG, PNG, JPG or GIF (max. 800x400px)",
+  accept: "*",
+};
 
 const columnNames = [
   "Name",
@@ -21,17 +35,34 @@ const columnNames = [
 
 const Template = () => {
   const [selectedButton, setSelectedButton] = useState(null);
-   
+  const [showNewtraining, setShowNewtraining] = useState(false);
+  const [showNewlesson, setShowNewlesson] = useState(false);
+  const [showNewplaylist, setShowNewplaylist] = useState(false);
+
+  function handleTraining() {
+    setShowNewtraining(!showNewtraining);
+  }
+  function handleLesson() {
+    setShowNewlesson(!showNewlesson);
+  }
+  function handlePlayList() {
+    setShowNewplaylist(!showNewplaylist);
+  }
+
+  function cancelBtnHandler() {
+    setShowNewtraining(false);
+    setShowNewlesson(false);
+    setShowNewplaylist(false);
+  }
+
   function handleButtonSelection(buttonValue) {
     setSelectedButton(buttonValue);
 
-    if( selectedButton === 'List'){
-        navigate("/list");
-    }
-    else if(selectedButton === 'Templates'){
+    if (selectedButton === "List") {
+      navigate("/list");
+    } else if (selectedButton === "Templates") {
       navigate("/templates");
-    }
-    else if (selectedButton === 'Playlist'){
+    } else if (selectedButton === "Playlist") {
       navigate("/playlist");
     }
   }
@@ -209,16 +240,89 @@ const Template = () => {
   return (
     <div className={styles.Template}>
       <div className={styles.Template__top}>
-        <ButtonGroup
-          buttons={buttons}
-          onButtonSelect={handleButtonSelection} 
-        />
-        
+        <ButtonGroup buttons={buttons} onButtonSelect={handleButtonSelection} />
+
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton>Create Playlist</SecondaryButton>
-          <SecondaryButton >Create Training</SecondaryButton>
-          <PrimaryButton>New Lesson</PrimaryButton>
+          <SecondaryButton onClick={handlePlayList}>
+            Create Playlist
+          </SecondaryButton>
+          <SecondaryButton onClick={handleTraining}>
+            Create Training
+          </SecondaryButton>
+          <PrimaryButton onClick={handleLesson}>New Lesson</PrimaryButton>
+          {showNewplaylist &&
+            createPortal(
+              <Card heading="New Playlist" onCancel={cancelBtnHandler}>
+                <div className={styles.form}>
+                  <TextInput
+                    label="Name of the lesson"
+                    placeholder="Lesson Name ABC"
+                  />
+                  <p className={styles.t3Lite}>Copy an existing lesson</p>
+                  <TextInput
+                    label="Description of the Playlist"
+                    placeholder="This is a training that needs help"
+                    // isRequired="false"
+                    type="text"
+                  />
+
+                  <TabGroup tabs={tabs}  label="Type of Lesson"/>
+                  <TextInput label="Assign To" />
+                  <div className={styles.button}>
+                    <PrimaryButton>confirm</PrimaryButton>
+                  </div>
+                </div>
+              </Card>,
+              document.getElementById("modalPortal")
+            )}
+          {showNewtraining &&
+            createPortal(
+              <Card heading="New Training" onCancel={cancelBtnHandler}>
+                <div className={styles.form}>
+                  <TextInput
+                    label="Name of the Playlist"
+                    placeholder="Training Name ABC"
+                  />
+                  <TextInput
+                    label="Description of the Playlist"
+                    placeholder="This is a training that needs help"
+                    // isRequired="false"
+                    type="text"
+                  />
+
+                  <FileUpload {...fileInput} />
+                  <TextInput label="Assign To" />
+                  <div className={styles.button}>
+                    <PrimaryButton>confirm</PrimaryButton>
+                  </div>
+                </div>
+              </Card>,
+              document.getElementById("modalPortal")
+            )}
+          {showNewlesson &&
+            createPortal(
+              <Card heading="New Lesson" onCancel={cancelBtnHandler}>
+                <div className={styles.form}>
+                  <TextInput
+                    label="Name of the Playlist"
+                    placeholder="Training Name ABC"
+                  />
+                  <TextInput
+                    label="Description of the Playlist"
+                    placeholder="This is a training that needs help"
+                    // isRequired="false"
+                    type="text"
+                  />
+
+                  <TextInput label="Assign To" />
+                  <div className={styles.button}>
+                    <PrimaryButton>confirm</PrimaryButton>
+                  </div>
+                </div>
+              </Card>,
+              document.getElementById("modalPortal")
+            )}
         </div>
       </div>
       <div className={styles.Template__buttom}>

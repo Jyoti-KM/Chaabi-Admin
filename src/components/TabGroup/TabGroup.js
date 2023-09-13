@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./TabGroup.module.scss";
 
-function TabGroup({ tabs }) {
+function TabGroup({ tabs ,label }) {
   const [selectedTab, setSelectedTab] = useState(null);
   function TabClickHandler(event) {
     console.log(event.target.id);
@@ -9,7 +9,10 @@ function TabGroup({ tabs }) {
   }
 
   return (
+    <div className={styles.Tabs}>
+    <label className={styles.label}>{label}</label>
     <div className={styles.tabGroupContainer}>
+    
       {tabs.map((item) => (
         <button
           className={selectedTab === item ? styles.selectedTab : styles.tab}
@@ -20,6 +23,7 @@ function TabGroup({ tabs }) {
           {item}
         </button>
       ))}
+    </div>
     </div>
   );
 }

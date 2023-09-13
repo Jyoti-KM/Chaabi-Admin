@@ -1,10 +1,23 @@
 @import '../../global-styles/global.module.scss';
 
+
+.Tabs{
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+.label{
+  @extend .t3Med;
+  color: $neutral50;
+  // margin-bottom: 1rem;
+}
+
 .tabGroupContainer {
   display: inline-flex;
   align-items: flex-start;
   align-self: stretch;
-  width: 22.5rem;
+  width: 100%;
+  // width: 22.5rem;
   background: $neutral100;
 
   .selectedTab {
