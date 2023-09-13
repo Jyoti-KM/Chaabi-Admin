@@ -15,6 +15,9 @@ import CheckBox from "../../components/Buttons/CheckBox/CheckBox";
 import OrganisationLogin from "../../pages/Org/OrgLogin";
 import { Link, Route, useNavigate } from "react-router-dom";
 import Layout from "../../Layout/Layout";
+import FileUpload from "../../components/InputFields/FileUpload/FileUpload";
+import cloudIcon from "../../assets/icons/cloud-upload-icon.svg";
+import NumberInput from "../../components/InputFields/NumberInput/NumberInput";
 
 const buttons = ["Users", "User Groups"];
 const buttons2 = ["And", "Or"];
@@ -28,7 +31,6 @@ const emailInput = {
   label: "",
   helperText: "",
 };
-
 
 const columnNames = [
   "Name",
@@ -46,16 +48,40 @@ const options = [
   "load the list of existing rules ",
 ];
 
+const fileInput = {
+  iconSource: cloudIcon,
+  supportingText: "SVG, PNG, JPG or GIF (max. 800x400px)",
+  accept: "*",
+};
+
 function Users() {
-  const navigate = useNavigate();
   const [addUserGroup, setAddUserGroup] = useState(false);
+  const [bukupload, setBulkupload] = useState(false);
+  const [selectedButton, setSelectedButton] = useState(null);
+
+  const navigate = useNavigate();
+
+  function handleButtonSelection(buttonValue) {
+    setSelectedButton(buttonValue);
+
+    if (selectedButton === "Users") {
+      navigate("/users");
+    } else if (selectedButton === "User Groups") {
+      navigate("/usergroup");
+    }
+  }
 
   function cancelBtnHandler() {
     setAddUserGroup(false);
+    setBulkupload(false);
   }
 
-  function AddUserGroups() {
+  function handleAddUserGroups() {
     setAddUserGroup(!addUserGroup);
+  }
+
+  function handleBulkUpload() {
+    setBulkupload(!bukupload);
   }
 
   const tableRows = [
@@ -68,7 +94,7 @@ function Users() {
       teams: ["Engineering", "Product", "Development"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 2,
@@ -79,7 +105,7 @@ function Users() {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 3,
@@ -90,7 +116,7 @@ function Users() {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 4,
@@ -101,7 +127,7 @@ function Users() {
       teams: ["Engineering", "Development"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 5,
@@ -112,7 +138,7 @@ function Users() {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 6,
@@ -123,7 +149,7 @@ function Users() {
       teams: ["Marketing", "Sales"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 7,
@@ -134,7 +160,7 @@ function Users() {
       teams: ["Engineering", "Development", "QA"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 8,
@@ -145,7 +171,7 @@ function Users() {
       teams: ["Design"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 9,
@@ -156,7 +182,7 @@ function Users() {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 10,
@@ -167,7 +193,7 @@ function Users() {
       teams: ["Engineering", "Development", "QA"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 11,
@@ -178,7 +204,7 @@ function Users() {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 12,
@@ -189,7 +215,7 @@ function Users() {
       teams: ["Marketing", "Sales", "Analytics"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 13,
@@ -200,7 +226,7 @@ function Users() {
       teams: ["Engineering", "Development"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 14,
@@ -211,7 +237,7 @@ function Users() {
       teams: ["Design", "Product"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
     {
       id: 15,
@@ -222,123 +248,70 @@ function Users() {
       teams: ["Product", "Sales", "Marketing", "Analytics"],
       onClick: () => {
         navigate("/userdetail");
-      }
+      },
     },
   ];
-  
 
- 
   return (
     <div className={styles.usersContainer}>
       <div className={styles.usersContainer__top}>
-        <ButtonGroup buttons={buttons}  />
+        <ButtonGroup buttons={buttons} onButtonSelect={handleButtonSelection} />
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton >Bulk upload</SecondaryButton>
-          <PrimaryButton onClick={AddUserGroups}>Add User Group</PrimaryButton>
+          <SecondaryButton onClick={handleBulkUpload}>
+            Bulk upload
+          </SecondaryButton>
+          <PrimaryButton onClick={handleAddUserGroups}>Add User </PrimaryButton>
 
           {addUserGroup &&
             createPortal(
-              <Card heading="Add a User Group" onCancel={cancelBtnHandler}>
+              <Card heading="User detail" onCancel={cancelBtnHandler}>
                 <div className={styles.form}>
-                  <div className={styles.form_col1}>
-                    <TextInput
-                      label="Name of the User Group"
-                      helperText=""
-                      type="text"
-                      placeholder="Name of the User Group"
-                    />
-
-                    <DropDown
-                      options={options}
-                      label={"Copy from another rule"}
-                    />
+                  <TextInput
+                    label="Name of the User"
+                    placeholder="Puneet Dhiman"
+                  />
+                  <NumberInput
+                    label="Email Address / Mobile Number"
+                    placeholder="0123456789"
+                  />
+                  <p className={styles.t4Lite}>Add Custom Fields</p>
+                  <TextInput label="Assign To" />
+                  <div className={styles.button}>
+                  <PrimaryButton>confirm</PrimaryButton>
                   </div>
+                  
+                </div>
+              </Card>,
+              document.getElementById("modalPortal")
+            )}
 
-                  <p className={styles.t1Reg}>When a user meets the following conditions:</p>
+          {bukupload &&
+            createPortal(
+              <Card heading="Bulk Upload Users" onCancel={cancelBtnHandler}>
+                <div className={styles.form2}>
+                  <TextInput
+                    label="Name of the Upload"
+                    placeholder="Gurgaon Users"
+                  />
 
-                  <div className={styles.form_col2}>
-                    
-                    <ButtonGroup className={styles.buttongroup} buttons={buttons2} />
-                    <p className={styles.t3Reg}>Match any of the following conditions</p>
-                    <div className={styles.row}>
-                      <div className={styles.row_1}>
-                        <DropDown options={options1} />
-                      </div>
-
-                      <div className={styles.row_2}>
-                        <DropDown options={options2} />
-                      </div>
-
-                      <div className={styles.row_3}>
-                        <TextInput {...emailInput} isRequire={true} />
-                      </div>
-
-                      <div className={styles.row_4}>
-                        <img src={closeImage} alt="close icon " />
-                      </div>
-                    </div>
-
-                <div className={styles.row}>
-                      <div className={styles.row_1}>
-                        <DropDown options={options1} />
-                      </div>
-
-                      <div className={styles.row_2}>
-                        <DropDown options={options2} />
-                      </div>
-
-                      <div className={styles.row_3}>
-                        <TextInput {...emailInput} />
-                      </div>
-
-                      <div className={styles.row_4}>
-                        <img
-                          src={closeImage}
-                          alt="close icon "
-                          isRequire={false}
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.row}>
-                      <div className={styles.row_1}>
-                        <DropDown options={options1} />
-                      </div>
-
-                      <div className={styles.row_2}>
-                        <DropDown options={options2} />
-                      </div>
-
-                      <div className={styles.row_3}>
-                        <TextInput {...emailInput} isRequire={false} />
-                      </div>
-
-                      <div className={styles.row_4}>
-                        <img src={closeImage} alt="close icon " />
-                      </div>
-                    </div>
-
-                    <TertiaryButton>+ Add Condition</TertiaryButton>
+                  <TextInput label="Assign To" />
+                  <FileUpload {...fileInput} />
+                  <div className={styles.button}>
+                    <PrimaryButton>Confirm</PrimaryButton>
                   </div>
-
-                  <p className={styles.t1Reg}>
-                    Enroll them in the &#60;&#60;&#60; Name of the usegroup
-                    &#62;&#62;&#62; user group
-                  </p>
-
-                  <div className={styles.form_col3}>
-                    <CheckBox />
-                    <p className={styles.t3Lite}>Auto-enroll future users</p>
-                  </div>
-                  <PrimaryButton>Confirm</PrimaryButton>
                 </div>
               </Card>,
               document.getElementById("modalPortal")
             )}
         </div>
       </div>
-      <div className={styles.usersContainer__buttom} >
-        <Table tableHeading="All Users Groups" columnNames={columnNames} tableRows={tableRows} />
+      <div className={styles.usersContainer__buttom}>
+        <Table
+          tableHeading=" Users "
+          columnNames={columnNames}
+          tableRows={tableRows}
+        />
       </div>
     </div>
   );

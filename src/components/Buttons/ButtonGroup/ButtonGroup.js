@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ButtonGroup.module.scss";
 import { useSelector } from "react-redux";
 
-function ButtonGroup({ buttons }) {
+
+function ButtonGroup({ buttons , onButtonSelect}) {
   const [selectedButton, setSelectedButton] = useState(null);
   const isDarkMode = useSelector((state) => state.theme.darkMode);
 
+  const emptyFunc = () => {
+
+  }
+
+  onButtonSelect = onButtonSelect ?? emptyFunc;
+
   function buttonClickHandler(event) {
     setSelectedButton(event.target.id);
+    onButtonSelect(event.target.id);
+    
   }
+
+  
+  useEffect(() => {
+    onButtonSelect(selectedButton);
+  }, [selectedButton]);
 
   return (
     <div

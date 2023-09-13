@@ -22,13 +22,14 @@
     cursor: pointer;
     white-space: nowrap;
 
-    &:hover{
+    &:hover , &:active{
       background-color:$neutral99 ;
     }
+
    
   }
 
-  .selectedBtnLightTheme {
+  .selectedBtnLightTheme{
     display: flex;
     padding: .9rem 1.5rem;
     justify-content: center;

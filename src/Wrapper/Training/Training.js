@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState }from "react";
 import styles from "./Training.module.scss";
 import SearchInput from "../../components/InputFields/SearchInput/searchInput";
 import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton";
@@ -19,7 +19,25 @@ const columnNames = [
 ];
 
 const Training = () => {
+  const [selectedButton, setSelectedButton] = useState(null)
+  
   const navigate = useNavigate();
+   
+  function handleButtonSelection(buttonValue) {
+    setSelectedButton(buttonValue);
+
+    if( selectedButton === 'List'){
+        navigate("/list");
+    }
+    else if(selectedButton === 'Templates'){
+      navigate("/templates");
+    }
+    else if (selectedButton === 'Playlist'){
+      navigate("/playlist");
+    }
+  }
+
+  
 
   const tableRows = [
     {
@@ -194,17 +212,9 @@ const Training = () => {
       <div className={styles.Training__top}>
         <ButtonGroup
           buttons={buttons}
-          onClick={(buttonName) => {
-            if (buttonName === "List") {
-              navigate("/list");
-            } else if (buttonName === "Templates") {
-              navigate("/templates");
-            } else if (buttonName === "Playlist") {
-              navigate("/playlist");
-            }
-          }}
+          onButtonSelect={handleButtonSelection} 
         />
-
+        
         <div className={styles.conatiner}>
           <SearchInput />
           <PrimaryButton>Create New</PrimaryButton>

@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import styles from "./Users.module.scss";
-import SearchInput from "../../components/InputFields/SearchInput/searchInput";
-import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton";
-import Table from "../../components/Table/Table";
-import ButtonGroup from "../../components/Buttons/ButtonGroup/ButtonGroup";
-import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
+import styles from "./userGroup.module.scss";
+import SearchInput from "../../../components/InputFields/SearchInput/searchInput";
+import PrimaryButton from "../../../components/Buttons/PrimaryButton/PrimaryButton";
+import Table from "../../../components/Table/Table";
+import ButtonGroup from "../../../components/Buttons/ButtonGroup/ButtonGroup";
+import SecondaryButton from "../../../components/Buttons/SecondaryButton/SecondaryButton";
 import { createPortal } from "react-dom";
-import Card from "../../components/CardComponent/Card/Card";
-import TextInput from "../../components/InputFields/TextInput/TextInput";
-import DropDown from "../../components/InputFields/DropDown/DropDown";
-import closeImage from "../../assets/close.svg";
-import TertiaryButton from "../../components/Buttons/TertiaryButton/TertiaryButton";
-import CheckBox from "../../components/Buttons/CheckBox/CheckBox";
-import OrganisationLogin from "../../pages/Org/OrgLogin";
+import Card from "../../../components/CardComponent/Card/Card";
+import TextInput from "../../../components/InputFields/TextInput/TextInput";
+import DropDown from "../../../components/InputFields/DropDown/DropDown";
+import closeImage from "../../../assets/close.svg";
+import TertiaryButton from "../../../components/Buttons/TertiaryButton/TertiaryButton";
+import CheckBox from "../../../components/Buttons/CheckBox/CheckBox";
+import OrganisationLogin from "../../../pages/Org/OrgLogin";
 import { Link, Route, useNavigate } from "react-router-dom";
-import Layout from "../../Layout/Layout";
+import Layout from "../../../Layout/Layout";
+import FileUpload from "../../../components/InputFields/FileUpload/FileUpload";
+import cloudIcon from "../../../assets/icons/cloud-upload-icon.svg";
 
 const buttons = ["Users", "User Groups"];
 const buttons2 = ["And", "Or"];
@@ -29,6 +31,11 @@ const emailInput = {
   helperText: "",
 };
 
+const fileInput = {
+  iconSource: cloudIcon,
+  supportingText: "SVG, PNG, JPG or GIF (max. 800x400px)",
+  accept: "*",
+};
 
 const columnNames = [
   "Name",
@@ -46,12 +53,34 @@ const options = [
   "load the list of existing rules ",
 ];
 
-function Users() {
-  const navigate = useNavigate();
-  const [addUserGroup, setAddUserGroup] = useState(false);
+function UserGroup() {
+    const [addUserGroup, setAddUserGroup] = useState(false);
+    const [bukupload, setBulkupload] = useState(false);
+    const [selectedButton, setSelectedButton] = useState(null)
+    
+    const navigate = useNavigate();
+
+
+  function handleBulkUpload() {
+    setBulkupload(!bukupload);
+  }
+     
+    function handleButtonSelection(buttonValue) {
+      setSelectedButton(buttonValue);
+  
+      if( selectedButton === 'Users'){
+          navigate("/users");
+      }
+      else if(selectedButton === 'User Groups'){
+        navigate("/usergroup");
+      }
+      
+    }
+    
 
   function cancelBtnHandler() {
     setAddUserGroup(false);
+    setBulkupload(false);
   }
 
   function AddUserGroups() {
@@ -231,10 +260,10 @@ function Users() {
   return (
     <div className={styles.usersContainer}>
       <div className={styles.usersContainer__top}>
-        <ButtonGroup buttons={buttons}  />
+        <ButtonGroup buttons={buttons} onButtonSelect={handleButtonSelection}  />
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton>Bulk upload</SecondaryButton>
+          <SecondaryButton onClick={handleBulkUpload}>Bulk upload</SecondaryButton>
           <PrimaryButton onClick={AddUserGroups}>Add User Group</PrimaryButton>
 
           {addUserGroup &&
@@ -335,6 +364,25 @@ function Users() {
               </Card>,
               document.getElementById("modalPortal")
             )}
+            {bukupload &&
+            createPortal(
+              <Card heading="Bulk Upload Users" onCancel={cancelBtnHandler}>
+                <div className={styles.form2}>
+                  <TextInput
+                    label="Name of the Upload"
+                    placeholder="Gurgaon Users"
+                  />
+                  
+                  <TextInput label="Assign To" />
+                  <FileUpload {...fileInput} />
+                  <div className={styles.button}>
+                  <PrimaryButton>Confirm</PrimaryButton>
+                  </div>
+                 
+                </div>
+              </Card>,
+              document.getElementById("modalPortal")
+            )}
         </div>
       </div>
       <div className={styles.usersContainer__buttom} >
@@ -344,4 +392,6 @@ function Users() {
   );
 }
 
-export default Users;
+export default UserGroup;
+
+

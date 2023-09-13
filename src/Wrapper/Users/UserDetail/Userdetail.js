@@ -18,7 +18,7 @@ const Userdetail = () => {
           <p className={styles.t1Lite}>Create/edit Users & User Groups</p>
         </div>
         <div className={styles.div1_right}>
-          <SecondaryButton>Back to List</SecondaryButton>
+          <SecondaryButton >Back to List</SecondaryButton>
           <PrimaryButton>Edit Details</PrimaryButton>
         </div>
       </div>

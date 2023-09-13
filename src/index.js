@@ -21,6 +21,8 @@ import TrainingDetail from "./Wrapper/Training/TrainingDetail/TrainingDetail";
 import TrainingName from "./Wrapper/Training/TrainingName/TrainingName";
 import Template from "./Wrapper/Training/Template/Template";
 import Playlist from "./Wrapper/Training/PlayList/Playlist";
+import UserGroup from "./Wrapper/Users/UserGroup/UserGroup";
+// import UserGroup from "./Wrapper/Users/UserGroup/UserGroup";
 // import Training from "./pages/Training/Training";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,6 +40,9 @@ root.render(
             <Route path="/my-account" element={<MyAccount />} />
             <Route path="/support" element={<Support />} />
             <Route path="/userdetail" element={<Userdetail />} />
+            
+            <Route path="/usergroup" element={<UserGroup />} />
+
             <Route path="/trainingdetail" element={<TrainingDetail />} />
             <Route path="/trainingname" element ={<TrainingName/>} />
             <Route path="/list" element={<Training />} />
