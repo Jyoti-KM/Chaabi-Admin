@@ -31,6 +31,9 @@ import FileUpload from "../../components/InputFields/FileUpload/FileUpload";
 import DropDown from "../../components/InputFields/DropDown/DropDown";
 import TextInput from "../../components/InputFields/TextInput/TextInput";
 import ButtonWithLeftAndRightIcon from "../../components/Buttons/ButtonWithLeftIcon/ButtonWithLeftIcon";
+import iconPlaceholder from '../../assets/iconplaceholder.svg';
+
+
 
 function Components() {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
@@ -249,15 +252,19 @@ function Components() {
       }`}
     >
       <div className="theme-toggle-container">
-      
-        <div>
-          primary button :
-          <PrimaryButton
-           
-            text="Click me"
-           
-            />
-        </div>
+        
+      <div>
+          <PrimaryButton text="Click me" />
+          </div>
+          <div>
+          <PrimaryButton srcLeft={iconPlaceholder} text="Click me" />
+          </div>
+          <div>
+          <PrimaryButton srcRight={iconPlaceholder} text="Click me" />
+          </div>
+         
+          
+     
         <ThemeToggleButton />
       </div>
 
@@ -345,8 +352,6 @@ function Components() {
       <div>
         checkBox - <CheckBox />
       </div>
-
-
     </div>
   );
 }

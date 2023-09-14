@@ -1,5 +1,13 @@
 @import '../../../global-styles/global.module.scss';
 
+
+button{
+ display: flex;
+
+ gap:.5rem;
+}
+
+
 .primaryBtnLightTheme {
 
   width: 100%;
