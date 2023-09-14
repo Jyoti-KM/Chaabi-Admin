@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SecondaryButton.module.scss";
 import { useSelector } from "react-redux";
 
-function SecondaryButton({ disabled, onClick, children }) {
+function SecondaryButton( props ) {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
   return (
     <button
@@ -11,10 +11,20 @@ function SecondaryButton({ disabled, onClick, children }) {
           ? styles.secondaryBtnDarkTheme
           : styles.secondaryBtnLightTheme
       }
-      disabled={disabled}
-      onClick={onClick}
+
+      disabled={props.disabled}
+      onClick={props.onClick}
+     
     >
-      {children}
+      {props.leftIcon && (
+        <img className={styles.img} src={props.leftIcon} alt="icon" />
+      )}
+
+
+      <p className={styles.p}>{props.text}</p>
+      {props.rightIcon && (
+        <img className={styles.img} src={props.rightIcon} alt="icon" />
+      )}
     </button>
   );
 }

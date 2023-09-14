@@ -257,10 +257,14 @@ function Components() {
           <PrimaryButton text="Click me" />
           </div>
           <div>
-          <PrimaryButton srcLeft={iconPlaceholder} text="Click me" />
+          <PrimaryButton leftIcon={iconPlaceholder} text="Click me" />
           </div>
           <div>
-          <PrimaryButton srcRight={iconPlaceholder} text="Click me" />
+          <PrimaryButton rightIcon={iconPlaceholder} text="Click me" />
+          </div>
+
+          <div>
+          <PrimaryButton text="Click me"  disabled={true} />
           </div>
          
           
@@ -269,7 +273,16 @@ function Components() {
       </div>
 
       <div>
-        secondary button : <SecondaryButton>button</SecondaryButton>
+        secondary button : <SecondaryButton text="Button" /> </div>
+        <div>
+        <SecondaryButton text="Button" leftIcon={cloudIcon} />
+        </div>
+        <div>
+        <SecondaryButton text="Button" rightIcon={cloudIcon} />
+       </div>
+       <div>
+          <SecondaryButton text="Click me"  disabled={true} />
+         
       </div>
 
       <div>

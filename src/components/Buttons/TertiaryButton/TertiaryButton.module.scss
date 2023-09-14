@@ -2,34 +2,37 @@
 
 
 .tertiaryBtnLightTheme {
-  width: 100%;
+  // width: 100%;
+  width: 4rem;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: $primary50;
+  color: $primary40;
+
   @extend .t3Reg;
   text-align: center;
-  border: .065rem solid $primary70;
+  border: none;
   background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
-  // transition: all 0.3s ease-in-out; 
+ 
 
 
 &:not(:disabled):hover {
-  border: .06rem solid $neutral80;
-  // transform: translateY(-.2rem);
+  @extend .t3Bold;
+  color: $primary40;
+
+ 
+  transform: translateY(-.1rem);
 }
 
 &:not(:disabled):active {
-  // transform: translateY(.1rem);
   color: $primary50;
-  border: .06rem solid $neutral80;
-  background-color: $neutral90;
-}
+  
+  transform: translateY(.1rem); }
 
 &[disabled] {
   color: $neutral70;

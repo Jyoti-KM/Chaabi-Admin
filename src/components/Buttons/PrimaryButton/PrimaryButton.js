@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./PrimaryButton.module.scss";
 import { useSelector } from "react-redux";
 
-const img = "";
+
 
 function PrimaryButton(props) {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
@@ -15,14 +15,14 @@ function PrimaryButton(props) {
       disabled={props.disabled}
       onClick={props.onClick}
     >
-     {props.srcLeft && (
-        <img className={styles.img} src={props.srcLeft} alt="icon" />
+     {props.leftIcon && (
+        <img className={styles.img} src={props.leftIcon} alt="icon" />
       )}
 
 
       <p className={styles.p}>{props.text}</p>
-      {props.srcRight && (
-        <img className={styles.img} src={props.srcRight} alt="icon" />
+      {props.rightIcon && (
+        <img className={styles.img} src={props.rightIcon} alt="icon" />
       )}
     </button>
   );

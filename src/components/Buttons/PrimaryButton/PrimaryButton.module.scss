@@ -1,15 +1,12 @@
-@import '../../../global-styles/global.module.scss';
+@import "../../../global-styles/global.module.scss";
 
+$primaryColor: $primary40;
+$primaryHoverColor: $primary90;
+$primaryActiveColor: $primary30;
+$disabledColor: $neutral90;
+$disabledBgColor: $neutral90;
 
-button{
- display: flex;
-
- gap:.5rem;
-}
-
-
-.primaryBtnLightTheme {
-
+.button-base {
   width: 100%;
   display: inline-flex;
   border-radius: 0.25rem;
@@ -19,70 +16,72 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: .8rem;
   @extend .t3Bold;
-  background: $primary40;
-  border: .06rem solid $primary50;
+  border: 0.06rem solid $primary50;
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
+}
 
+.primaryBtnLightTheme {
+  @extend .button-base;
+  background: $primaryColor;
   &:not(:disabled):hover {
-    box-shadow: 0rem 0rem 0rem .25rem $primary90;
-    transform: translateY(-.1rem);
+    box-shadow: 0rem 0rem 0rem 0.25rem $primaryHoverColor;
+    transform: translateY(-0.1rem);
   }
 
   &:not(:disabled):active {
     box-shadow: none;
-    background: $primary30;
-    transform: translateY(.1rem);
+    background: $primaryActiveColor;
+    transform: translateY(0.1rem);
   }
 
   &[disabled] {
-    border: 1rem solid $neutral90;
+    border: none;
     background: $neutral90;
-    color: $neutral100;
+    color: $neutral70;
     cursor: not-allowed;
   }
-  
 }
 
-
-
-
-// dark mode classes
 .primaryBtnDarkTheme {
-
-
-  width: 100%;
-  display: inline-flex;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
-  color: $neutral100;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @extend .t3Bold;
-  background: $primary50;
-  border: .06rem solid $primary50;
-  cursor: pointer;
-  white-space: nowrap;
-
-}
-
-.primaryBtnDarkTheme:not(:disabled):hover {
-  box-shadow: 0rem 0rem 0rem .25rem  $primary80;
-}
-
-.primaryBtnDarkTheme:not(:disabled):active {
+  @extend .button-base;
   background: $primary60;
-  border-color: transparent;
-  box-shadow: 0rem 0rem 0rem .25rem  $primary80;
+  border-color: $primary60;
+  color: $primary10;
+
+  &:not(:disabled):hover {
+    box-shadow: 0rem 0rem 0rem 0.25rem $primary80;
+  }
+
+  &:not(:disabled):active {
+    color: $neutral100;
+    background: $primary50;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    // border: .1rem solid $disabledColor;
+    border: none;
+    background: $neutral40;
+    color: $neutral70;
+    cursor: not-allowed;
+  }
 }
 
-.primaryBtnDarkTheme[disabled] {
-  color: $neutral100;
-  background: $neutral20;
-  border: .06rem solid $neutral20;
-  cursor: not-allowed;
-}
+// .img {
+//   display: inline-block;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+// }
+
+// .img:hover {
+//   fill: red;
+// }
+
+// .img:active {
+//   fill: blue;
+// }

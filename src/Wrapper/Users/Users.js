@@ -275,7 +275,7 @@ function Users() {
                     label="Email Address / Mobile Number"
                     placeholder="0123456789"
                   />
-                  <p className={styles.t4Lite}>Add Custom Fields</p>
+                  <p className={styles.pw}>Add Custom Fields</p>
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
                   <PrimaryButton text="Confirm" />

@@ -1,69 +1,69 @@
 @import '../../../global-styles/global.module.scss';
 
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  white-space: nowrap;
+  @extend .t3Med;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .secondaryBtnLightTheme {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
+  @extend .button;
   color: $neutral20;
-  background-color: transparent;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out; 
-  
-  @extend .t3Med;
-  text-align: center;
-  border: .06rem solid $neutral90;
-  cursor: pointer;
+ 
+  border: 0.09rem solid $neutral80;
+
+  &:not(:disabled):hover {
+    border: 0.09rem solid $primary50;
+    transform: translateY(-0.1rem);
+  }
+
+  &:not(:disabled):active {
+    border: 0.09rem solid $primary50;
+    background: $neutral99;
+    box-shadow: 0 0 0 0.25rem $primary90;
+    transform: translateY(0.1rem);
+  }
+
+  &[disabled] {
+    border: none;
+    background: $neutral90;
+    color: $neutral70;
+    cursor: not-allowed;
+  }
 }
 
-.secondaryBtnLightTheme:not(:disabled):hover {
-  border: .06rem solid $primary50;
-  transform: translateY(-.1rem);
-}
+.secondaryBtnDarkTheme{
+  @extend .button;
+  color: $primary80;
+ 
+  border: 0.09rem solid $primary80;
 
-.secondaryBtnLightTheme:not(:disabled):active {
-  border: .06rem solid $primary50;
-  background: $neutral99;
-  box-shadow: 0px 0px 0px 4px $primary90;
-  transform: translateY(.1rem);
-}
+  &:not(:disabled):hover {
+    border: 0.0625rem solid $primary60;
+    color: $primary60;
+  }
 
-.secondaryBtnLightTheme[disabled] {
-  color: $neutral100;
-  border: 0.0625rem solid $neutral90;
-  background: $neutral90;
-}
+  &:not(:disabled):active {
+    color: $primary10;
+    border:none;
+    background: $primary70;
+    box-shadow: none;
+  }
 
-//dark mode classes
-.secondaryBtnDarkTheme {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
-  color: $neutral99;
-  background-color: transparent;
-  @extend .t3Med;
-  text-align: center;
-  border: .06rem solid $neutral90;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.secondaryBtnDarkTheme:not(:disabled):hover {
-  border: 0.0625rem solid $primary50;
-}
-
-.secondaryBtnDarkTheme:not(:disabled):active {
-  color: $neutral20;
-  border: 0.0625rem solid $primary50;
-  background: $neutral99;
-  box-shadow: 0rem 0rem 0rem 0.25rem $primary80;
-}
-
-.secondaryBtnDarkTheme[disabled] {
-  color: $neutral100;
-  border: 0.0625rem solid $neutral20;
-  background: $neutral20;
+  &[disabled] {
+    // border: .1rem solid $disabledColor;
+    border: none;
+    background: $neutral40;
+    color: $neutral70;
+    cursor: not-allowed;
+    border: 0.09rem solid  $neutral70;
+  }
 }
