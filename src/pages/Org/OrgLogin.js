@@ -30,7 +30,7 @@ const OrganisationLogin = () => {
               <TextInput label="Your Role" helperText="" placeholder="Founder & CEO"/>
             </div>
             <div className={styles.field_account}>
-              <TextInput label="Account URL" helperText="" placeholder="companyname"/>
+              <TextInput label="Account URL" helperText="" placeholder="companyname.chaabi.co"/>
               <TextInput label="Industry" helperText="" placeholder="Manufacturing"/>
             </div>
             <div className={styles.field_detail}>

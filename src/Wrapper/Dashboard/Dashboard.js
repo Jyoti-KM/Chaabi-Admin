@@ -82,7 +82,7 @@ function CustomizeButtonAndForm({ showCustomizeButton, showForm, handleButtonCli
               </div>
 
               <div className={styles.button}>
-              <PrimaryButton >Confirm</PrimaryButton> 
+              <PrimaryButton text="confirm" /> 
               </div>
              
                  </div>

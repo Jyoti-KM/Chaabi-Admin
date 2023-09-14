@@ -250,7 +250,7 @@ const Template = () => {
           <SecondaryButton onClick={handleTraining}>
             Create Training
           </SecondaryButton>
-          <PrimaryButton onClick={handleLesson}>New Lesson</PrimaryButton>
+          <PrimaryButton text="New Lesson" onClick={handleLesson} />
           {showNewplaylist &&
             createPortal(
               <Card heading="New Playlist" onCancel={cancelBtnHandler}>
@@ -270,7 +270,7 @@ const Template = () => {
                   <TabGroup tabs={tabs}  label="Type of Lesson"/>
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
-                    <PrimaryButton>confirm</PrimaryButton>
+                    <PrimaryButton text="Confirm" />
                   </div>
                 </div>
               </Card>,
@@ -294,7 +294,7 @@ const Template = () => {
                   <FileUpload {...fileInput} />
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
-                    <PrimaryButton>confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                   </div>
                 </div>
               </Card>,
@@ -317,7 +317,7 @@ const Template = () => {
 
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
-                    <PrimaryButton>confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                   </div>
                 </div>
               </Card>,

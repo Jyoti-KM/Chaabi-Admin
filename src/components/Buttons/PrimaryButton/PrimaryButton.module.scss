@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   @extend .t3Bold;
-  background: $primary50;
+  background: $primary40;
   border: .06rem solid $primary50;
   cursor: pointer;
   white-space: nowrap;
@@ -20,12 +20,12 @@
 
   &:not(:disabled):hover {
     box-shadow: 0rem 0rem 0rem .25rem $primary90;
-    transform: translateY(-.2rem);
+    transform: translateY(-.1rem);
   }
 
   &:not(:disabled):active {
-    box-shadow: 0rem 0rem 0rem .25rem $primary90;
-    background: $primary40;
+    box-shadow: none;
+    background: $primary30;
     transform: translateY(.1rem);
   }
 

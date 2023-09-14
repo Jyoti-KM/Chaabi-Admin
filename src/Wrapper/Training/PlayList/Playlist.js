@@ -237,7 +237,7 @@ const Playlist = () => {
         
         <div className={styles.conatiner}>
           <SearchInput />
-          <PrimaryButton onClick={handlePlaylist}>New Playlist</PrimaryButton>
+          <PrimaryButton  text="New Playlist" onClick={handlePlaylist} />
           {playlist &&
             createPortal(
               <Card heading="New Playlist" onCancel={cancelBtnHandler}>
@@ -257,7 +257,7 @@ const Playlist = () => {
                   <FileUpload {...fileInput} />
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
-                    <PrimaryButton>Confirm</PrimaryButton>
+                    <PrimaryButton text="Confirm" />
                   </div>
                 </div>
               </Card>,

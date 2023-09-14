@@ -261,7 +261,7 @@ function Users() {
           <SecondaryButton onClick={handleBulkUpload}>
             Bulk upload
           </SecondaryButton>
-          <PrimaryButton onClick={handleAddUserGroups}>Add User </PrimaryButton>
+          <PrimaryButton onClick={handleAddUserGroups} text="Add User"  />
 
           {addUserGroup &&
             createPortal(
@@ -278,7 +278,7 @@ function Users() {
                   <p className={styles.t4Lite}>Add Custom Fields</p>
                   <TextInput label="Assign To" />
                   <div className={styles.button}>
-                  <PrimaryButton>confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                   </div>
                   
                 </div>
@@ -298,7 +298,7 @@ function Users() {
                   <TextInput label="Assign To" />
                   <FileUpload {...fileInput} />
                   <div className={styles.button}>
-                    <PrimaryButton>Confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                   </div>
                 </div>
               </Card>,

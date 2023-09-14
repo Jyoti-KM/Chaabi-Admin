@@ -264,7 +264,7 @@ function UserGroup() {
         <div className={styles.container}>
           <SearchInput />
           <SecondaryButton onClick={handleBulkUpload}>Bulk upload</SecondaryButton>
-          <PrimaryButton onClick={AddUserGroups}>Add User Group</PrimaryButton>
+          <PrimaryButton onClick={AddUserGroups} text="Add User Group" />
 
           {addUserGroup &&
             createPortal(
@@ -359,7 +359,7 @@ function UserGroup() {
                     <CheckBox />
                     <p className={styles.t3Lite}>Auto-enroll future users</p>
                   </div>
-                  <PrimaryButton>Confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                 </div>
               </Card>,
               document.getElementById("modalPortal")
@@ -376,7 +376,7 @@ function UserGroup() {
                   <TextInput label="Assign To" />
                   <FileUpload {...fileInput} />
                   <div className={styles.button}>
-                  <PrimaryButton>Confirm</PrimaryButton>
+                  <PrimaryButton text="Confirm" />
                   </div>
                  
                 </div>

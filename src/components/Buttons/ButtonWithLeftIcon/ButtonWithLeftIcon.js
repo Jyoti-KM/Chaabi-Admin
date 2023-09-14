@@ -15,9 +15,9 @@ function ButtonWithLeftIcon(props) {
       onClick={props.onClick}
       disabled={props.disabled}
     >
-     <img className={styles.img} src={props.src} alt="google icon" />
-               
-               <p className={styles.p}>{props.text}</p>
+      <img className={styles.img} src={props.src} alt="icon" />
+
+      <p className={styles.p}>{props.text}</p>
     </button>
   );
 }

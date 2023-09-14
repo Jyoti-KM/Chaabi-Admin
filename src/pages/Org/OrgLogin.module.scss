@@ -69,7 +69,7 @@
         // }
  
           &_1{
-          
+              // flex: 1;
              p{
               @extend .t4Lite;
               color: $neutral50;
@@ -78,6 +78,9 @@
              }
           }
          
+          // &_2{
+          //   flex: 2;
+          // }
 
         }
         &_account {

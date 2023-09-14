@@ -30,6 +30,7 @@ import SearchInput from "../../components/InputFields/SearchInput/searchInput";
 import FileUpload from "../../components/InputFields/FileUpload/FileUpload";
 import DropDown from "../../components/InputFields/DropDown/DropDown";
 import TextInput from "../../components/InputFields/TextInput/TextInput";
+import ButtonWithLeftAndRightIcon from "../../components/Buttons/ButtonWithLeftIcon/ButtonWithLeftIcon";
 
 function Components() {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
@@ -248,8 +249,14 @@ function Components() {
       }`}
     >
       <div className="theme-toggle-container">
+      
         <div>
-          primary button : <PrimaryButton>button</PrimaryButton>
+          primary button :
+          <PrimaryButton
+           
+            text="Click me"
+           
+            />
         </div>
         <ThemeToggleButton />
       </div>
@@ -263,13 +270,12 @@ function Components() {
       </div>
 
       <div>
-        btn w/th left icon : 
+        btn w/th left icon :
         <ButtonWithLeftIcon src={uploadIcon} text="Image" />
-         
       </div>
 
       <div>
-        btn w/th right icon : 
+        btn w/th right icon :
         <ButtonWithRightIcon>
           <img src={cancelIcon} alt="#" />
           all time
@@ -317,14 +323,14 @@ function Components() {
       </div>
 
       <div>
-      Accordion : <Accordion tabs={AccordionTabs} />
+        Accordion : <Accordion tabs={AccordionTabs} />
       </div>
 
       <div>
         notification : <Notifications notificationItems={notificationItems} />
       </div>
 
-       <div>
+      <div>
         table : <Table columnNames={columnNames} tableRows={tableRows} />
       </div>
 
@@ -340,7 +346,7 @@ function Components() {
         checkBox - <CheckBox />
       </div>
 
-     
+
     </div>
   );
 }

@@ -217,7 +217,7 @@ const Training = () => {
         
         <div className={styles.conatiner}>
           <SearchInput />
-          <PrimaryButton>Create New</PrimaryButton>
+          <PrimaryButton text="Create New" />
         </div>
       </div>
       <div className={styles.Training__buttom}>

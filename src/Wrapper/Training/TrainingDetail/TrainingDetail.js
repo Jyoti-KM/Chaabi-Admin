@@ -38,7 +38,7 @@ const TrainingDetail = () => {
         <div className={styles.div2_right}>
           <SecondaryButton>Upload Quiz</SecondaryButton>
           <SecondaryButton>View Demo</SecondaryButton>
-          <PrimaryButton>Publish</PrimaryButton>
+          <PrimaryButton text="Publish" />
         </div>
       </div>
       <div className={styles.div3}>

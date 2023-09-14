@@ -21,7 +21,7 @@ const TrainingName = () => {
         <h5 className={styles.h5Med}>&#60;&#60;&#60; Lesson Name &#62;&#62;&#62;</h5>
         <div className={styles.div1_right}>
         <SecondaryButton>Back to List</SecondaryButton>
-          <PrimaryButton>Edit Training</PrimaryButton>
+          <PrimaryButton text="Edit Training" />
         </div>
       </div>
       <div className={styles.div2}>

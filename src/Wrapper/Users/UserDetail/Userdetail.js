@@ -19,7 +19,7 @@ const Userdetail = () => {
         </div>
         <div className={styles.div1_right}>
           <SecondaryButton >Back to List</SecondaryButton>
-          <PrimaryButton>Edit Details</PrimaryButton>
+          <PrimaryButton text="Edit Details" />
         </div>
       </div>
       <div className={styles.div2}>
