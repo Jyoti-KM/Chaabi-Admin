@@ -244,12 +244,12 @@ const Template = () => {
 
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton onClick={handlePlayList}>
-            Create Playlist
-          </SecondaryButton>
-          <SecondaryButton onClick={handleTraining}>
-            Create Training
-          </SecondaryButton>
+          <SecondaryButton text="Create Playlist" onClick={handlePlayList} />
+            
+         
+          <SecondaryButton text="Create Training" onClick={handleTraining} />
+            
+         
           <PrimaryButton text="New Lesson" onClick={handleLesson} />
           {showNewplaylist &&
             createPortal(

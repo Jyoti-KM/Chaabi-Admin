@@ -82,9 +82,9 @@ const SignUp = () => {
               </div>
             </div>
           </div>
-          <PrimaryButton>Submit</PrimaryButton>
+          <PrimaryButton text="Submit" />
           <div>
-            <p>
+            <p className={styles.p}>
               Already a member? <span>Login </span>
             </p>
             <div className={styles.hr}>

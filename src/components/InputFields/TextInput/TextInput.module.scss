@@ -30,6 +30,7 @@
 
 
   &::placeholder {
+    border-color: .5rem solid $neutral10;
     
     color:$neutral60;
     @extend .t4Lite;
@@ -105,6 +106,5 @@
     margin: 0rem;
   }
 }
-
 
 

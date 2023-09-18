@@ -13,7 +13,11 @@ function TertiaryButton(props) {
       disabled={props.disabled}
       onClick={props.onClick}
     >
-      {props.children}
+    {props.leftIcon && (
+        <img className={styles.img} src={props.leftIcon} alt="icon" />
+      )}
+
+      <p className={styles.p}>{props.text}</p>
     </button>
   );
 }

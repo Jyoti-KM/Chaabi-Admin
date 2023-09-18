@@ -263,7 +263,7 @@ function UserGroup() {
         <ButtonGroup buttons={buttons} onButtonSelect={handleButtonSelection}  />
         <div className={styles.container}>
           <SearchInput />
-          <SecondaryButton onClick={handleBulkUpload}>Bulk upload</SecondaryButton>
+          <SecondaryButton text="Bulk upload" onClick={handleBulkUpload} />
           <PrimaryButton onClick={AddUserGroups} text="Add User Group" />
 
           {addUserGroup &&

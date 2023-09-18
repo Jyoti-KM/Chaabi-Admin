@@ -37,7 +37,7 @@ const OrganisationLogin = () => {
               <div className={styles.field_detail_1}>
                 
 
-                 <p>How will your users login?</p>
+                 <p className={styles.p}>How will your users login?</p>
                 <ButtonGroup buttons={buttons} />
 
               </div>
@@ -46,7 +46,7 @@ const OrganisationLogin = () => {
               </div>
             </div>
           </div>
-          <PrimaryButton>Submit</PrimaryButton>
+          <PrimaryButton text="Submit" />
         </div>
       </div>
     </div>

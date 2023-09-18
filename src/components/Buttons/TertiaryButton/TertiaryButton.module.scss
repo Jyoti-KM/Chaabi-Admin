@@ -1,71 +1,64 @@
 @import '../../../global-styles/global.module.scss';
 
+@mixin commonBtnStyles {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  @extend .t3Reg;
+  text-align: center;
+  gap: 0.8rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
 
 .tertiaryBtnLightTheme {
-  // width: 100%;
-  width: 4rem;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
   color: $primary40;
 
-  @extend .t3Reg;
-  text-align: center;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  white-space: nowrap;
- 
+  @include commonBtnStyles;
 
+  &:not(:disabled):hover {
+    color: $primary40;
+    background-color: $primary90;
+    transform: translateY(-0.1rem);
+  }
 
-&:not(:disabled):hover {
-  @extend .t3Bold;
-  color: $primary40;
+  &:not(:disabled):active {
+    color: $primary50;
+    transform: translateY(0.1rem);
+    background-color: $primary80;
+  }
 
- 
-  transform: translateY(-.1rem);
+  &[disabled] {
+    color: $neutral70;
+    cursor: not-allowed;
+  }
 }
-
-&:not(:disabled):active {
-  color: $primary50;
-  
-  transform: translateY(.1rem); }
-
-&[disabled] {
-  color: $neutral70;
-  cursor: not-allowed;
-}
-}
-
 
 .tertiaryBtnDarkTheme {
-  display: inline-flex;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
-  color: $primary99;
-  @extend .t3Reg;
-  text-align: center;
-  border: .06rem solid transparent;
-  background-color: transparent;
-  cursor: pointer;
-  white-space: nowrap;
-}
+  color: $primary70;
 
-.tertiaryBtnDarkTheme:not(:disabled):hover {
-  border: .06rem solid $primary99;
-}
+  @include commonBtnStyles;
 
-.tertiaryBtnDarkTheme:not(:disabled):active {
-  color: $primary50;
-  border: .06rem solid $primary99;
-  background-color: $primary99;
-}
+  &:not(:disabled):hover {
+    color: $neutral100;
+    background-color: $primary60;
+    transform: translateY(-0.1rem);
+  }
 
-.tertiaryBtnDarkTheme[disabled] {
-  color: $neutral90;
-  background: $neutral20;
-  cursor: not-allowed;
+  &:not(:disabled):active {
+    color: $neutral100;
+    transform: translateY(0.1rem);
+    background-color: $primary50;
+  }
+
+  &[disabled] {
+    color: $neutral70;
+    background: transparent;
+    cursor: not-allowed;
+  }
 }

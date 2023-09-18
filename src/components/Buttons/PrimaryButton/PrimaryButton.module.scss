@@ -64,7 +64,6 @@ $disabledBgColor: $neutral90;
   }
 
   &[disabled] {
-    // border: .1rem solid $disabledColor;
     border: none;
     background: $neutral40;
     color: $neutral70;
@@ -72,16 +71,4 @@ $disabledBgColor: $neutral90;
   }
 }
 
-// .img {
-//   display: inline-block;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease;
-// }
 
-// .img:hover {
-//   fill: red;
-// }
-
-// .img:active {
-//   fill: blue;
-// }

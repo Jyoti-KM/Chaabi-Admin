@@ -286,9 +286,14 @@ function Components() {
       </div>
 
       <div>
-        tertiary button : <TertiaryButton>button</TertiaryButton>
+        tertiary button : <TertiaryButton text="button" />
       </div>
-
+      <div>
+      <TertiaryButton text="button" leftIcon={cloudIcon}/>
+      </div>
+      <div>
+       <TertiaryButton text="button"  disabled={true}/>
+      </div>
       <div>
         btn w/th left icon :
         <ButtonWithLeftIcon src={uploadIcon} text="Image" />
